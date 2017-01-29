@@ -1,0 +1,14 @@
+/vendor
+/node_modules
+Homestead.yaml
+Homestead.json
+.env
+.DS_Store
+.idea/
+composer.lock
+node_modules
+public/dev
+public/build
+public/download
+public/storage
+public/images/profile

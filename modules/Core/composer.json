@@ -1,0 +1,26 @@
+{
+	"name": "tb/core",
+	"description": "",
+	"authors": [
+		{
+			"name": "koodi",
+			"email": "hello@koodi.ph"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"TB\\Core\\": ""
+		}
+	},
+	"require": {
+		"laravelcollective/html": "5.2.*",
+        "infyomlabs/core-templates": "5.2.x-dev",
+        "zizaco/entrust": "5.2.x-dev",
+        "intervention/image": "^2.3",
+        "laracasts/flash": "~2.0",
+        "parse/php-sdk" : "1.2.*",
+        "snowfire/beautymail": "dev-master",
+        "nesbot/carbon": "~1.21",
+        "laracasts/utilities": "~2.0"
+	}
+}

@@ -1,0 +1,15 @@
+{
+	"name": "tb/notification",
+	"description": "",
+	"authors": [
+		{
+			"name": "koodi",
+			"email": "hello@koodi.ph"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"TB\\Notification\\": ""
+		}
+	}
+}

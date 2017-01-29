@@ -1,0 +1,15 @@
+{
+	"name": "tb/client",
+	"description": "",
+	"authors": [
+		{
+			"name": "koodi",
+			"email": "hello@koodi.ph"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"TB\\Client\\": ""
+		}
+	}
+}

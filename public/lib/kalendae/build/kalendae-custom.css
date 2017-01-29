@@ -1,0 +1,65 @@
+
+.kalendae {
+	background: transparent;
+}
+
+.kalendae .k-calendar{
+	width: 266px;
+}
+.kalendae .k-title, .kalendae .k-header, .kalendae .k-days {
+	width: 270px;
+}
+
+.kalendae .k-days span {
+	width: 38px;
+	padding: 10px 12px 20px 14px;
+	border-radius: 0;
+	
+}
+
+.kalendae .k-header span, .kalendae .k-days span {
+	margin: 0;
+}
+
+.kalendae .k-separator {
+	background: transparent;
+}
+
+.kalendae .k-days span.k-out-of-month {
+	background-color: #fff;
+	border-color: #ddd;
+}
+
+.kalendae .k-header span {
+	width: 38px;
+	padding: 10px 0;
+	color: #9C9C9C;
+	font-size: 12px;
+	font-weight: lighter;
+}
+
+.kalendae .k-caption {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #9C9C9C;
+	font-weight: lighter;
+}
+
+.kalendae .k-days span.k-selected.k-active, .kalendae .k-header.k-active span.k-selected {
+	background: #4BC800;
+}
+
+.kalendae .k-days span.k-range.k-in-month {
+	background: #4BC800;
+	border-color: #ddd;
+	color: #fff;
+}
+
+.kalendae .k-days span.k-selected.k-active, .kalendae .k-header.k-active span.k-selected {
+	background: #37AA00;
+}
+
+.kalendae .k-days span.k-selected {
+	background: #37AA00;
+	color: #fff;
+}

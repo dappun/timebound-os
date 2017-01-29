@@ -1,0 +1,15 @@
+{
+    "name": "Project",
+    "alias": "project",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 1,
+    "providers": [
+        "TB\\Project\\Providers\\ProjectServiceProvider"
+    ],
+    "aliases":{},
+    "files": [
+        "start.php"
+    ]
+}
