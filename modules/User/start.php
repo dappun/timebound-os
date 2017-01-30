@@ -13,3 +13,4 @@
 */
 
 require __DIR__ . '/Http/routes.php';
+require __DIR__ . '/Http/helper.php';

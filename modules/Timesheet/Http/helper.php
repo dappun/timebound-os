@@ -73,17 +73,6 @@ function convertDate($value, $type = 'db-to-user')
     return $date;
 }
 
-function userTimezone()
-{
-    if (\Auth::check()) {
-        $ustz = \Auth::user()->getTimezone();
-    } else {
-        $ustz = \Config::get('core.timezone.display');
-    }
-
-    return $ustz;
-}
-
 function calculateDateRanges($date, $interval)
 {
     $today = new DateTime();
