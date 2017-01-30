@@ -35,8 +35,8 @@
         }
 
         core.setting = {
-            alert_notice: '{{ Config::get('core.alert.notice') }}',
-            alert_warning: '{{ Config::get('core.alert.warning') }}'
+            alert_notice: '{{ Config::get('timesheet.overtime.notice') }}',
+            alert_warning: '{{ Config::get('timesheet.overtime.warning') }}'
         }
     </script>
 
