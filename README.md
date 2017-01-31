@@ -16,6 +16,26 @@ This project uses the following:
 * PHP 5.6 or higher. Tested using PHP 5.6 and PHP 7.1
 * Mysql. Tested using Mysql 5.7
 
+## Installation
+
+* `$ git clone https://github.com/koodiph/timebound-os.git`
+
+* Create `.env` file.
+
+* Copy the content of `.env.example` to `.env`
+
+* Put your database credentials in `.env`
+
+* `$ composer install`
+
+* `$ npm install`
+
+* `$ php artisan key:generate`
+
+* `$ php artisan module:migrate`
+
+* `$ php artisan module:seed`
+
 ## Documentation
 
 Documentation to follow
