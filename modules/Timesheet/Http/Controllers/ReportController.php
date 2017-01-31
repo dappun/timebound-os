@@ -57,16 +57,26 @@ class ReportController extends BaseController
         if ($input) {
             $request->session()->put('last_query_report', $input);
         } else {
-            $input = $request->session()->get('last_query_report');
-            if ($input) {
-                $request->replace($input);    
+            // $input = $request->session()->get('last_query_report');
+            // if ($input) {
+                //$request->replace($input);    
+            // }
+        }
+
+        $urlParam = '';
+        if ($request->query()) {
+            foreach ($request->query() as $key => $value) {
+                $urlParam .= !$urlParam ? '?' : '&';
+                $urlParam .= $key . '=' . urlencode($value);
             }
         }
-        
+            
+
         \View::share('projects', $this->projects);
         \View::share('users', $this->users);
         \View::share('clients', $this->clients);
         \View::share('request', $request);
+        \View::share('urlParam', $urlParam);
 
         return $this->{$method}($input);
     }
@@ -74,7 +84,7 @@ class ReportController extends BaseController
     private function reportList($request)
     {
         $conditions = $this->cleanRequestInput($request);
-        $page = isset($input['page']) ? (int)$input['page'] : 1;
+        $page = isset($request['page']) ? (int)$request['page'] : 1;
         $timesheets = $this->timesheetRepository->history($conditions, $page, 20);
 
         $total = $this->timesheetRepository->totalCount;
@@ -101,7 +111,6 @@ class ReportController extends BaseController
     {
         $conditions = $this->cleanRequestInput($request);
         $report = $this->timesheetRepository->groupByDay($conditions);
-        // dd($report);
         
         $dateRanges = calculateDateRanges([
             'from' => $conditions['start'],
