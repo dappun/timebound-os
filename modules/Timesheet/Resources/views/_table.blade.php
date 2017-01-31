@@ -87,10 +87,10 @@
 
 @if ($timesheets->count() > 1)
 
-    @if (isset($urlParam) && $urlParam)
-        {{ $timesheets->appends($urlParam)->links() }}
+    @if (isset($urlQuery) && $urlQuery)
+        {{ $timesheets->appends($urlQuery)->links() }}
     @else
-        {{ $timesheets->links() }}
+        
     @endif
 
 @endif

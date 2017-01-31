@@ -77,6 +77,7 @@ class ReportController extends BaseController
         \View::share('clients', $this->clients);
         \View::share('request', $request);
         \View::share('urlParam', $urlParam);
+        \View::share('urlQuery', $request->query());
 
         return $this->{$method}($input);
     }
@@ -90,7 +91,7 @@ class ReportController extends BaseController
         $total = $this->timesheetRepository->totalCount;
         \View::share('total', $total);
 
-        $all = $this->timesheetRepository->history($conditions, $page, 1000);
+        $all = $this->timesheetRepository->history($conditions, 0, 1000);
         $jsonData = [];
         $jsonData[] = ['Day', 'Hours', ['role' => 'annotation']];
         foreach ($all as $ts) {
