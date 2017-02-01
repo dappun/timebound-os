@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 622);
+/******/ 	return __webpack_require__(__webpack_require__.s = 617);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1274,7 +1274,7 @@ exports.unbind = function(el, type, fn, capture){
 
 /***/ }),
 
-/***/ 362:
+/***/ 357:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1287,24 +1287,18 @@ var _list2 = _interopRequireDefault(_list);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var options = {
-	valueNames: ['name', 'role', 'status']
+	valueNames: ['name', 'status', 'client']
 };
 
-var userlist = new _list2.default('table-team', options);
-userlist.filter(function (item) {
+var list = new _list2.default('table-project', options);
+list.filter(function (item) {
 	return item.values().status == 'active';
 });
 
 $('.filter-button-group .btn-link').on('click', function () {
 	var filter = $(this).attr('data-filter');
-	var type = $(this).attr('data-type');
-
-	userlist.filter(function (item) {
-		if (type == 'role') {
-			return item.values().role == filter;
-		} else {
-			return item.values().status == filter;
-		}
+	list.filter(function (item) {
+		return item.values().status == filter;
 	});
 });
 
@@ -1810,10 +1804,10 @@ module.exports = function(s) {
 
 /***/ }),
 
-/***/ 622:
+/***/ 617:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(362);
+module.exports = __webpack_require__(357);
 
 
 /***/ })

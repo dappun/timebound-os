@@ -23,7 +23,7 @@
 
             <div class="element-item col-sm-3">
                 <div class="btn-edit">
-                <a href="{!! route('admin.users.edit', [$user->id]) !!}" class='btn btn-primary btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i> edit</a>
+                    <a href="{!! route('admin.users.edit', [$user->id]) !!}" class='btn btn-primary btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i> edit</a>
                 </div>
 
                 {!! Form::open(['route' => ['admin.users.destroy', $user->id], 'method' => 'delete', 'class' => 'btn-del']) !!}
