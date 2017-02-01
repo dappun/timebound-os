@@ -102,16 +102,39 @@ class ProjectController extends BaseController
         
         // Statistics
         $contributors = $this->projectRepository->contributors($id, $cond);
-        $jsonContributors = [['Name', 'Worked hours']];
+        $chartData = [
+            'label' => [],
+            'data' => [],
+            'bgcolor' => [],
+        ];
+
+        $colors = [
+            "#FF6384",
+            "#4BC0C0",
+            "#FFCE56",
+            "#E7E9ED",
+            "#36A2EB"
+        ];
+
+        $ctr = 0;
         foreach ($contributors as $key => $value) {
             $hours = (float)$value->total / 3600;
-            $jsonContributors[] = [$value->name, $hours];
+
+            $chartData['label'][] = $value->name;
+            $chartData['data'][] = number_format($hours, 2);
+
+            if (!isset($colors[$ctr])) {
+                $ctr = 0;
+            }
+
+            $chartData['bgcolor'][] = $colors[$ctr];
+            $ctr++;
         }
-        
+
         $total_hours = $this->projectRepository->totalHours($id, $cond);
 
         \View::share('timesheets', $timesheets);
-        \View::share('contributors', $jsonContributors);
+        \View::share('contributors', $chartData);
         \View::share('hours', $total_hours);
 
         return view('project::show')->with('project', $project);

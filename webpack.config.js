@@ -20,6 +20,9 @@ var config = {
       ],
       page_user: [
         './resources/assets/js/page_user.js',  
+      ],
+      page_project_show: [
+        './resources/assets/js/page_project_show.js',  
       ]
   },
 
