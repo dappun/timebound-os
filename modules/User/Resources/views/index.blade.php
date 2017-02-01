@@ -1,27 +1,36 @@
 @extends('core::layouts.master')
 
 @section('content')
-<div class="row">
-    <div class="col-sm-12">
-        <h1 class="pull-left">Team</h1>
-        <a class="btn btn-primary pull-right" style="margin-top: 25px;" href="{!! route('admin.users.create') !!}">Add New</a>
-    </div>
-</div>
+<div id="table-team">
+	<div class="row">
+	    <div class="col-sm-6">
+	        <h1 class="pull-left">Team</h1>
+	        
+	    </div>
 
-@include('flash::message')
+	    <div class="col-sm-5">
+	    	<input class="form-control search" placeholder="Search" />
+	    </div>
 
-<br/><br/>
+	    <div class="col-sm-1">
+	    	<a class="btn btn-primary pull-right" href="{!! route('admin.users.create') !!}">Add New</a>
+	    </div>
+	</div>
 
-<div class="row">
-	<div class="col-sm-12">
+	@include('flash::message')
 
-        @include('user::table')
+	<br/><br/>
+	<hr />
+	<br/><br/>
 
+	<div class="row">
+		<div class="col-sm-12">
+
+	        @include('user::table')
+
+		</div>
 	</div>
 </div>
-
-
-
 
 @stop
 

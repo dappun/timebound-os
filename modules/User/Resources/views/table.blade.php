@@ -1,27 +1,27 @@
 <div class="view-filtered-js table-team">
-    <div class="button-group filter-button-group">
-        <button class="is-checked btn btn-link" data-filter=".active">Active</button>
-        <button class="btn btn-link" data-filter=".notactive">Not Active</button>
+    <div>
+        
+        <button class="sort btn-link btn pull-right" data-sort="name">Sort by name</button>
+        <div class="button-group filter-button-group">
+            <button class="is-checked btn btn-link" data-type="status" data-filter="active">Active</button>
+            <button class="btn btn-link" data-type="status" data-filter="notactive">Not Active</button>
 
-        <button class="btn btn-link" data-filter=".admin">Administrators</button>
-        <button class="btn btn-link" data-filter=".manager">Project Managers</button>
-        <button class="btn btn-link" data-filter=".customer">Clients</button>
-        <button class="btn btn-link" data-filter=".member">Team Members</button>
+            <button class="btn btn-link" data-type="role" data-filter="admin">Administrators</button>
+            <button class="btn btn-link" data-type="role" data-filter="manager">Project Managers</button>
+            <button class="btn btn-link" data-type="role" data-filter="customer">Clients</button>
+            <button class="btn btn-link" data-type="role" data-filter="member">Team Members</button>
+        </div>
+
     </div>
 
 
-    <div class="grid">
+    <div class="grid list">
         @foreach($users as $user)
             <?php 
-            $elemClasses = strtolower(str_replace(' ', '', $user->status));
-            
-            if ($user->roles()->count()) {
-                $elemClasses .= ' ' . $user->roles()->first()->name;
-            }
+            $status = strtolower(str_replace(' ', '', $user->status));
             ?>
 
-            <div class="element-item {!! $elemClasses !!} col-sm-3">
-
+            <div class="element-item col-sm-3">
                 <div class="btn-edit">
                 <a href="{!! route('admin.users.edit', [$user->id]) !!}" class='btn btn-primary btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i> edit</a>
                 </div>
@@ -40,6 +40,9 @@
                     {!! $user->last_name . ', ' . $user->first_name !!}<br/>
                     <label>{!! $user->name !!}</label>
                 </div>
+
+                <span class="role hide">{{ $user->roles()->first()->name }}</span>
+                <span class="status hide">{{ $status }}</span>
                 
 
         </div>
@@ -48,48 +51,5 @@
 </div>
 
 @section('scripts')
-<script src="{{ asset('lib/isotope.min.js') }}"></script>
-<script type="text/javascript">
-$(function() {
-    var iso = new Isotope( '.grid', {
-      itemSelector: '.element-item',
-      layoutMode: 'fitRows',
-      filter: '.active'
-    });
-
-    // filter functions
-    var filterFns = {
-      // show if number is greater than 50
-      numberGreaterThan50: function( itemElem ) {
-        var number = itemElem.querySelector('.number').textContent;
-        return parseInt( number, 10 ) > 50;
-      },
-      // show if name ends with -ium
-      ium: function( itemElem ) {
-        var name = itemElem.querySelector('.name').textContent;
-        return name.match( /ium$/ );
-      }
-    };
-
-    var filtersElem = document.querySelector('.filter-button-group');
-    filtersElem.addEventListener( 'click', function( event ) {
-      // only work with buttons
-      if ( !matchesSelector( event.target, 'button' ) ) {
-        return;
-      }
-
-      var filterValue = event.target.getAttribute('data-filter');
-      // use matching filter function
-      filterValue = filterFns[ filterValue ] || filterValue;
-      iso.arrange({ filter: filterValue });
-    });
-
-    // change is-checked class on buttons
-    $('.button-group .btn').on('click', function(e) {
-        $('.button-group .is-checked').removeClass('is-checked');
-        $(this).addClass('is-checked');
-    });
-
-});    
-</script>
+<script type="text/javascript" src="{{ asset('dist/page_user.js') }}"></script>
 @endsection

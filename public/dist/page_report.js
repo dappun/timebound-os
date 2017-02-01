@@ -63,12 +63,11 @@
 /******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 547);
+/******/ 	return __webpack_require__(__webpack_require__.s = 593);
 /******/ })
 /************************************************************************/
 /******/ ([
-/* 0 */,
-/* 1 */
+/* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(module) {//! moment.js
@@ -1885,7 +1884,7 @@ function loadLocale(name) {
             module && module.exports) {
         try {
             oldLocale = globalLocale._abbr;
-            __webpack_require__(524)("./" + name);
+            __webpack_require__(229)("./" + name);
             // because defineLocale currently also sets the global locale, we
             // want to undo that for lazy loaded locales
             getSetGlobalLocale(oldLocale);
@@ -4373,9 +4372,10 @@ return hooks;
 
 })));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(545)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(231)(module)))
 
 /***/ }),
+/* 1 */,
 /* 2 */,
 /* 3 */,
 /* 4 */,
@@ -4746,135 +4746,7 @@ function updateLink(linkElement, obj) {
 /* 63 */,
 /* 64 */,
 /* 65 */,
-/* 66 */,
-/* 67 */,
-/* 68 */,
-/* 69 */,
-/* 70 */,
-/* 71 */,
-/* 72 */,
-/* 73 */,
-/* 74 */,
-/* 75 */,
-/* 76 */,
-/* 77 */,
-/* 78 */
-/***/ (function(module, exports) {
-
-/*
-	MIT License http://www.opensource.org/licenses/mit-license.php
-	Author Tobias Koppers @sokra
-*/
-module.exports = function(src) {
-	if (typeof execScript !== "undefined")
-		execScript(src);
-	else
-		eval.call(null, src);
-}
-
-
-/***/ }),
-/* 79 */,
-/* 80 */,
-/* 81 */,
-/* 82 */,
-/* 83 */,
-/* 84 */,
-/* 85 */,
-/* 86 */,
-/* 87 */,
-/* 88 */,
-/* 89 */,
-/* 90 */,
-/* 91 */,
-/* 92 */,
-/* 93 */,
-/* 94 */,
-/* 95 */,
-/* 96 */,
-/* 97 */,
-/* 98 */,
-/* 99 */,
-/* 100 */,
-/* 101 */,
-/* 102 */,
-/* 103 */,
-/* 104 */,
-/* 105 */,
-/* 106 */,
-/* 107 */,
-/* 108 */,
-/* 109 */,
-/* 110 */,
-/* 111 */,
-/* 112 */,
-/* 113 */,
-/* 114 */,
-/* 115 */,
-/* 116 */,
-/* 117 */,
-/* 118 */,
-/* 119 */,
-/* 120 */,
-/* 121 */,
-/* 122 */,
-/* 123 */,
-/* 124 */,
-/* 125 */,
-/* 126 */,
-/* 127 */,
-/* 128 */,
-/* 129 */,
-/* 130 */,
-/* 131 */,
-/* 132 */,
-/* 133 */,
-/* 134 */,
-/* 135 */,
-/* 136 */,
-/* 137 */,
-/* 138 */,
-/* 139 */,
-/* 140 */,
-/* 141 */,
-/* 142 */,
-/* 143 */,
-/* 144 */,
-/* 145 */,
-/* 146 */,
-/* 147 */,
-/* 148 */,
-/* 149 */,
-/* 150 */,
-/* 151 */,
-/* 152 */,
-/* 153 */,
-/* 154 */,
-/* 155 */,
-/* 156 */,
-/* 157 */,
-/* 158 */,
-/* 159 */,
-/* 160 */,
-/* 161 */,
-/* 162 */,
-/* 163 */,
-/* 164 */,
-/* 165 */,
-/* 166 */,
-/* 167 */,
-/* 168 */,
-/* 169 */,
-/* 170 */,
-/* 171 */,
-/* 172 */,
-/* 173 */,
-/* 174 */,
-/* 175 */,
-/* 176 */,
-/* 177 */,
-/* 178 */,
-/* 179 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -4882,7 +4754,7 @@ module.exports = function(src) {
 //! author : Werner Mollentze : https://github.com/wernerm
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -4952,7 +4824,7 @@ return af;
 
 
 /***/ }),
-/* 180 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -4960,7 +4832,7 @@ return af;
 //! author : Noureddine LOUAHEDJ : https://github.com/noureddineme
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -5016,7 +4888,7 @@ return arDz;
 
 
 /***/ }),
-/* 181 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -5024,7 +4896,7 @@ return arDz;
 //! author : Ali Hmer: https://github.com/kikoanis
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -5147,7 +5019,7 @@ return arLy;
 
 
 /***/ }),
-/* 182 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -5156,7 +5028,7 @@ return arLy;
 //! author : Abdel Said : https://github.com/abdelsaid
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -5212,7 +5084,7 @@ return arMa;
 
 
 /***/ }),
-/* 183 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -5220,7 +5092,7 @@ return arMa;
 //! author : Suhail Alkowaileet : https://github.com/xsoh
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -5322,7 +5194,7 @@ return arSa;
 
 
 /***/ }),
-/* 184 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -5330,7 +5202,7 @@ return arSa;
 //! author : Nader Toukabri : https://github.com/naderio
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -5386,7 +5258,7 @@ return arTn;
 
 
 /***/ }),
-/* 185 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -5396,7 +5268,7 @@ return arTn;
 //! author : forabi https://github.com/forabi
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -5533,7 +5405,7 @@ return ar;
 
 
 /***/ }),
-/* 186 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -5541,7 +5413,7 @@ return ar;
 //! author : topchiyev : https://github.com/topchiyev
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -5643,7 +5515,7 @@ return az;
 
 
 /***/ }),
-/* 187 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -5653,7 +5525,7 @@ return az;
 //! Author : Menelion Elensúle : https://github.com/Oire
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -5782,7 +5654,7 @@ return be;
 
 
 /***/ }),
-/* 188 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -5790,7 +5662,7 @@ return be;
 //! author : Krasen Borisov : https://github.com/kraz
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -5877,7 +5749,7 @@ return bg;
 
 
 /***/ }),
-/* 189 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -5885,7 +5757,7 @@ return bg;
 //! author : Kaushik Gandhi : https://github.com/kaushikgandhi
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -6001,7 +5873,7 @@ return bn;
 
 
 /***/ }),
-/* 190 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6009,7 +5881,7 @@ return bn;
 //! author : Thupten N. Chakrishar : https://github.com/vajradog
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -6125,7 +5997,7 @@ return bo;
 
 
 /***/ }),
-/* 191 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6133,7 +6005,7 @@ return bo;
 //! author : Jean-Baptiste Le Duigou : https://github.com/jbleduigou
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -6238,7 +6110,7 @@ return br;
 
 
 /***/ }),
-/* 192 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6247,7 +6119,7 @@ return br;
 //! based on (hr) translation by Bojan Marković
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -6386,7 +6258,7 @@ return bs;
 
 
 /***/ }),
-/* 193 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6394,7 +6266,7 @@ return bs;
 //! author : Juan G. Hurtado : https://github.com/juanghurtado
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -6472,7 +6344,7 @@ return ca;
 
 
 /***/ }),
-/* 194 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6480,7 +6352,7 @@ return ca;
 //! author : petrbela : https://github.com/petrbela
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -6649,7 +6521,7 @@ return cs;
 
 
 /***/ }),
-/* 195 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6657,7 +6529,7 @@ return cs;
 //! author : Anatoly Mironov : https://github.com/mirontoli
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -6717,7 +6589,7 @@ return cv;
 
 
 /***/ }),
-/* 196 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6726,7 +6598,7 @@ return cv;
 //! author : https://github.com/ryangreaves
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -6803,7 +6675,7 @@ return cy;
 
 
 /***/ }),
-/* 197 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6811,7 +6683,7 @@ return cy;
 //! author : Ulrik Nielsen : https://github.com/mrbase
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -6868,7 +6740,7 @@ return da;
 
 
 /***/ }),
-/* 198 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6879,7 +6751,7 @@ return da;
 //! author : Mikolaj Dadela : https://github.com/mik01aj
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -6952,7 +6824,7 @@ return deAt;
 
 
 /***/ }),
-/* 199 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6962,7 +6834,7 @@ return deAt;
 //! author : Mikolaj Dadela : https://github.com/mik01aj
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -7035,7 +6907,7 @@ return de;
 
 
 /***/ }),
-/* 200 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7043,7 +6915,7 @@ return de;
 //! author : Jawish Hameed : https://github.com/jawish
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -7140,7 +7012,7 @@ return dv;
 
 
 /***/ }),
-/* 201 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7148,7 +7020,7 @@ return dv;
 //! author : Aggelos Karalias : https://github.com/mehiel
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -7243,7 +7115,7 @@ return el;
 
 
 /***/ }),
-/* 202 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7251,7 +7123,7 @@ return el;
 //! author : Jared Morse : https://github.com/jarcoal
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -7315,7 +7187,7 @@ return enAu;
 
 
 /***/ }),
-/* 203 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7323,7 +7195,7 @@ return enAu;
 //! author : Jonathan Abourbih : https://github.com/jonbca
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -7383,7 +7255,7 @@ return enCa;
 
 
 /***/ }),
-/* 204 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7391,7 +7263,7 @@ return enCa;
 //! author : Chris Gedrim : https://github.com/chrisgedrim
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -7455,7 +7327,7 @@ return enGb;
 
 
 /***/ }),
-/* 205 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7463,7 +7335,7 @@ return enGb;
 //! author : Chris Cartlidge : https://github.com/chriscartlidge
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -7527,7 +7399,7 @@ return enIe;
 
 
 /***/ }),
-/* 206 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7535,7 +7407,7 @@ return enIe;
 //! author : Luke McGregor : https://github.com/lukemcgregor
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -7599,7 +7471,7 @@ return enNz;
 
 
 /***/ }),
-/* 207 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7609,7 +7481,7 @@ return enNz;
 //!          Se ne, bonvolu korekti kaj avizi min por ke mi povas lerni!
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -7677,14 +7549,14 @@ return eo;
 
 
 /***/ }),
-/* 208 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
 //! locale : Spanish (Dominican Republic) [es-do]
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -7762,7 +7634,7 @@ return esDo;
 
 
 /***/ }),
-/* 209 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7770,7 +7642,7 @@ return esDo;
 //! author : Julio Napurí : https://github.com/julionc
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -7848,7 +7720,7 @@ return es;
 
 
 /***/ }),
-/* 210 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7857,7 +7729,7 @@ return es;
 //! improvements : Illimar Tambek : https://github.com/ragulka
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -7933,7 +7805,7 @@ return et;
 
 
 /***/ }),
-/* 211 */
+/* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7941,7 +7813,7 @@ return et;
 //! author : Eneko Illarramendi : https://github.com/eillarra
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -8004,7 +7876,7 @@ return eu;
 
 
 /***/ }),
-/* 212 */
+/* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8012,7 +7884,7 @@ return eu;
 //! author : Ebrahim Byagowi : https://github.com/ebraminio
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -8116,7 +7988,7 @@ return fa;
 
 
 /***/ }),
-/* 213 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8124,7 +7996,7 @@ return fa;
 //! author : Tarmo Aidantausta : https://github.com/bleadof
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -8228,7 +8100,7 @@ return fi;
 
 
 /***/ }),
-/* 214 */
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8236,7 +8108,7 @@ return fi;
 //! author : Ragnar Johannesen : https://github.com/ragnar123
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -8293,7 +8165,7 @@ return fo;
 
 
 /***/ }),
-/* 215 */
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8301,7 +8173,7 @@ return fo;
 //! author : Jonathan Abourbih : https://github.com/jonbca
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -8358,7 +8230,7 @@ return frCa;
 
 
 /***/ }),
-/* 216 */
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8366,7 +8238,7 @@ return frCa;
 //! author : Gaspard Bucher : https://github.com/gaspard
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -8427,7 +8299,7 @@ return frCh;
 
 
 /***/ }),
-/* 217 */
+/* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8435,7 +8307,7 @@ return frCh;
 //! author : John Fischer : https://github.com/jfroffice
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -8496,7 +8368,7 @@ return fr;
 
 
 /***/ }),
-/* 218 */
+/* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8504,7 +8376,7 @@ return fr;
 //! author : Robin van der Vliet : https://github.com/robin0van0der0v
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -8574,7 +8446,7 @@ return fy;
 
 
 /***/ }),
-/* 219 */
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8582,7 +8454,7 @@ return fy;
 //! author : Jon Ashdown : https://github.com/jonashdown
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -8655,7 +8527,7 @@ return gd;
 
 
 /***/ }),
-/* 220 */
+/* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8663,7 +8535,7 @@ return gd;
 //! author : Juan G. Hurtado : https://github.com/juanghurtado
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -8737,7 +8609,7 @@ return gl;
 
 
 /***/ }),
-/* 221 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8747,7 +8619,7 @@ return gl;
 //! author : Tal Ater : https://github.com/TalAter
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -8841,7 +8713,7 @@ return he;
 
 
 /***/ }),
-/* 222 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8849,7 +8721,7 @@ return he;
 //! author : Mayank Singhal : https://github.com/mayanksinghal
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -8970,7 +8842,7 @@ return hi;
 
 
 /***/ }),
-/* 223 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8978,7 +8850,7 @@ return hi;
 //! author : Bojan Marković : https://github.com/bmarkovic
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -9120,7 +8992,7 @@ return hr;
 
 
 /***/ }),
-/* 224 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9128,7 +9000,7 @@ return hr;
 //! author : Adam Brunner : https://github.com/adambrunner
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -9234,7 +9106,7 @@ return hu;
 
 
 /***/ }),
-/* 225 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9242,7 +9114,7 @@ return hu;
 //! author : Armendarabyan : https://github.com/armendarabyan
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -9334,7 +9206,7 @@ return hyAm;
 
 
 /***/ }),
-/* 226 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9343,7 +9215,7 @@ return hyAm;
 //! reference: http://id.wikisource.org/wiki/Pedoman_Umum_Ejaan_Bahasa_Indonesia_yang_Disempurnakan
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -9422,7 +9294,7 @@ return id;
 
 
 /***/ }),
-/* 227 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9430,7 +9302,7 @@ return id;
 //! author : Hinrik Örn Sigurðsson : https://github.com/hinrik
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -9554,7 +9426,7 @@ return is;
 
 
 /***/ }),
-/* 228 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9563,7 +9435,7 @@ return is;
 //! author: Mattia Larentis: https://github.com/nostalgiaz
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -9629,7 +9501,7 @@ return it;
 
 
 /***/ }),
-/* 229 */
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9637,7 +9509,7 @@ return it;
 //! author : LI Long : https://github.com/baryon
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -9710,7 +9582,7 @@ return ja;
 
 
 /***/ }),
-/* 230 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9719,7 +9591,7 @@ return ja;
 //! reference: http://jv.wikipedia.org/wiki/Basa_Jawa
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -9798,7 +9670,7 @@ return jv;
 
 
 /***/ }),
-/* 231 */
+/* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9806,7 +9678,7 @@ return jv;
 //! author : Irakli Janiashvili : https://github.com/irakli-janiashvili
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -9892,7 +9764,7 @@ return ka;
 
 
 /***/ }),
-/* 232 */
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9900,7 +9772,7 @@ return ka;
 //! authors : Nurlan Rakhimzhanov : https://github.com/nurlan
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -9984,7 +9856,7 @@ return kk;
 
 
 /***/ }),
-/* 233 */
+/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9992,7 +9864,7 @@ return kk;
 //! author : Kruy Vanna : https://github.com/kruyvanna
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -10047,7 +9919,7 @@ return km;
 
 
 /***/ }),
-/* 234 */
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10056,7 +9928,7 @@ return km;
 //! author : Jeeeyul Lee <jeeeyul@gmail.com>
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -10117,7 +9989,7 @@ return ko;
 
 
 /***/ }),
-/* 235 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10125,7 +9997,7 @@ return ko;
 //! author : Chyngyz Arystan uulu : https://github.com/chyngyz
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -10210,7 +10082,7 @@ return ky;
 
 
 /***/ }),
-/* 236 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10219,7 +10091,7 @@ return ky;
 //! author : David Raison : https://github.com/kwisatz
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -10352,7 +10224,7 @@ return lb;
 
 
 /***/ }),
-/* 237 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10360,7 +10232,7 @@ return lb;
 //! author : Ryan Hart : https://github.com/ryanhart2
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -10427,7 +10299,7 @@ return lo;
 
 
 /***/ }),
-/* 238 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10435,7 +10307,7 @@ return lo;
 //! author : Mindaugas Mozūras : https://github.com/mmozuras
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -10549,7 +10421,7 @@ return lt;
 
 
 /***/ }),
-/* 239 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10558,7 +10430,7 @@ return lt;
 //! author : Jānis Elmeris : https://github.com/JanisE
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -10651,7 +10523,7 @@ return lv;
 
 
 /***/ }),
-/* 240 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10659,7 +10531,7 @@ return lv;
 //! author : Miodrag Nikač <miodrag@restartit.me> : https://github.com/miodragnikac
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -10767,7 +10639,7 @@ return me;
 
 
 /***/ }),
-/* 241 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10775,7 +10647,7 @@ return me;
 //! author : John Corrigan <robbiecloset@gmail.com> : https://github.com/johnideal
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -10836,7 +10708,7 @@ return mi;
 
 
 /***/ }),
-/* 242 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10844,7 +10716,7 @@ return mi;
 //! author : Borislav Mickov : https://github.com/B0k0
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -10931,7 +10803,7 @@ return mk;
 
 
 /***/ }),
-/* 243 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10939,7 +10811,7 @@ return mk;
 //! author : Floyd Pink : https://github.com/floydpink
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -11017,7 +10889,7 @@ return ml;
 
 
 /***/ }),
-/* 244 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11026,7 +10898,7 @@ return ml;
 //! author : Vivek Athalye : https://github.com/vnathalye
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -11181,7 +11053,7 @@ return mr;
 
 
 /***/ }),
-/* 245 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11190,7 +11062,7 @@ return mr;
 //! author : Weldan Jamili : https://github.com/weldan
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -11269,7 +11141,7 @@ return msMy;
 
 
 /***/ }),
-/* 246 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11277,7 +11149,7 @@ return msMy;
 //! author : Weldan Jamili : https://github.com/weldan
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -11356,7 +11228,7 @@ return ms;
 
 
 /***/ }),
-/* 247 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11366,7 +11238,7 @@ return ms;
 //! author : Tin Aung Lin : https://github.com/thanyawzinmin
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -11457,7 +11329,7 @@ return my;
 
 
 /***/ }),
-/* 248 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11466,7 +11338,7 @@ return my;
 //!           Sigurd Gartmann : https://github.com/sigurdga
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -11525,7 +11397,7 @@ return nb;
 
 
 /***/ }),
-/* 249 */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11533,7 +11405,7 @@ return nb;
 //! author : suvash : https://github.com/suvash
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -11653,7 +11525,7 @@ return ne;
 
 
 /***/ }),
-/* 250 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11662,7 +11534,7 @@ return ne;
 //! author : Jacob Middag : https://github.com/middagj
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -11744,7 +11616,7 @@ return nlBe;
 
 
 /***/ }),
-/* 251 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11753,7 +11625,7 @@ return nlBe;
 //! author : Jacob Middag : https://github.com/middagj
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -11835,7 +11707,7 @@ return nl;
 
 
 /***/ }),
-/* 252 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11843,7 +11715,7 @@ return nl;
 //! author : https://github.com/mechuwind
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -11900,7 +11772,7 @@ return nn;
 
 
 /***/ }),
-/* 253 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11908,7 +11780,7 @@ return nn;
 //! author : Harpreet Singh : https://github.com/harpreetkhalsagtbit
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -12029,7 +11901,7 @@ return paIn;
 
 
 /***/ }),
-/* 254 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12037,7 +11909,7 @@ return paIn;
 //! author : Rafal Hirsz : https://github.com/evoL
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -12139,7 +12011,7 @@ return pl;
 
 
 /***/ }),
-/* 255 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12147,7 +12019,7 @@ return pl;
 //! author : Caio Ribeiro Pereira : https://github.com/caio-ribeiro-pereira
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -12205,7 +12077,7 @@ return ptBr;
 
 
 /***/ }),
-/* 256 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12213,7 +12085,7 @@ return ptBr;
 //! author : Jefferson : https://github.com/jalex79
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -12275,7 +12147,7 @@ return pt;
 
 
 /***/ }),
-/* 257 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12284,7 +12156,7 @@ return pt;
 //! author : Valentin Agachi : https://github.com/avaly
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -12355,7 +12227,7 @@ return ro;
 
 
 /***/ }),
-/* 258 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12365,7 +12237,7 @@ return ro;
 //! author : Коренберг Марк : https://github.com/socketpair
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -12543,7 +12415,7 @@ return ru;
 
 
 /***/ }),
-/* 259 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12551,7 +12423,7 @@ return ru;
 //! authors : Bård Rolstad Henriksen : https://github.com/karamell
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -12609,7 +12481,7 @@ return se;
 
 
 /***/ }),
-/* 260 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12617,7 +12489,7 @@ return se;
 //! author : Sampath Sitinamaluwa : https://github.com/sampathsris
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -12685,7 +12557,7 @@ return si;
 
 
 /***/ }),
-/* 261 */
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12694,7 +12566,7 @@ return si;
 //! based on work of petrbela : https://github.com/petrbela
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -12840,7 +12712,7 @@ return sk;
 
 
 /***/ }),
-/* 262 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12848,7 +12720,7 @@ return sk;
 //! author : Robert Sedovšek : https://github.com/sedovsek
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -13007,7 +12879,7 @@ return sl;
 
 
 /***/ }),
-/* 263 */
+/* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13017,7 +12889,7 @@ return sl;
 //! author : Oerd Cukalla : https://github.com/oerd
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -13082,7 +12954,7 @@ return sq;
 
 
 /***/ }),
-/* 264 */
+/* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13090,7 +12962,7 @@ return sq;
 //! author : Milan Janačković<milanjanackovic@gmail.com> : https://github.com/milan-j
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -13197,7 +13069,7 @@ return srCyrl;
 
 
 /***/ }),
-/* 265 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13205,7 +13077,7 @@ return srCyrl;
 //! author : Milan Janačković<milanjanackovic@gmail.com> : https://github.com/milan-j
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -13312,7 +13184,7 @@ return sr;
 
 
 /***/ }),
-/* 266 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13320,7 +13192,7 @@ return sr;
 //! author : Nicolai Davies<mail@nicolai.io> : https://github.com/nicolaidavies
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -13406,7 +13278,7 @@ return ss;
 
 
 /***/ }),
-/* 267 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13414,7 +13286,7 @@ return ss;
 //! author : Jens Alm : https://github.com/ulmus
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -13480,7 +13352,7 @@ return sv;
 
 
 /***/ }),
-/* 268 */
+/* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13488,7 +13360,7 @@ return sv;
 //! author : Fahad Kassim : https://github.com/fadsel
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -13544,7 +13416,7 @@ return sw;
 
 
 /***/ }),
-/* 269 */
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13552,7 +13424,7 @@ return sw;
 //! author : Arjunkumar Krishnamoorthy : https://github.com/tk120404
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -13679,7 +13551,7 @@ return ta;
 
 
 /***/ }),
-/* 270 */
+/* 157 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13687,7 +13559,7 @@ return ta;
 //! author : Krishna Chaitanya Thota : https://github.com/kcthota
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -13773,7 +13645,7 @@ return te;
 
 
 /***/ }),
-/* 271 */
+/* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13782,7 +13654,7 @@ return te;
 //! author : Onorio De J. Afonso : https://github.com/marobo
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -13846,7 +13718,7 @@ return tet;
 
 
 /***/ }),
-/* 272 */
+/* 159 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13854,7 +13726,7 @@ return tet;
 //! author : Kridsada Thanabulpong : https://github.com/sirn
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -13918,7 +13790,7 @@ return th;
 
 
 /***/ }),
-/* 273 */
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13926,7 +13798,7 @@ return th;
 //! author : Dan Hagman : https://github.com/hagmandan
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -13985,7 +13857,7 @@ return tlPh;
 
 
 /***/ }),
-/* 274 */
+/* 161 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13993,7 +13865,7 @@ return tlPh;
 //! author : Dominika Kruk : https://github.com/amaranthrose
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -14110,7 +13982,7 @@ return tlh;
 
 
 /***/ }),
-/* 275 */
+/* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14119,7 +13991,7 @@ return tlh;
 //!           Burak Yiğit Kaya: https://github.com/BYK
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -14205,7 +14077,7 @@ return tr;
 
 
 /***/ }),
-/* 276 */
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14214,7 +14086,7 @@ return tr;
 //! author : Iustì Canun
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -14301,7 +14173,7 @@ return tzl;
 
 
 /***/ }),
-/* 277 */
+/* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14309,7 +14181,7 @@ return tzl;
 //! author : Abdel Said : https://github.com/abdelsaid
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -14364,7 +14236,7 @@ return tzmLatn;
 
 
 /***/ }),
-/* 278 */
+/* 165 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14372,7 +14244,7 @@ return tzmLatn;
 //! author : Abdel Said : https://github.com/abdelsaid
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -14427,7 +14299,7 @@ return tzm;
 
 
 /***/ }),
-/* 279 */
+/* 166 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14436,7 +14308,7 @@ return tzm;
 //! Author : Menelion Elensúle : https://github.com/Oire
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -14578,7 +14450,7 @@ return uk;
 
 
 /***/ }),
-/* 280 */
+/* 167 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14586,7 +14458,7 @@ return uk;
 //! author : Sardor Muminov : https://github.com/muminoff
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -14641,7 +14513,7 @@ return uz;
 
 
 /***/ }),
-/* 281 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14649,7 +14521,7 @@ return uz;
 //! author : Bang Nguyen : https://github.com/bangnk
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -14725,7 +14597,7 @@ return vi;
 
 
 /***/ }),
-/* 282 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14733,7 +14605,7 @@ return vi;
 //! author : Andrew Hood : https://github.com/andrewhood125
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -14798,7 +14670,7 @@ return xPseudo;
 
 
 /***/ }),
-/* 283 */
+/* 170 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14806,7 +14678,7 @@ return xPseudo;
 //! author : Atolagbe Abisoye : https://github.com/andela-batolagbe
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -14863,7 +14735,7 @@ return yo;
 
 
 /***/ }),
-/* 284 */
+/* 171 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14872,7 +14744,7 @@ return yo;
 //! author : Zeno Zeng : https://github.com/zenozeng
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -14995,7 +14867,7 @@ return zhCn;
 
 
 /***/ }),
-/* 285 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -15005,7 +14877,7 @@ return zhCn;
 //! author : Konstantin : https://github.com/skfd
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -15105,7 +14977,7 @@ return zhHk;
 
 
 /***/ }),
-/* 286 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -15114,7 +14986,7 @@ return zhHk;
 //! author : Chris Lam : https://github.com/hehachris
 
 ;(function (global, factory) {
-    true ? factory(__webpack_require__(1)) :
+    true ? factory(__webpack_require__(0)) :
    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
    factory(global.moment)
 }(this, (function (moment) { 'use strict';
@@ -15214,23 +15086,418 @@ return zhTw;
 
 
 /***/ }),
+/* 174 */,
+/* 175 */,
+/* 176 */,
+/* 177 */,
+/* 178 */,
+/* 179 */,
+/* 180 */,
+/* 181 */,
+/* 182 */,
+/* 183 */,
+/* 184 */,
+/* 185 */,
+/* 186 */
+/***/ (function(module, exports) {
+
+/*
+	MIT License http://www.opensource.org/licenses/mit-license.php
+	Author Tobias Koppers @sokra
+*/
+module.exports = function(src) {
+	if (typeof execScript !== "undefined")
+		execScript(src);
+	else
+		eval.call(null, src);
+}
+
+
+/***/ }),
+/* 187 */,
+/* 188 */,
+/* 189 */,
+/* 190 */,
+/* 191 */,
+/* 192 */,
+/* 193 */,
+/* 194 */,
+/* 195 */,
+/* 196 */,
+/* 197 */,
+/* 198 */,
+/* 199 */,
+/* 200 */,
+/* 201 */,
+/* 202 */,
+/* 203 */,
+/* 204 */,
+/* 205 */,
+/* 206 */,
+/* 207 */,
+/* 208 */,
+/* 209 */,
+/* 210 */,
+/* 211 */,
+/* 212 */,
+/* 213 */,
+/* 214 */,
+/* 215 */,
+/* 216 */,
+/* 217 */,
+/* 218 */,
+/* 219 */,
+/* 220 */,
+/* 221 */,
+/* 222 */,
+/* 223 */,
+/* 224 */,
+/* 225 */,
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./af": 66,
+	"./af.js": 66,
+	"./ar": 72,
+	"./ar-dz": 67,
+	"./ar-dz.js": 67,
+	"./ar-ly": 68,
+	"./ar-ly.js": 68,
+	"./ar-ma": 69,
+	"./ar-ma.js": 69,
+	"./ar-sa": 70,
+	"./ar-sa.js": 70,
+	"./ar-tn": 71,
+	"./ar-tn.js": 71,
+	"./ar.js": 72,
+	"./az": 73,
+	"./az.js": 73,
+	"./be": 74,
+	"./be.js": 74,
+	"./bg": 75,
+	"./bg.js": 75,
+	"./bn": 76,
+	"./bn.js": 76,
+	"./bo": 77,
+	"./bo.js": 77,
+	"./br": 78,
+	"./br.js": 78,
+	"./bs": 79,
+	"./bs.js": 79,
+	"./ca": 80,
+	"./ca.js": 80,
+	"./cs": 81,
+	"./cs.js": 81,
+	"./cv": 82,
+	"./cv.js": 82,
+	"./cy": 83,
+	"./cy.js": 83,
+	"./da": 84,
+	"./da.js": 84,
+	"./de": 86,
+	"./de-at": 85,
+	"./de-at.js": 85,
+	"./de.js": 86,
+	"./dv": 87,
+	"./dv.js": 87,
+	"./el": 88,
+	"./el.js": 88,
+	"./en-au": 89,
+	"./en-au.js": 89,
+	"./en-ca": 90,
+	"./en-ca.js": 90,
+	"./en-gb": 91,
+	"./en-gb.js": 91,
+	"./en-ie": 92,
+	"./en-ie.js": 92,
+	"./en-nz": 93,
+	"./en-nz.js": 93,
+	"./eo": 94,
+	"./eo.js": 94,
+	"./es": 96,
+	"./es-do": 95,
+	"./es-do.js": 95,
+	"./es.js": 96,
+	"./et": 97,
+	"./et.js": 97,
+	"./eu": 98,
+	"./eu.js": 98,
+	"./fa": 99,
+	"./fa.js": 99,
+	"./fi": 100,
+	"./fi.js": 100,
+	"./fo": 101,
+	"./fo.js": 101,
+	"./fr": 104,
+	"./fr-ca": 102,
+	"./fr-ca.js": 102,
+	"./fr-ch": 103,
+	"./fr-ch.js": 103,
+	"./fr.js": 104,
+	"./fy": 105,
+	"./fy.js": 105,
+	"./gd": 106,
+	"./gd.js": 106,
+	"./gl": 107,
+	"./gl.js": 107,
+	"./he": 108,
+	"./he.js": 108,
+	"./hi": 109,
+	"./hi.js": 109,
+	"./hr": 110,
+	"./hr.js": 110,
+	"./hu": 111,
+	"./hu.js": 111,
+	"./hy-am": 112,
+	"./hy-am.js": 112,
+	"./id": 113,
+	"./id.js": 113,
+	"./is": 114,
+	"./is.js": 114,
+	"./it": 115,
+	"./it.js": 115,
+	"./ja": 116,
+	"./ja.js": 116,
+	"./jv": 117,
+	"./jv.js": 117,
+	"./ka": 118,
+	"./ka.js": 118,
+	"./kk": 119,
+	"./kk.js": 119,
+	"./km": 120,
+	"./km.js": 120,
+	"./ko": 121,
+	"./ko.js": 121,
+	"./ky": 122,
+	"./ky.js": 122,
+	"./lb": 123,
+	"./lb.js": 123,
+	"./lo": 124,
+	"./lo.js": 124,
+	"./lt": 125,
+	"./lt.js": 125,
+	"./lv": 126,
+	"./lv.js": 126,
+	"./me": 127,
+	"./me.js": 127,
+	"./mi": 128,
+	"./mi.js": 128,
+	"./mk": 129,
+	"./mk.js": 129,
+	"./ml": 130,
+	"./ml.js": 130,
+	"./mr": 131,
+	"./mr.js": 131,
+	"./ms": 133,
+	"./ms-my": 132,
+	"./ms-my.js": 132,
+	"./ms.js": 133,
+	"./my": 134,
+	"./my.js": 134,
+	"./nb": 135,
+	"./nb.js": 135,
+	"./ne": 136,
+	"./ne.js": 136,
+	"./nl": 138,
+	"./nl-be": 137,
+	"./nl-be.js": 137,
+	"./nl.js": 138,
+	"./nn": 139,
+	"./nn.js": 139,
+	"./pa-in": 140,
+	"./pa-in.js": 140,
+	"./pl": 141,
+	"./pl.js": 141,
+	"./pt": 143,
+	"./pt-br": 142,
+	"./pt-br.js": 142,
+	"./pt.js": 143,
+	"./ro": 144,
+	"./ro.js": 144,
+	"./ru": 145,
+	"./ru.js": 145,
+	"./se": 146,
+	"./se.js": 146,
+	"./si": 147,
+	"./si.js": 147,
+	"./sk": 148,
+	"./sk.js": 148,
+	"./sl": 149,
+	"./sl.js": 149,
+	"./sq": 150,
+	"./sq.js": 150,
+	"./sr": 152,
+	"./sr-cyrl": 151,
+	"./sr-cyrl.js": 151,
+	"./sr.js": 152,
+	"./ss": 153,
+	"./ss.js": 153,
+	"./sv": 154,
+	"./sv.js": 154,
+	"./sw": 155,
+	"./sw.js": 155,
+	"./ta": 156,
+	"./ta.js": 156,
+	"./te": 157,
+	"./te.js": 157,
+	"./tet": 158,
+	"./tet.js": 158,
+	"./th": 159,
+	"./th.js": 159,
+	"./tl-ph": 160,
+	"./tl-ph.js": 160,
+	"./tlh": 161,
+	"./tlh.js": 161,
+	"./tr": 162,
+	"./tr.js": 162,
+	"./tzl": 163,
+	"./tzl.js": 163,
+	"./tzm": 165,
+	"./tzm-latn": 164,
+	"./tzm-latn.js": 164,
+	"./tzm.js": 165,
+	"./uk": 166,
+	"./uk.js": 166,
+	"./uz": 167,
+	"./uz.js": 167,
+	"./vi": 168,
+	"./vi.js": 168,
+	"./x-pseudo": 169,
+	"./x-pseudo.js": 169,
+	"./yo": 170,
+	"./yo.js": 170,
+	"./zh-cn": 171,
+	"./zh-cn.js": 171,
+	"./zh-hk": 172,
+	"./zh-hk.js": 172,
+	"./zh-tw": 173,
+	"./zh-tw.js": 173
+};
+function webpackContext(req) {
+	return __webpack_require__(webpackContextResolve(req));
+};
+function webpackContextResolve(req) {
+	var id = map[req];
+	if(!(id + 1)) // check for number
+		throw new Error("Cannot find module '" + req + "'.");
+	return id;
+};
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 229;
+
+
+/***/ }),
+/* 230 */,
+/* 231 */
+/***/ (function(module, exports) {
+
+module.exports = function(module) {
+	if(!module.webpackPolyfill) {
+		module.deprecate = function() {};
+		module.paths = [];
+		// module.parent = undefined by default
+		if(!module.children) module.children = [];
+		Object.defineProperty(module, "loaded", {
+			enumerable: true,
+			get: function() {
+				return module.l;
+			}
+		});
+		Object.defineProperty(module, "id", {
+			enumerable: true,
+			get: function() {
+				return module.i;
+			}
+		});
+		module.webpackPolyfill = 1;
+	}
+	return module;
+};
+
+
+/***/ }),
+/* 232 */,
+/* 233 */,
+/* 234 */,
+/* 235 */,
+/* 236 */,
+/* 237 */,
+/* 238 */,
+/* 239 */,
+/* 240 */,
+/* 241 */,
+/* 242 */,
+/* 243 */,
+/* 244 */,
+/* 245 */,
+/* 246 */,
+/* 247 */,
+/* 248 */,
+/* 249 */,
+/* 250 */,
+/* 251 */,
+/* 252 */,
+/* 253 */,
+/* 254 */,
+/* 255 */,
+/* 256 */,
+/* 257 */,
+/* 258 */,
+/* 259 */,
+/* 260 */,
+/* 261 */,
+/* 262 */,
+/* 263 */,
+/* 264 */,
+/* 265 */,
+/* 266 */,
+/* 267 */,
+/* 268 */,
+/* 269 */,
+/* 270 */,
+/* 271 */,
+/* 272 */,
+/* 273 */,
+/* 274 */,
+/* 275 */,
+/* 276 */,
+/* 277 */,
+/* 278 */,
+/* 279 */,
+/* 280 */,
+/* 281 */,
+/* 282 */,
+/* 283 */,
+/* 284 */,
+/* 285 */,
+/* 286 */,
 /* 287 */,
 /* 288 */,
-/* 289 */
+/* 289 */,
+/* 290 */,
+/* 291 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(536);
+__webpack_require__(583);
 
-var _chart = __webpack_require__(550);
+var _chart = __webpack_require__(299);
 
 var _chart2 = _interopRequireDefault(_chart);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-__webpack_require__(529);
+__webpack_require__(576);
 
 var report = {};
 
@@ -15317,8 +15584,6 @@ report.initChart = function (data, container) {
 window.report = report;
 
 /***/ }),
-/* 290 */,
-/* 291 */,
 /* 292 */,
 /* 293 */,
 /* 294 */,
@@ -15326,634 +15591,64 @@ window.report = report;
 /* 296 */,
 /* 297 */,
 /* 298 */,
-/* 299 */,
-/* 300 */,
-/* 301 */,
-/* 302 */,
-/* 303 */,
-/* 304 */,
-/* 305 */,
-/* 306 */,
-/* 307 */,
-/* 308 */,
-/* 309 */,
-/* 310 */,
-/* 311 */,
-/* 312 */,
-/* 313 */,
-/* 314 */,
-/* 315 */,
-/* 316 */,
-/* 317 */,
-/* 318 */,
-/* 319 */,
-/* 320 */,
-/* 321 */,
-/* 322 */,
-/* 323 */,
-/* 324 */,
-/* 325 */,
-/* 326 */,
-/* 327 */,
-/* 328 */,
-/* 329 */,
-/* 330 */,
-/* 331 */,
-/* 332 */,
-/* 333 */,
-/* 334 */,
-/* 335 */,
-/* 336 */,
-/* 337 */,
-/* 338 */,
-/* 339 */,
-/* 340 */,
-/* 341 */,
-/* 342 */,
-/* 343 */,
-/* 344 */,
-/* 345 */,
-/* 346 */,
-/* 347 */,
-/* 348 */,
-/* 349 */,
-/* 350 */,
-/* 351 */,
-/* 352 */,
-/* 353 */,
-/* 354 */,
-/* 355 */,
-/* 356 */,
-/* 357 */,
-/* 358 */,
-/* 359 */,
-/* 360 */,
-/* 361 */,
-/* 362 */,
-/* 363 */,
-/* 364 */,
-/* 365 */,
-/* 366 */,
-/* 367 */,
-/* 368 */,
-/* 369 */,
-/* 370 */,
-/* 371 */,
-/* 372 */,
-/* 373 */,
-/* 374 */,
-/* 375 */,
-/* 376 */,
-/* 377 */,
-/* 378 */,
-/* 379 */,
-/* 380 */,
-/* 381 */,
-/* 382 */,
-/* 383 */,
-/* 384 */,
-/* 385 */,
-/* 386 */,
-/* 387 */,
-/* 388 */,
-/* 389 */,
-/* 390 */,
-/* 391 */,
-/* 392 */,
-/* 393 */,
-/* 394 */,
-/* 395 */,
-/* 396 */,
-/* 397 */,
-/* 398 */,
-/* 399 */,
-/* 400 */,
-/* 401 */,
-/* 402 */,
-/* 403 */,
-/* 404 */,
-/* 405 */,
-/* 406 */,
-/* 407 */,
-/* 408 */,
-/* 409 */,
-/* 410 */,
-/* 411 */,
-/* 412 */,
-/* 413 */,
-/* 414 */,
-/* 415 */,
-/* 416 */,
-/* 417 */,
-/* 418 */,
-/* 419 */,
-/* 420 */,
-/* 421 */,
-/* 422 */,
-/* 423 */,
-/* 424 */,
-/* 425 */,
-/* 426 */,
-/* 427 */,
-/* 428 */,
-/* 429 */,
-/* 430 */,
-/* 431 */,
-/* 432 */,
-/* 433 */,
-/* 434 */,
-/* 435 */,
-/* 436 */,
-/* 437 */,
-/* 438 */,
-/* 439 */,
-/* 440 */,
-/* 441 */,
-/* 442 */,
-/* 443 */,
-/* 444 */,
-/* 445 */,
-/* 446 */,
-/* 447 */,
-/* 448 */,
-/* 449 */,
-/* 450 */,
-/* 451 */,
-/* 452 */,
-/* 453 */,
-/* 454 */,
-/* 455 */,
-/* 456 */,
-/* 457 */,
-/* 458 */,
-/* 459 */,
-/* 460 */,
-/* 461 */,
-/* 462 */,
-/* 463 */,
-/* 464 */,
-/* 465 */,
-/* 466 */,
-/* 467 */,
-/* 468 */,
-/* 469 */,
-/* 470 */,
-/* 471 */,
-/* 472 */,
-/* 473 */,
-/* 474 */,
-/* 475 */,
-/* 476 */,
-/* 477 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(47)();
-// imports
-
-
-// module
-exports.push([module.i, ".daterangepicker {\n  position: absolute;\n  color: inherit;\n  background-color: #fff;\n  border-radius: 4px;\n  width: 278px;\n  padding: 4px;\n  margin-top: 1px;\n  top: 100px;\n  left: 20px;\n  /* Calendars */ }\n  .daterangepicker:before, .daterangepicker:after {\n    position: absolute;\n    display: inline-block;\n    border-bottom-color: rgba(0, 0, 0, 0.2);\n    content: ''; }\n  .daterangepicker:before {\n    top: -7px;\n    border-right: 7px solid transparent;\n    border-left: 7px solid transparent;\n    border-bottom: 7px solid #ccc; }\n  .daterangepicker:after {\n    top: -6px;\n    border-right: 6px solid transparent;\n    border-bottom: 6px solid #fff;\n    border-left: 6px solid transparent; }\n  .daterangepicker.opensleft:before {\n    right: 9px; }\n  .daterangepicker.opensleft:after {\n    right: 10px; }\n  .daterangepicker.openscenter:before {\n    left: 0;\n    right: 0;\n    width: 0;\n    margin-left: auto;\n    margin-right: auto; }\n  .daterangepicker.openscenter:after {\n    left: 0;\n    right: 0;\n    width: 0;\n    margin-left: auto;\n    margin-right: auto; }\n  .daterangepicker.opensright:before {\n    left: 9px; }\n  .daterangepicker.opensright:after {\n    left: 10px; }\n  .daterangepicker.dropup {\n    margin-top: -5px; }\n    .daterangepicker.dropup:before {\n      top: initial;\n      bottom: -7px;\n      border-bottom: initial;\n      border-top: 7px solid #ccc; }\n    .daterangepicker.dropup:after {\n      top: initial;\n      bottom: -6px;\n      border-bottom: initial;\n      border-top: 6px solid #fff; }\n  .daterangepicker.dropdown-menu {\n    max-width: none;\n    z-index: 3001; }\n  .daterangepicker.single .ranges, .daterangepicker.single .calendar {\n    float: none; }\n  .daterangepicker.show-calendar .calendar {\n    display: block; }\n  .daterangepicker .calendar {\n    display: none;\n    max-width: 270px;\n    margin: 4px; }\n    .daterangepicker .calendar.single .calendar-table {\n      border: none; }\n    .daterangepicker .calendar th, .daterangepicker .calendar td {\n      white-space: nowrap;\n      text-align: center;\n      min-width: 32px; }\n  .daterangepicker .calendar-table {\n    border: 1px solid #fff;\n    padding: 4px;\n    border-radius: 4px;\n    background-color: #fff; }\n  .daterangepicker table {\n    width: 100%;\n    margin: 0; }\n  .daterangepicker td, .daterangepicker th {\n    text-align: center;\n    width: 20px;\n    height: 20px;\n    border-radius: 4px;\n    border: 1px solid transparent;\n    white-space: nowrap;\n    cursor: pointer; }\n    .daterangepicker td.available:hover, .daterangepicker th.available:hover {\n      background-color: #eee;\n      border-color: transparent;\n      color: inherit; }\n    .daterangepicker td.week, .daterangepicker th.week {\n      font-size: 80%;\n      color: #ccc; }\n  .daterangepicker td.off, .daterangepicker td.off.in-range, .daterangepicker td.off.start-date, .daterangepicker td.off.end-date {\n    background-color: #fff;\n    border-color: transparent;\n    color: #999; }\n  .daterangepicker td.in-range {\n    background-color: #ebf4f8;\n    border-color: transparent;\n    color: #000;\n    border-radius: 0; }\n  .daterangepicker td.start-date {\n    border-radius: 4px 0 0 4px; }\n  .daterangepicker td.end-date {\n    border-radius: 0 4px 4px 0; }\n  .daterangepicker td.start-date.end-date {\n    border-radius: 4px; }\n  .daterangepicker td.active, .daterangepicker td.active:hover {\n    background-color: #357ebd;\n    border-color: transparent;\n    color: #fff; }\n  .daterangepicker th.month {\n    width: auto; }\n  .daterangepicker td.disabled, .daterangepicker option.disabled {\n    color: #999;\n    cursor: not-allowed;\n    text-decoration: line-through; }\n  .daterangepicker select.monthselect, .daterangepicker select.yearselect {\n    font-size: 12px;\n    padding: 1px;\n    height: auto;\n    margin: 0;\n    cursor: default; }\n  .daterangepicker select.monthselect {\n    margin-right: 2%;\n    width: 56%; }\n  .daterangepicker select.yearselect {\n    width: 40%; }\n  .daterangepicker select.hourselect, .daterangepicker select.minuteselect, .daterangepicker select.secondselect, .daterangepicker select.ampmselect {\n    width: 50px;\n    margin-bottom: 0; }\n  .daterangepicker .input-mini {\n    border: 1px solid #ccc;\n    border-radius: 4px;\n    color: #555;\n    height: 30px;\n    line-height: 30px;\n    display: block;\n    vertical-align: middle;\n    margin: 0 0 5px 0;\n    padding: 0 6px 0 28px;\n    width: 100%; }\n    .daterangepicker .input-mini.active {\n      border: 1px solid #08c;\n      border-radius: 4px; }\n  .daterangepicker .daterangepicker_input {\n    position: relative; }\n    .daterangepicker .daterangepicker_input i {\n      position: absolute;\n      left: 8px;\n      top: 8px; }\n  .daterangepicker.rtl .input-mini {\n    padding-right: 28px;\n    padding-left: 6px; }\n  .daterangepicker.rtl .daterangepicker_input i {\n    left: auto;\n    right: 8px; }\n  .daterangepicker .calendar-time {\n    text-align: center;\n    margin: 5px auto;\n    line-height: 30px;\n    position: relative;\n    padding-left: 28px; }\n    .daterangepicker .calendar-time select.disabled {\n      color: #ccc;\n      cursor: not-allowed; }\n\n.ranges {\n  font-size: 11px;\n  float: none;\n  margin: 4px;\n  text-align: left; }\n  .ranges ul {\n    list-style: none;\n    margin: 0 auto;\n    padding: 0;\n    width: 100%; }\n  .ranges li {\n    font-size: 13px;\n    background-color: #f5f5f5;\n    border: 1px solid #f5f5f5;\n    border-radius: 4px;\n    color: #08c;\n    padding: 3px 12px;\n    margin-bottom: 8px;\n    cursor: pointer; }\n    .ranges li:hover {\n      background-color: #08c;\n      border: 1px solid #08c;\n      color: #fff; }\n    .ranges li.active {\n      background-color: #08c;\n      border: 1px solid #08c;\n      color: #fff; }\n\n/*  Larger Screen Styling */\n@media (min-width: 564px) {\n  .daterangepicker {\n    width: auto; }\n    .daterangepicker .ranges ul {\n      width: 160px; }\n    .daterangepicker.single .ranges ul {\n      width: 100%; }\n    .daterangepicker.single .calendar.left {\n      clear: none; }\n    .daterangepicker.single.ltr .ranges, .daterangepicker.single.ltr .calendar {\n      float: left; }\n    .daterangepicker.single.rtl .ranges, .daterangepicker.single.rtl .calendar {\n      float: right; }\n    .daterangepicker.ltr {\n      direction: ltr;\n      text-align: left; }\n      .daterangepicker.ltr .calendar.left {\n        clear: left;\n        margin-right: 0; }\n        .daterangepicker.ltr .calendar.left .calendar-table {\n          border-right: none;\n          border-top-right-radius: 0;\n          border-bottom-right-radius: 0; }\n      .daterangepicker.ltr .calendar.right {\n        margin-left: 0; }\n        .daterangepicker.ltr .calendar.right .calendar-table {\n          border-left: none;\n          border-top-left-radius: 0;\n          border-bottom-left-radius: 0; }\n      .daterangepicker.ltr .left .daterangepicker_input {\n        padding-right: 12px; }\n      .daterangepicker.ltr .calendar.left .calendar-table {\n        padding-right: 12px; }\n      .daterangepicker.ltr .ranges, .daterangepicker.ltr .calendar {\n        float: left; }\n    .daterangepicker.rtl {\n      direction: rtl;\n      text-align: right; }\n      .daterangepicker.rtl .calendar.left {\n        clear: right;\n        margin-left: 0; }\n        .daterangepicker.rtl .calendar.left .calendar-table {\n          border-left: none;\n          border-top-left-radius: 0;\n          border-bottom-left-radius: 0; }\n      .daterangepicker.rtl .calendar.right {\n        margin-right: 0; }\n        .daterangepicker.rtl .calendar.right .calendar-table {\n          border-right: none;\n          border-top-right-radius: 0;\n          border-bottom-right-radius: 0; }\n      .daterangepicker.rtl .left .daterangepicker_input {\n        padding-left: 12px; }\n      .daterangepicker.rtl .calendar.left .calendar-table {\n        padding-left: 12px; }\n      .daterangepicker.rtl .ranges, .daterangepicker.rtl .calendar {\n        text-align: right;\n        float: right; } }\n@media (min-width: 730px) {\n  .daterangepicker .ranges {\n    width: auto; }\n  .daterangepicker.ltr .ranges {\n    float: left; }\n  .daterangepicker.rtl .ranges {\n    float: right; }\n  .daterangepicker .calendar.left {\n    clear: none !important; } }\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 478 */,
-/* 479 */,
-/* 480 */,
-/* 481 */,
-/* 482 */,
-/* 483 */,
-/* 484 */,
-/* 485 */,
-/* 486 */,
-/* 487 */,
-/* 488 */,
-/* 489 */,
-/* 490 */,
-/* 491 */,
-/* 492 */,
-/* 493 */,
-/* 494 */,
-/* 495 */,
-/* 496 */,
-/* 497 */,
-/* 498 */,
-/* 499 */,
-/* 500 */,
-/* 501 */,
-/* 502 */,
-/* 503 */,
-/* 504 */,
-/* 505 */,
-/* 506 */,
-/* 507 */,
-/* 508 */,
-/* 509 */,
-/* 510 */,
-/* 511 */,
-/* 512 */,
-/* 513 */,
-/* 514 */,
-/* 515 */,
-/* 516 */,
-/* 517 */,
-/* 518 */,
-/* 519 */,
-/* 520 */,
-/* 521 */,
-/* 522 */,
-/* 523 */,
-/* 524 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var map = {
-	"./af": 179,
-	"./af.js": 179,
-	"./ar": 185,
-	"./ar-dz": 180,
-	"./ar-dz.js": 180,
-	"./ar-ly": 181,
-	"./ar-ly.js": 181,
-	"./ar-ma": 182,
-	"./ar-ma.js": 182,
-	"./ar-sa": 183,
-	"./ar-sa.js": 183,
-	"./ar-tn": 184,
-	"./ar-tn.js": 184,
-	"./ar.js": 185,
-	"./az": 186,
-	"./az.js": 186,
-	"./be": 187,
-	"./be.js": 187,
-	"./bg": 188,
-	"./bg.js": 188,
-	"./bn": 189,
-	"./bn.js": 189,
-	"./bo": 190,
-	"./bo.js": 190,
-	"./br": 191,
-	"./br.js": 191,
-	"./bs": 192,
-	"./bs.js": 192,
-	"./ca": 193,
-	"./ca.js": 193,
-	"./cs": 194,
-	"./cs.js": 194,
-	"./cv": 195,
-	"./cv.js": 195,
-	"./cy": 196,
-	"./cy.js": 196,
-	"./da": 197,
-	"./da.js": 197,
-	"./de": 199,
-	"./de-at": 198,
-	"./de-at.js": 198,
-	"./de.js": 199,
-	"./dv": 200,
-	"./dv.js": 200,
-	"./el": 201,
-	"./el.js": 201,
-	"./en-au": 202,
-	"./en-au.js": 202,
-	"./en-ca": 203,
-	"./en-ca.js": 203,
-	"./en-gb": 204,
-	"./en-gb.js": 204,
-	"./en-ie": 205,
-	"./en-ie.js": 205,
-	"./en-nz": 206,
-	"./en-nz.js": 206,
-	"./eo": 207,
-	"./eo.js": 207,
-	"./es": 209,
-	"./es-do": 208,
-	"./es-do.js": 208,
-	"./es.js": 209,
-	"./et": 210,
-	"./et.js": 210,
-	"./eu": 211,
-	"./eu.js": 211,
-	"./fa": 212,
-	"./fa.js": 212,
-	"./fi": 213,
-	"./fi.js": 213,
-	"./fo": 214,
-	"./fo.js": 214,
-	"./fr": 217,
-	"./fr-ca": 215,
-	"./fr-ca.js": 215,
-	"./fr-ch": 216,
-	"./fr-ch.js": 216,
-	"./fr.js": 217,
-	"./fy": 218,
-	"./fy.js": 218,
-	"./gd": 219,
-	"./gd.js": 219,
-	"./gl": 220,
-	"./gl.js": 220,
-	"./he": 221,
-	"./he.js": 221,
-	"./hi": 222,
-	"./hi.js": 222,
-	"./hr": 223,
-	"./hr.js": 223,
-	"./hu": 224,
-	"./hu.js": 224,
-	"./hy-am": 225,
-	"./hy-am.js": 225,
-	"./id": 226,
-	"./id.js": 226,
-	"./is": 227,
-	"./is.js": 227,
-	"./it": 228,
-	"./it.js": 228,
-	"./ja": 229,
-	"./ja.js": 229,
-	"./jv": 230,
-	"./jv.js": 230,
-	"./ka": 231,
-	"./ka.js": 231,
-	"./kk": 232,
-	"./kk.js": 232,
-	"./km": 233,
-	"./km.js": 233,
-	"./ko": 234,
-	"./ko.js": 234,
-	"./ky": 235,
-	"./ky.js": 235,
-	"./lb": 236,
-	"./lb.js": 236,
-	"./lo": 237,
-	"./lo.js": 237,
-	"./lt": 238,
-	"./lt.js": 238,
-	"./lv": 239,
-	"./lv.js": 239,
-	"./me": 240,
-	"./me.js": 240,
-	"./mi": 241,
-	"./mi.js": 241,
-	"./mk": 242,
-	"./mk.js": 242,
-	"./ml": 243,
-	"./ml.js": 243,
-	"./mr": 244,
-	"./mr.js": 244,
-	"./ms": 246,
-	"./ms-my": 245,
-	"./ms-my.js": 245,
-	"./ms.js": 246,
-	"./my": 247,
-	"./my.js": 247,
-	"./nb": 248,
-	"./nb.js": 248,
-	"./ne": 249,
-	"./ne.js": 249,
-	"./nl": 251,
-	"./nl-be": 250,
-	"./nl-be.js": 250,
-	"./nl.js": 251,
-	"./nn": 252,
-	"./nn.js": 252,
-	"./pa-in": 253,
-	"./pa-in.js": 253,
-	"./pl": 254,
-	"./pl.js": 254,
-	"./pt": 256,
-	"./pt-br": 255,
-	"./pt-br.js": 255,
-	"./pt.js": 256,
-	"./ro": 257,
-	"./ro.js": 257,
-	"./ru": 258,
-	"./ru.js": 258,
-	"./se": 259,
-	"./se.js": 259,
-	"./si": 260,
-	"./si.js": 260,
-	"./sk": 261,
-	"./sk.js": 261,
-	"./sl": 262,
-	"./sl.js": 262,
-	"./sq": 263,
-	"./sq.js": 263,
-	"./sr": 265,
-	"./sr-cyrl": 264,
-	"./sr-cyrl.js": 264,
-	"./sr.js": 265,
-	"./ss": 266,
-	"./ss.js": 266,
-	"./sv": 267,
-	"./sv.js": 267,
-	"./sw": 268,
-	"./sw.js": 268,
-	"./ta": 269,
-	"./ta.js": 269,
-	"./te": 270,
-	"./te.js": 270,
-	"./tet": 271,
-	"./tet.js": 271,
-	"./th": 272,
-	"./th.js": 272,
-	"./tl-ph": 273,
-	"./tl-ph.js": 273,
-	"./tlh": 274,
-	"./tlh.js": 274,
-	"./tr": 275,
-	"./tr.js": 275,
-	"./tzl": 276,
-	"./tzl.js": 276,
-	"./tzm": 278,
-	"./tzm-latn": 277,
-	"./tzm-latn.js": 277,
-	"./tzm.js": 278,
-	"./uk": 279,
-	"./uk.js": 279,
-	"./uz": 280,
-	"./uz.js": 280,
-	"./vi": 281,
-	"./vi.js": 281,
-	"./x-pseudo": 282,
-	"./x-pseudo.js": 282,
-	"./yo": 283,
-	"./yo.js": 283,
-	"./zh-cn": 284,
-	"./zh-cn.js": 284,
-	"./zh-hk": 285,
-	"./zh-hk.js": 285,
-	"./zh-tw": 286,
-	"./zh-tw.js": 286
-};
-function webpackContext(req) {
-	return __webpack_require__(webpackContextResolve(req));
-};
-function webpackContextResolve(req) {
-	var id = map[req];
-	if(!(id + 1)) // check for number
-		throw new Error("Cannot find module '" + req + "'.");
-	return id;
-};
-webpackContext.keys = function webpackContextKeys() {
-	return Object.keys(map);
-};
-webpackContext.resolve = webpackContextResolve;
-module.exports = webpackContext;
-webpackContext.id = 524;
-
-
-/***/ }),
-/* 525 */
-/***/ (function(module, exports) {
-
-module.exports = "/**\n* @version: 2.1.25\n* @author: Dan Grossman http://www.dangrossman.info/\n* @copyright: Copyright (c) 2012-2017 Dan Grossman. All rights reserved.\n* @license: Licensed under the MIT license. See http://www.opensource.org/licenses/mit-license.php\n* @website: https://www.daterangepicker.com/\n*/\n// Follow the UMD template https://github.com/umdjs/umd/blob/master/templates/returnExportsGlobal.js\n(function (root, factory) {\n    if (typeof define === 'function' && define.amd) {\n        // AMD. Make globaly available as well\n        define(['moment', 'jquery'], function (moment, jquery) {\n            return (root.daterangepicker = factory(moment, jquery));\n        });\n    } else if (typeof module === 'object' && module.exports) {\n        // Node / Browserify\n        //isomorphic issue\n        var jQuery = (typeof window != 'undefined') ? window.jQuery : undefined;\n        if (!jQuery) {\n            jQuery = require('jquery');\n            if (!jQuery.fn) jQuery.fn = {};\n        }\n        module.exports = factory(require('moment'), jQuery);\n    } else {\n        // Browser globals\n        root.daterangepicker = factory(root.moment, root.jQuery);\n    }\n}(this, function(moment, $) {\n    var DateRangePicker = function(element, options, cb) {\n\n        //default settings for options\n        this.parentEl = 'body';\n        this.element = $(element);\n        this.startDate = moment().startOf('day');\n        this.endDate = moment().endOf('day');\n        this.minDate = false;\n        this.maxDate = false;\n        this.dateLimit = false;\n        this.autoApply = false;\n        this.singleDatePicker = false;\n        this.showDropdowns = false;\n        this.showWeekNumbers = false;\n        this.showISOWeekNumbers = false;\n        this.showCustomRangeLabel = true;\n        this.timePicker = false;\n        this.timePicker24Hour = false;\n        this.timePickerIncrement = 1;\n        this.timePickerSeconds = false;\n        this.linkedCalendars = true;\n        this.autoUpdateInput = true;\n        this.alwaysShowCalendars = false;\n        this.ranges = {};\n\n        this.opens = 'right';\n        if (this.element.hasClass('pull-right'))\n            this.opens = 'left';\n\n        this.drops = 'down';\n        if (this.element.hasClass('dropup'))\n            this.drops = 'up';\n\n        this.buttonClasses = 'btn btn-sm';\n        this.applyClass = 'btn-success';\n        this.cancelClass = 'btn-default';\n\n        this.locale = {\n            direction: 'ltr',\n            format: moment.localeData().longDateFormat('L'),\n            separator: ' - ',\n            applyLabel: 'Apply',\n            cancelLabel: 'Cancel',\n            weekLabel: 'W',\n            customRangeLabel: 'Custom Range',\n            daysOfWeek: moment.weekdaysMin(),\n            monthNames: moment.monthsShort(),\n            firstDay: moment.localeData().firstDayOfWeek()\n        };\n\n        this.callback = function() { };\n\n        //some state information\n        this.isShowing = false;\n        this.leftCalendar = {};\n        this.rightCalendar = {};\n\n        //custom options from user\n        if (typeof options !== 'object' || options === null)\n            options = {};\n\n        //allow setting options with data attributes\n        //data-api options will be overwritten with custom javascript options\n        options = $.extend(this.element.data(), options);\n\n        //html template for the picker UI\n        if (typeof options.template !== 'string' && !(options.template instanceof $))\n            options.template = '<div class=\"daterangepicker dropdown-menu\">' +\n                '<div class=\"calendar left\">' +\n                    '<div class=\"daterangepicker_input\">' +\n                      '<input class=\"input-mini form-control\" type=\"text\" name=\"daterangepicker_start\" value=\"\" />' +\n                      '<i class=\"fa fa-calendar glyphicon glyphicon-calendar\"></i>' +\n                      '<div class=\"calendar-time\">' +\n                        '<div></div>' +\n                        '<i class=\"fa fa-clock-o glyphicon glyphicon-time\"></i>' +\n                      '</div>' +\n                    '</div>' +\n                    '<div class=\"calendar-table\"></div>' +\n                '</div>' +\n                '<div class=\"calendar right\">' +\n                    '<div class=\"daterangepicker_input\">' +\n                      '<input class=\"input-mini form-control\" type=\"text\" name=\"daterangepicker_end\" value=\"\" />' +\n                      '<i class=\"fa fa-calendar glyphicon glyphicon-calendar\"></i>' +\n                      '<div class=\"calendar-time\">' +\n                        '<div></div>' +\n                        '<i class=\"fa fa-clock-o glyphicon glyphicon-time\"></i>' +\n                      '</div>' +\n                    '</div>' +\n                    '<div class=\"calendar-table\"></div>' +\n                '</div>' +\n                '<div class=\"ranges\">' +\n                    '<div class=\"range_inputs\">' +\n                        '<button class=\"applyBtn\" disabled=\"disabled\" type=\"button\"></button> ' +\n                        '<button class=\"cancelBtn\" type=\"button\"></button>' +\n                    '</div>' +\n                '</div>' +\n            '</div>';\n\n        this.parentEl = (options.parentEl && $(options.parentEl).length) ? $(options.parentEl) : $(this.parentEl);\n        this.container = $(options.template).appendTo(this.parentEl);\n\n        //\n        // handle all the possible options overriding defaults\n        //\n\n        if (typeof options.locale === 'object') {\n\n            if (typeof options.locale.direction === 'string')\n                this.locale.direction = options.locale.direction;\n\n            if (typeof options.locale.format === 'string')\n                this.locale.format = options.locale.format;\n\n            if (typeof options.locale.separator === 'string')\n                this.locale.separator = options.locale.separator;\n\n            if (typeof options.locale.daysOfWeek === 'object')\n                this.locale.daysOfWeek = options.locale.daysOfWeek.slice();\n\n            if (typeof options.locale.monthNames === 'object')\n              this.locale.monthNames = options.locale.monthNames.slice();\n\n            if (typeof options.locale.firstDay === 'number')\n              this.locale.firstDay = options.locale.firstDay;\n\n            if (typeof options.locale.applyLabel === 'string')\n              this.locale.applyLabel = options.locale.applyLabel;\n\n            if (typeof options.locale.cancelLabel === 'string')\n              this.locale.cancelLabel = options.locale.cancelLabel;\n\n            if (typeof options.locale.weekLabel === 'string')\n              this.locale.weekLabel = options.locale.weekLabel;\n\n            if (typeof options.locale.customRangeLabel === 'string'){\n                //Support unicode chars in the custom range name.\n                var elem = document.createElement('textarea');\n                elem.innerHTML = options.locale.customRangeLabel;\n                var rangeHtml = elem.value;\n                this.locale.customRangeLabel = rangeHtml;\n            }\n        }\n        this.container.addClass(this.locale.direction);\n\n        if (typeof options.startDate === 'string')\n            this.startDate = moment(options.startDate, this.locale.format);\n\n        if (typeof options.endDate === 'string')\n            this.endDate = moment(options.endDate, this.locale.format);\n\n        if (typeof options.minDate === 'string')\n            this.minDate = moment(options.minDate, this.locale.format);\n\n        if (typeof options.maxDate === 'string')\n            this.maxDate = moment(options.maxDate, this.locale.format);\n\n        if (typeof options.startDate === 'object')\n            this.startDate = moment(options.startDate);\n\n        if (typeof options.endDate === 'object')\n            this.endDate = moment(options.endDate);\n\n        if (typeof options.minDate === 'object')\n            this.minDate = moment(options.minDate);\n\n        if (typeof options.maxDate === 'object')\n            this.maxDate = moment(options.maxDate);\n\n        // sanity check for bad options\n        if (this.minDate && this.startDate.isBefore(this.minDate))\n            this.startDate = this.minDate.clone();\n\n        // sanity check for bad options\n        if (this.maxDate && this.endDate.isAfter(this.maxDate))\n            this.endDate = this.maxDate.clone();\n\n        if (typeof options.applyClass === 'string')\n            this.applyClass = options.applyClass;\n\n        if (typeof options.cancelClass === 'string')\n            this.cancelClass = options.cancelClass;\n\n        if (typeof options.dateLimit === 'object')\n            this.dateLimit = options.dateLimit;\n\n        if (typeof options.opens === 'string')\n            this.opens = options.opens;\n\n        if (typeof options.drops === 'string')\n            this.drops = options.drops;\n\n        if (typeof options.showWeekNumbers === 'boolean')\n            this.showWeekNumbers = options.showWeekNumbers;\n\n        if (typeof options.showISOWeekNumbers === 'boolean')\n            this.showISOWeekNumbers = options.showISOWeekNumbers;\n\n        if (typeof options.buttonClasses === 'string')\n            this.buttonClasses = options.buttonClasses;\n\n        if (typeof options.buttonClasses === 'object')\n            this.buttonClasses = options.buttonClasses.join(' ');\n\n        if (typeof options.showDropdowns === 'boolean')\n            this.showDropdowns = options.showDropdowns;\n\n        if (typeof options.showCustomRangeLabel === 'boolean')\n            this.showCustomRangeLabel = options.showCustomRangeLabel;\n\n        if (typeof options.singleDatePicker === 'boolean') {\n            this.singleDatePicker = options.singleDatePicker;\n            if (this.singleDatePicker)\n                this.endDate = this.startDate.clone();\n        }\n\n        if (typeof options.timePicker === 'boolean')\n            this.timePicker = options.timePicker;\n\n        if (typeof options.timePickerSeconds === 'boolean')\n            this.timePickerSeconds = options.timePickerSeconds;\n\n        if (typeof options.timePickerIncrement === 'number')\n            this.timePickerIncrement = options.timePickerIncrement;\n\n        if (typeof options.timePicker24Hour === 'boolean')\n            this.timePicker24Hour = options.timePicker24Hour;\n\n        if (typeof options.autoApply === 'boolean')\n            this.autoApply = options.autoApply;\n\n        if (typeof options.autoUpdateInput === 'boolean')\n            this.autoUpdateInput = options.autoUpdateInput;\n\n        if (typeof options.linkedCalendars === 'boolean')\n            this.linkedCalendars = options.linkedCalendars;\n\n        if (typeof options.isInvalidDate === 'function')\n            this.isInvalidDate = options.isInvalidDate;\n\n        if (typeof options.isCustomDate === 'function')\n            this.isCustomDate = options.isCustomDate;\n\n        if (typeof options.alwaysShowCalendars === 'boolean')\n            this.alwaysShowCalendars = options.alwaysShowCalendars;\n\n        // update day names order to firstDay\n        if (this.locale.firstDay != 0) {\n            var iterator = this.locale.firstDay;\n            while (iterator > 0) {\n                this.locale.daysOfWeek.push(this.locale.daysOfWeek.shift());\n                iterator--;\n            }\n        }\n\n        var start, end, range;\n\n        //if no start/end dates set, check if an input element contains initial values\n        if (typeof options.startDate === 'undefined' && typeof options.endDate === 'undefined') {\n            if ($(this.element).is('input[type=text]')) {\n                var val = $(this.element).val(),\n                    split = val.split(this.locale.separator);\n\n                start = end = null;\n\n                if (split.length == 2) {\n                    start = moment(split[0], this.locale.format);\n                    end = moment(split[1], this.locale.format);\n                } else if (this.singleDatePicker && val !== \"\") {\n                    start = moment(val, this.locale.format);\n                    end = moment(val, this.locale.format);\n                }\n                if (start !== null && end !== null) {\n                    this.setStartDate(start);\n                    this.setEndDate(end);\n                }\n            }\n        }\n\n        if (typeof options.ranges === 'object') {\n            for (range in options.ranges) {\n\n                if (typeof options.ranges[range][0] === 'string')\n                    start = moment(options.ranges[range][0], this.locale.format);\n                else\n                    start = moment(options.ranges[range][0]);\n\n                if (typeof options.ranges[range][1] === 'string')\n                    end = moment(options.ranges[range][1], this.locale.format);\n                else\n                    end = moment(options.ranges[range][1]);\n\n                // If the start or end date exceed those allowed by the minDate or dateLimit\n                // options, shorten the range to the allowable period.\n                if (this.minDate && start.isBefore(this.minDate))\n                    start = this.minDate.clone();\n\n                var maxDate = this.maxDate;\n                if (this.dateLimit && maxDate && start.clone().add(this.dateLimit).isAfter(maxDate))\n                    maxDate = start.clone().add(this.dateLimit);\n                if (maxDate && end.isAfter(maxDate))\n                    end = maxDate.clone();\n\n                // If the end of the range is before the minimum or the start of the range is\n                // after the maximum, don't display this range option at all.\n                if ((this.minDate && end.isBefore(this.minDate, this.timepicker ? 'minute' : 'day')) \n                  || (maxDate && start.isAfter(maxDate, this.timepicker ? 'minute' : 'day')))\n                    continue;\n\n                //Support unicode chars in the range names.\n                var elem = document.createElement('textarea');\n                elem.innerHTML = range;\n                var rangeHtml = elem.value;\n\n                this.ranges[rangeHtml] = [start, end];\n            }\n\n            var list = '<ul>';\n            for (range in this.ranges) {\n                list += '<li data-range-key=\"' + range + '\">' + range + '</li>';\n            }\n            if (this.showCustomRangeLabel) {\n                list += '<li data-range-key=\"' + this.locale.customRangeLabel + '\">' + this.locale.customRangeLabel + '</li>';\n            }\n            list += '</ul>';\n            this.container.find('.ranges').prepend(list);\n        }\n\n        if (typeof cb === 'function') {\n            this.callback = cb;\n        }\n\n        if (!this.timePicker) {\n            this.startDate = this.startDate.startOf('day');\n            this.endDate = this.endDate.endOf('day');\n            this.container.find('.calendar-time').hide();\n        }\n\n        //can't be used together for now\n        if (this.timePicker && this.autoApply)\n            this.autoApply = false;\n\n        if (this.autoApply && typeof options.ranges !== 'object') {\n            this.container.find('.ranges').hide();\n        } else if (this.autoApply) {\n            this.container.find('.applyBtn, .cancelBtn').addClass('hide');\n        }\n\n        if (this.singleDatePicker) {\n            this.container.addClass('single');\n            this.container.find('.calendar.left').addClass('single');\n            this.container.find('.calendar.left').show();\n            this.container.find('.calendar.right').hide();\n            this.container.find('.daterangepicker_input input, .daterangepicker_input > i').hide();\n            if (this.timePicker) {\n                this.container.find('.ranges ul').hide();\n            } else {\n                this.container.find('.ranges').hide();\n            }\n        }\n\n        if ((typeof options.ranges === 'undefined' && !this.singleDatePicker) || this.alwaysShowCalendars) {\n            this.container.addClass('show-calendar');\n        }\n\n        this.container.addClass('opens' + this.opens);\n\n        //swap the position of the predefined ranges if opens right\n        if (typeof options.ranges !== 'undefined' && this.opens == 'right') {\n            this.container.find('.ranges').prependTo( this.container.find('.calendar.left').parent() );\n        }\n\n        //apply CSS classes and labels to buttons\n        this.container.find('.applyBtn, .cancelBtn').addClass(this.buttonClasses);\n        if (this.applyClass.length)\n            this.container.find('.applyBtn').addClass(this.applyClass);\n        if (this.cancelClass.length)\n            this.container.find('.cancelBtn').addClass(this.cancelClass);\n        this.container.find('.applyBtn').html(this.locale.applyLabel);\n        this.container.find('.cancelBtn').html(this.locale.cancelLabel);\n\n        //\n        // event listeners\n        //\n\n        this.container.find('.calendar')\n            .on('click.daterangepicker', '.prev', $.proxy(this.clickPrev, this))\n            .on('click.daterangepicker', '.next', $.proxy(this.clickNext, this))\n            .on('mousedown.daterangepicker', 'td.available', $.proxy(this.clickDate, this))\n            .on('mouseenter.daterangepicker', 'td.available', $.proxy(this.hoverDate, this))\n            .on('mouseleave.daterangepicker', 'td.available', $.proxy(this.updateFormInputs, this))\n            .on('change.daterangepicker', 'select.yearselect', $.proxy(this.monthOrYearChanged, this))\n            .on('change.daterangepicker', 'select.monthselect', $.proxy(this.monthOrYearChanged, this))\n            .on('change.daterangepicker', 'select.hourselect,select.minuteselect,select.secondselect,select.ampmselect', $.proxy(this.timeChanged, this))\n            .on('click.daterangepicker', '.daterangepicker_input input', $.proxy(this.showCalendars, this))\n            .on('focus.daterangepicker', '.daterangepicker_input input', $.proxy(this.formInputsFocused, this))\n            .on('blur.daterangepicker', '.daterangepicker_input input', $.proxy(this.formInputsBlurred, this))\n            .on('change.daterangepicker', '.daterangepicker_input input', $.proxy(this.formInputsChanged, this));\n\n        this.container.find('.ranges')\n            .on('click.daterangepicker', 'button.applyBtn', $.proxy(this.clickApply, this))\n            .on('click.daterangepicker', 'button.cancelBtn', $.proxy(this.clickCancel, this))\n            .on('click.daterangepicker', 'li', $.proxy(this.clickRange, this))\n            .on('mouseenter.daterangepicker', 'li', $.proxy(this.hoverRange, this))\n            .on('mouseleave.daterangepicker', 'li', $.proxy(this.updateFormInputs, this));\n\n        if (this.element.is('input') || this.element.is('button')) {\n            this.element.on({\n                'click.daterangepicker': $.proxy(this.show, this),\n                'focus.daterangepicker': $.proxy(this.show, this),\n                'keyup.daterangepicker': $.proxy(this.elementChanged, this),\n                'keydown.daterangepicker': $.proxy(this.keydown, this)\n            });\n        } else {\n            this.element.on('click.daterangepicker', $.proxy(this.toggle, this));\n        }\n\n        //\n        // if attached to a text input, set the initial value\n        //\n\n        if (this.element.is('input') && !this.singleDatePicker && this.autoUpdateInput) {\n            this.element.val(this.startDate.format(this.locale.format) + this.locale.separator + this.endDate.format(this.locale.format));\n            this.element.trigger('change');\n        } else if (this.element.is('input') && this.autoUpdateInput) {\n            this.element.val(this.startDate.format(this.locale.format));\n            this.element.trigger('change');\n        }\n\n    };\n\n    DateRangePicker.prototype = {\n\n        constructor: DateRangePicker,\n\n        setStartDate: function(startDate) {\n            if (typeof startDate === 'string')\n                this.startDate = moment(startDate, this.locale.format);\n\n            if (typeof startDate === 'object')\n                this.startDate = moment(startDate);\n\n            if (!this.timePicker)\n                this.startDate = this.startDate.startOf('day');\n\n            if (this.timePicker && this.timePickerIncrement)\n                this.startDate.minute(Math.round(this.startDate.minute() / this.timePickerIncrement) * this.timePickerIncrement);\n\n            if (this.minDate && this.startDate.isBefore(this.minDate)) {\n                this.startDate = this.minDate.clone();\n                if (this.timePicker && this.timePickerIncrement)\n                    this.startDate.minute(Math.round(this.startDate.minute() / this.timePickerIncrement) * this.timePickerIncrement);\n            }\n\n            if (this.maxDate && this.startDate.isAfter(this.maxDate)) {\n                this.startDate = this.maxDate.clone();\n                if (this.timePicker && this.timePickerIncrement)\n                    this.startDate.minute(Math.floor(this.startDate.minute() / this.timePickerIncrement) * this.timePickerIncrement);\n            }\n\n            if (!this.isShowing)\n                this.updateElement();\n\n            this.updateMonthsInView();\n        },\n\n        setEndDate: function(endDate) {\n            if (typeof endDate === 'string')\n                this.endDate = moment(endDate, this.locale.format);\n\n            if (typeof endDate === 'object')\n                this.endDate = moment(endDate);\n\n            if (!this.timePicker)\n                this.endDate = this.endDate.endOf('day');\n\n            if (this.timePicker && this.timePickerIncrement)\n                this.endDate.minute(Math.round(this.endDate.minute() / this.timePickerIncrement) * this.timePickerIncrement);\n\n            if (this.endDate.isBefore(this.startDate))\n                this.endDate = this.startDate.clone();\n\n            if (this.maxDate && this.endDate.isAfter(this.maxDate))\n                this.endDate = this.maxDate.clone();\n\n            if (this.dateLimit && this.startDate.clone().add(this.dateLimit).isBefore(this.endDate))\n                this.endDate = this.startDate.clone().add(this.dateLimit);\n\n            this.previousRightTime = this.endDate.clone();\n\n            if (!this.isShowing)\n                this.updateElement();\n\n            this.updateMonthsInView();\n        },\n\n        isInvalidDate: function() {\n            return false;\n        },\n\n        isCustomDate: function() {\n            return false;\n        },\n\n        updateView: function() {\n            if (this.timePicker) {\n                this.renderTimePicker('left');\n                this.renderTimePicker('right');\n                if (!this.endDate) {\n                    this.container.find('.right .calendar-time select').attr('disabled', 'disabled').addClass('disabled');\n                } else {\n                    this.container.find('.right .calendar-time select').removeAttr('disabled').removeClass('disabled');\n                }\n            }\n            if (this.endDate) {\n                this.container.find('input[name=\"daterangepicker_end\"]').removeClass('active');\n                this.container.find('input[name=\"daterangepicker_start\"]').addClass('active');\n            } else {\n                this.container.find('input[name=\"daterangepicker_end\"]').addClass('active');\n                this.container.find('input[name=\"daterangepicker_start\"]').removeClass('active');\n            }\n            this.updateMonthsInView();\n            this.updateCalendars();\n            this.updateFormInputs();\n        },\n\n        updateMonthsInView: function() {\n            if (this.endDate) {\n\n                //if both dates are visible already, do nothing\n                if (!this.singleDatePicker && this.leftCalendar.month && this.rightCalendar.month &&\n                    (this.startDate.format('YYYY-MM') == this.leftCalendar.month.format('YYYY-MM') || this.startDate.format('YYYY-MM') == this.rightCalendar.month.format('YYYY-MM'))\n                    &&\n                    (this.endDate.format('YYYY-MM') == this.leftCalendar.month.format('YYYY-MM') || this.endDate.format('YYYY-MM') == this.rightCalendar.month.format('YYYY-MM'))\n                    ) {\n                    return;\n                }\n\n                this.leftCalendar.month = this.startDate.clone().date(2);\n                if (!this.linkedCalendars && (this.endDate.month() != this.startDate.month() || this.endDate.year() != this.startDate.year())) {\n                    this.rightCalendar.month = this.endDate.clone().date(2);\n                } else {\n                    this.rightCalendar.month = this.startDate.clone().date(2).add(1, 'month');\n                }\n\n            } else {\n                if (this.leftCalendar.month.format('YYYY-MM') != this.startDate.format('YYYY-MM') && this.rightCalendar.month.format('YYYY-MM') != this.startDate.format('YYYY-MM')) {\n                    this.leftCalendar.month = this.startDate.clone().date(2);\n                    this.rightCalendar.month = this.startDate.clone().date(2).add(1, 'month');\n                }\n            }\n            if (this.maxDate && this.linkedCalendars && !this.singleDatePicker && this.rightCalendar.month > this.maxDate) {\n              this.rightCalendar.month = this.maxDate.clone().date(2);\n              this.leftCalendar.month = this.maxDate.clone().date(2).subtract(1, 'month');\n            }\n        },\n\n        updateCalendars: function() {\n\n            if (this.timePicker) {\n                var hour, minute, second;\n                if (this.endDate) {\n                    hour = parseInt(this.container.find('.left .hourselect').val(), 10);\n                    minute = parseInt(this.container.find('.left .minuteselect').val(), 10);\n                    second = this.timePickerSeconds ? parseInt(this.container.find('.left .secondselect').val(), 10) : 0;\n                    if (!this.timePicker24Hour) {\n                        var ampm = this.container.find('.left .ampmselect').val();\n                        if (ampm === 'PM' && hour < 12)\n                            hour += 12;\n                        if (ampm === 'AM' && hour === 12)\n                            hour = 0;\n                    }\n                } else {\n                    hour = parseInt(this.container.find('.right .hourselect').val(), 10);\n                    minute = parseInt(this.container.find('.right .minuteselect').val(), 10);\n                    second = this.timePickerSeconds ? parseInt(this.container.find('.right .secondselect').val(), 10) : 0;\n                    if (!this.timePicker24Hour) {\n                        var ampm = this.container.find('.right .ampmselect').val();\n                        if (ampm === 'PM' && hour < 12)\n                            hour += 12;\n                        if (ampm === 'AM' && hour === 12)\n                            hour = 0;\n                    }\n                }\n                this.leftCalendar.month.hour(hour).minute(minute).second(second);\n                this.rightCalendar.month.hour(hour).minute(minute).second(second);\n            }\n\n            this.renderCalendar('left');\n            this.renderCalendar('right');\n\n            //highlight any predefined range matching the current start and end dates\n            this.container.find('.ranges li').removeClass('active');\n            if (this.endDate == null) return;\n\n            this.calculateChosenLabel();\n        },\n\n        renderCalendar: function(side) {\n\n            //\n            // Build the matrix of dates that will populate the calendar\n            //\n\n            var calendar = side == 'left' ? this.leftCalendar : this.rightCalendar;\n            var month = calendar.month.month();\n            var year = calendar.month.year();\n            var hour = calendar.month.hour();\n            var minute = calendar.month.minute();\n            var second = calendar.month.second();\n            var daysInMonth = moment([year, month]).daysInMonth();\n            var firstDay = moment([year, month, 1]);\n            var lastDay = moment([year, month, daysInMonth]);\n            var lastMonth = moment(firstDay).subtract(1, 'month').month();\n            var lastYear = moment(firstDay).subtract(1, 'month').year();\n            var daysInLastMonth = moment([lastYear, lastMonth]).daysInMonth();\n            var dayOfWeek = firstDay.day();\n\n            //initialize a 6 rows x 7 columns array for the calendar\n            var calendar = [];\n            calendar.firstDay = firstDay;\n            calendar.lastDay = lastDay;\n\n            for (var i = 0; i < 6; i++) {\n                calendar[i] = [];\n            }\n\n            //populate the calendar with date objects\n            var startDay = daysInLastMonth - dayOfWeek + this.locale.firstDay + 1;\n            if (startDay > daysInLastMonth)\n                startDay -= 7;\n\n            if (dayOfWeek == this.locale.firstDay)\n                startDay = daysInLastMonth - 6;\n\n            var curDate = moment([lastYear, lastMonth, startDay, 12, minute, second]);\n\n            var col, row;\n            for (var i = 0, col = 0, row = 0; i < 42; i++, col++, curDate = moment(curDate).add(24, 'hour')) {\n                if (i > 0 && col % 7 === 0) {\n                    col = 0;\n                    row++;\n                }\n                calendar[row][col] = curDate.clone().hour(hour).minute(minute).second(second);\n                curDate.hour(12);\n\n                if (this.minDate && calendar[row][col].format('YYYY-MM-DD') == this.minDate.format('YYYY-MM-DD') && calendar[row][col].isBefore(this.minDate) && side == 'left') {\n                    calendar[row][col] = this.minDate.clone();\n                }\n\n                if (this.maxDate && calendar[row][col].format('YYYY-MM-DD') == this.maxDate.format('YYYY-MM-DD') && calendar[row][col].isAfter(this.maxDate) && side == 'right') {\n                    calendar[row][col] = this.maxDate.clone();\n                }\n\n            }\n\n            //make the calendar object available to hoverDate/clickDate\n            if (side == 'left') {\n                this.leftCalendar.calendar = calendar;\n            } else {\n                this.rightCalendar.calendar = calendar;\n            }\n\n            //\n            // Display the calendar\n            //\n\n            var minDate = side == 'left' ? this.minDate : this.startDate;\n            var maxDate = this.maxDate;\n            var selected = side == 'left' ? this.startDate : this.endDate;\n            var arrow = this.locale.direction == 'ltr' ? {left: 'chevron-left', right: 'chevron-right'} : {left: 'chevron-right', right: 'chevron-left'};\n\n            var html = '<table class=\"table-condensed\">';\n            html += '<thead>';\n            html += '<tr>';\n\n            // add empty cell for week number\n            if (this.showWeekNumbers || this.showISOWeekNumbers)\n                html += '<th></th>';\n\n            if ((!minDate || minDate.isBefore(calendar.firstDay)) && (!this.linkedCalendars || side == 'left')) {\n                html += '<th class=\"prev available\"><i class=\"fa fa-' + arrow.left + ' glyphicon glyphicon-' + arrow.left + '\"></i></th>';\n            } else {\n                html += '<th></th>';\n            }\n\n            var dateHtml = this.locale.monthNames[calendar[1][1].month()] + calendar[1][1].format(\" YYYY\");\n\n            if (this.showDropdowns) {\n                var currentMonth = calendar[1][1].month();\n                var currentYear = calendar[1][1].year();\n                var maxYear = (maxDate && maxDate.year()) || (currentYear + 5);\n                var minYear = (minDate && minDate.year()) || (currentYear - 50);\n                var inMinYear = currentYear == minYear;\n                var inMaxYear = currentYear == maxYear;\n\n                var monthHtml = '<select class=\"monthselect\">';\n                for (var m = 0; m < 12; m++) {\n                    if ((!inMinYear || m >= minDate.month()) && (!inMaxYear || m <= maxDate.month())) {\n                        monthHtml += \"<option value='\" + m + \"'\" +\n                            (m === currentMonth ? \" selected='selected'\" : \"\") +\n                            \">\" + this.locale.monthNames[m] + \"</option>\";\n                    } else {\n                        monthHtml += \"<option value='\" + m + \"'\" +\n                            (m === currentMonth ? \" selected='selected'\" : \"\") +\n                            \" disabled='disabled'>\" + this.locale.monthNames[m] + \"</option>\";\n                    }\n                }\n                monthHtml += \"</select>\";\n\n                var yearHtml = '<select class=\"yearselect\">';\n                for (var y = minYear; y <= maxYear; y++) {\n                    yearHtml += '<option value=\"' + y + '\"' +\n                        (y === currentYear ? ' selected=\"selected\"' : '') +\n                        '>' + y + '</option>';\n                }\n                yearHtml += '</select>';\n\n                dateHtml = monthHtml + yearHtml;\n            }\n\n            html += '<th colspan=\"5\" class=\"month\">' + dateHtml + '</th>';\n            if ((!maxDate || maxDate.isAfter(calendar.lastDay)) && (!this.linkedCalendars || side == 'right' || this.singleDatePicker)) {\n                html += '<th class=\"next available\"><i class=\"fa fa-' + arrow.right + ' glyphicon glyphicon-' + arrow.right + '\"></i></th>';\n            } else {\n                html += '<th></th>';\n            }\n\n            html += '</tr>';\n            html += '<tr>';\n\n            // add week number label\n            if (this.showWeekNumbers || this.showISOWeekNumbers)\n                html += '<th class=\"week\">' + this.locale.weekLabel + '</th>';\n\n            $.each(this.locale.daysOfWeek, function(index, dayOfWeek) {\n                html += '<th>' + dayOfWeek + '</th>';\n            });\n\n            html += '</tr>';\n            html += '</thead>';\n            html += '<tbody>';\n\n            //adjust maxDate to reflect the dateLimit setting in order to\n            //grey out end dates beyond the dateLimit\n            if (this.endDate == null && this.dateLimit) {\n                var maxLimit = this.startDate.clone().add(this.dateLimit).endOf('day');\n                if (!maxDate || maxLimit.isBefore(maxDate)) {\n                    maxDate = maxLimit;\n                }\n            }\n\n            for (var row = 0; row < 6; row++) {\n                html += '<tr>';\n\n                // add week number\n                if (this.showWeekNumbers)\n                    html += '<td class=\"week\">' + calendar[row][0].week() + '</td>';\n                else if (this.showISOWeekNumbers)\n                    html += '<td class=\"week\">' + calendar[row][0].isoWeek() + '</td>';\n\n                for (var col = 0; col < 7; col++) {\n\n                    var classes = [];\n\n                    //highlight today's date\n                    if (calendar[row][col].isSame(new Date(), \"day\"))\n                        classes.push('today');\n\n                    //highlight weekends\n                    if (calendar[row][col].isoWeekday() > 5)\n                        classes.push('weekend');\n\n                    //grey out the dates in other months displayed at beginning and end of this calendar\n                    if (calendar[row][col].month() != calendar[1][1].month())\n                        classes.push('off');\n\n                    //don't allow selection of dates before the minimum date\n                    if (this.minDate && calendar[row][col].isBefore(this.minDate, 'day'))\n                        classes.push('off', 'disabled');\n\n                    //don't allow selection of dates after the maximum date\n                    if (maxDate && calendar[row][col].isAfter(maxDate, 'day'))\n                        classes.push('off', 'disabled');\n\n                    //don't allow selection of date if a custom function decides it's invalid\n                    if (this.isInvalidDate(calendar[row][col]))\n                        classes.push('off', 'disabled');\n\n                    //highlight the currently selected start date\n                    if (calendar[row][col].format('YYYY-MM-DD') == this.startDate.format('YYYY-MM-DD'))\n                        classes.push('active', 'start-date');\n\n                    //highlight the currently selected end date\n                    if (this.endDate != null && calendar[row][col].format('YYYY-MM-DD') == this.endDate.format('YYYY-MM-DD'))\n                        classes.push('active', 'end-date');\n\n                    //highlight dates in-between the selected dates\n                    if (this.endDate != null && calendar[row][col] > this.startDate && calendar[row][col] < this.endDate)\n                        classes.push('in-range');\n\n                    //apply custom classes for this date\n                    var isCustom = this.isCustomDate(calendar[row][col]);\n                    if (isCustom !== false) {\n                        if (typeof isCustom === 'string')\n                            classes.push(isCustom);\n                        else\n                            Array.prototype.push.apply(classes, isCustom);\n                    }\n\n                    var cname = '', disabled = false;\n                    for (var i = 0; i < classes.length; i++) {\n                        cname += classes[i] + ' ';\n                        if (classes[i] == 'disabled')\n                            disabled = true;\n                    }\n                    if (!disabled)\n                        cname += 'available';\n\n                    html += '<td class=\"' + cname.replace(/^\\s+|\\s+$/g, '') + '\" data-title=\"' + 'r' + row + 'c' + col + '\">' + calendar[row][col].date() + '</td>';\n\n                }\n                html += '</tr>';\n            }\n\n            html += '</tbody>';\n            html += '</table>';\n\n            this.container.find('.calendar.' + side + ' .calendar-table').html(html);\n\n        },\n\n        renderTimePicker: function(side) {\n\n            // Don't bother updating the time picker if it's currently disabled\n            // because an end date hasn't been clicked yet\n            if (side == 'right' && !this.endDate) return;\n\n            var html, selected, minDate, maxDate = this.maxDate;\n\n            if (this.dateLimit && (!this.maxDate || this.startDate.clone().add(this.dateLimit).isAfter(this.maxDate)))\n                maxDate = this.startDate.clone().add(this.dateLimit);\n\n            if (side == 'left') {\n                selected = this.startDate.clone();\n                minDate = this.minDate;\n            } else if (side == 'right') {\n                selected = this.endDate.clone();\n                minDate = this.startDate;\n\n                //Preserve the time already selected\n                var timeSelector = this.container.find('.calendar.right .calendar-time div');\n                if (timeSelector.html() != '') {\n\n                    selected.hour(timeSelector.find('.hourselect option:selected').val() || selected.hour());\n                    selected.minute(timeSelector.find('.minuteselect option:selected').val() || selected.minute());\n                    selected.second(timeSelector.find('.secondselect option:selected').val() || selected.second());\n\n                    if (!this.timePicker24Hour) {\n                        var ampm = timeSelector.find('.ampmselect option:selected').val();\n                        if (ampm === 'PM' && selected.hour() < 12)\n                            selected.hour(selected.hour() + 12);\n                        if (ampm === 'AM' && selected.hour() === 12)\n                            selected.hour(0);\n                    }\n\n                }\n\n                if (selected.isBefore(this.startDate))\n                    selected = this.startDate.clone();\n\n                if (maxDate && selected.isAfter(maxDate))\n                    selected = maxDate.clone();\n\n            }\n\n            //\n            // hours\n            //\n\n            html = '<select class=\"hourselect\">';\n\n            var start = this.timePicker24Hour ? 0 : 1;\n            var end = this.timePicker24Hour ? 23 : 12;\n\n            for (var i = start; i <= end; i++) {\n                var i_in_24 = i;\n                if (!this.timePicker24Hour)\n                    i_in_24 = selected.hour() >= 12 ? (i == 12 ? 12 : i + 12) : (i == 12 ? 0 : i);\n\n                var time = selected.clone().hour(i_in_24);\n                var disabled = false;\n                if (minDate && time.minute(59).isBefore(minDate))\n                    disabled = true;\n                if (maxDate && time.minute(0).isAfter(maxDate))\n                    disabled = true;\n\n                if (i_in_24 == selected.hour() && !disabled) {\n                    html += '<option value=\"' + i + '\" selected=\"selected\">' + i + '</option>';\n                } else if (disabled) {\n                    html += '<option value=\"' + i + '\" disabled=\"disabled\" class=\"disabled\">' + i + '</option>';\n                } else {\n                    html += '<option value=\"' + i + '\">' + i + '</option>';\n                }\n            }\n\n            html += '</select> ';\n\n            //\n            // minutes\n            //\n\n            html += ': <select class=\"minuteselect\">';\n\n            for (var i = 0; i < 60; i += this.timePickerIncrement) {\n                var padded = i < 10 ? '0' + i : i;\n                var time = selected.clone().minute(i);\n\n                var disabled = false;\n                if (minDate && time.second(59).isBefore(minDate))\n                    disabled = true;\n                if (maxDate && time.second(0).isAfter(maxDate))\n                    disabled = true;\n\n                if (selected.minute() == i && !disabled) {\n                    html += '<option value=\"' + i + '\" selected=\"selected\">' + padded + '</option>';\n                } else if (disabled) {\n                    html += '<option value=\"' + i + '\" disabled=\"disabled\" class=\"disabled\">' + padded + '</option>';\n                } else {\n                    html += '<option value=\"' + i + '\">' + padded + '</option>';\n                }\n            }\n\n            html += '</select> ';\n\n            //\n            // seconds\n            //\n\n            if (this.timePickerSeconds) {\n                html += ': <select class=\"secondselect\">';\n\n                for (var i = 0; i < 60; i++) {\n                    var padded = i < 10 ? '0' + i : i;\n                    var time = selected.clone().second(i);\n\n                    var disabled = false;\n                    if (minDate && time.isBefore(minDate))\n                        disabled = true;\n                    if (maxDate && time.isAfter(maxDate))\n                        disabled = true;\n\n                    if (selected.second() == i && !disabled) {\n                        html += '<option value=\"' + i + '\" selected=\"selected\">' + padded + '</option>';\n                    } else if (disabled) {\n                        html += '<option value=\"' + i + '\" disabled=\"disabled\" class=\"disabled\">' + padded + '</option>';\n                    } else {\n                        html += '<option value=\"' + i + '\">' + padded + '</option>';\n                    }\n                }\n\n                html += '</select> ';\n            }\n\n            //\n            // AM/PM\n            //\n\n            if (!this.timePicker24Hour) {\n                html += '<select class=\"ampmselect\">';\n\n                var am_html = '';\n                var pm_html = '';\n\n                if (minDate && selected.clone().hour(12).minute(0).second(0).isBefore(minDate))\n                    am_html = ' disabled=\"disabled\" class=\"disabled\"';\n\n                if (maxDate && selected.clone().hour(0).minute(0).second(0).isAfter(maxDate))\n                    pm_html = ' disabled=\"disabled\" class=\"disabled\"';\n\n                if (selected.hour() >= 12) {\n                    html += '<option value=\"AM\"' + am_html + '>AM</option><option value=\"PM\" selected=\"selected\"' + pm_html + '>PM</option>';\n                } else {\n                    html += '<option value=\"AM\" selected=\"selected\"' + am_html + '>AM</option><option value=\"PM\"' + pm_html + '>PM</option>';\n                }\n\n                html += '</select>';\n            }\n\n            this.container.find('.calendar.' + side + ' .calendar-time div').html(html);\n\n        },\n\n        updateFormInputs: function() {\n\n            //ignore mouse movements while an above-calendar text input has focus\n            if (this.container.find('input[name=daterangepicker_start]').is(\":focus\") || this.container.find('input[name=daterangepicker_end]').is(\":focus\"))\n                return;\n\n            this.container.find('input[name=daterangepicker_start]').val(this.startDate.format(this.locale.format));\n            if (this.endDate)\n                this.container.find('input[name=daterangepicker_end]').val(this.endDate.format(this.locale.format));\n\n            if (this.singleDatePicker || (this.endDate && (this.startDate.isBefore(this.endDate) || this.startDate.isSame(this.endDate)))) {\n                this.container.find('button.applyBtn').removeAttr('disabled');\n            } else {\n                this.container.find('button.applyBtn').attr('disabled', 'disabled');\n            }\n\n        },\n\n        move: function() {\n            var parentOffset = { top: 0, left: 0 },\n                containerTop;\n            var parentRightEdge = $(window).width();\n            if (!this.parentEl.is('body')) {\n                parentOffset = {\n                    top: this.parentEl.offset().top - this.parentEl.scrollTop(),\n                    left: this.parentEl.offset().left - this.parentEl.scrollLeft()\n                };\n                parentRightEdge = this.parentEl[0].clientWidth + this.parentEl.offset().left;\n            }\n\n            if (this.drops == 'up')\n                containerTop = this.element.offset().top - this.container.outerHeight() - parentOffset.top;\n            else\n                containerTop = this.element.offset().top + this.element.outerHeight() - parentOffset.top;\n            this.container[this.drops == 'up' ? 'addClass' : 'removeClass']('dropup');\n\n            if (this.opens == 'left') {\n                this.container.css({\n                    top: containerTop,\n                    right: parentRightEdge - this.element.offset().left - this.element.outerWidth(),\n                    left: 'auto'\n                });\n                if (this.container.offset().left < 0) {\n                    this.container.css({\n                        right: 'auto',\n                        left: 9\n                    });\n                }\n            } else if (this.opens == 'center') {\n                this.container.css({\n                    top: containerTop,\n                    left: this.element.offset().left - parentOffset.left + this.element.outerWidth() / 2\n                            - this.container.outerWidth() / 2,\n                    right: 'auto'\n                });\n                if (this.container.offset().left < 0) {\n                    this.container.css({\n                        right: 'auto',\n                        left: 9\n                    });\n                }\n            } else {\n                this.container.css({\n                    top: containerTop,\n                    left: this.element.offset().left - parentOffset.left,\n                    right: 'auto'\n                });\n                if (this.container.offset().left + this.container.outerWidth() > $(window).width()) {\n                    this.container.css({\n                        left: 'auto',\n                        right: 0\n                    });\n                }\n            }\n        },\n\n        show: function(e) {\n            if (this.isShowing) return;\n\n            // Create a click proxy that is private to this instance of datepicker, for unbinding\n            this._outsideClickProxy = $.proxy(function(e) { this.outsideClick(e); }, this);\n\n            // Bind global datepicker mousedown for hiding and\n            $(document)\n              .on('mousedown.daterangepicker', this._outsideClickProxy)\n              // also support mobile devices\n              .on('touchend.daterangepicker', this._outsideClickProxy)\n              // also explicitly play nice with Bootstrap dropdowns, which stopPropagation when clicking them\n              .on('click.daterangepicker', '[data-toggle=dropdown]', this._outsideClickProxy)\n              // and also close when focus changes to outside the picker (eg. tabbing between controls)\n              .on('focusin.daterangepicker', this._outsideClickProxy);\n\n            // Reposition the picker if the window is resized while it's open\n            $(window).on('resize.daterangepicker', $.proxy(function(e) { this.move(e); }, this));\n\n            this.oldStartDate = this.startDate.clone();\n            this.oldEndDate = this.endDate.clone();\n            this.previousRightTime = this.endDate.clone();\n\n            this.updateView();\n            this.container.show();\n            this.move();\n            this.element.trigger('show.daterangepicker', this);\n            this.isShowing = true;\n        },\n\n        hide: function(e) {\n            if (!this.isShowing) return;\n\n            //incomplete date selection, revert to last values\n            if (!this.endDate) {\n                this.startDate = this.oldStartDate.clone();\n                this.endDate = this.oldEndDate.clone();\n            }\n\n            //if a new date range was selected, invoke the user callback function\n            if (!this.startDate.isSame(this.oldStartDate) || !this.endDate.isSame(this.oldEndDate))\n                this.callback(this.startDate, this.endDate, this.chosenLabel);\n\n            //if picker is attached to a text input, update it\n            this.updateElement();\n\n            $(document).off('.daterangepicker');\n            $(window).off('.daterangepicker');\n            this.container.hide();\n            this.element.trigger('hide.daterangepicker', this);\n            this.isShowing = false;\n        },\n\n        toggle: function(e) {\n            if (this.isShowing) {\n                this.hide();\n            } else {\n                this.show();\n            }\n        },\n\n        outsideClick: function(e) {\n            var target = $(e.target);\n            // if the page is clicked anywhere except within the daterangerpicker/button\n            // itself then call this.hide()\n            if (\n                // ie modal dialog fix\n                e.type == \"focusin\" ||\n                target.closest(this.element).length ||\n                target.closest(this.container).length ||\n                target.closest('.calendar-table').length\n                ) return;\n            this.hide();\n            this.element.trigger('outsideClick.daterangepicker', this);\n        },\n\n        showCalendars: function() {\n            this.container.addClass('show-calendar');\n            this.move();\n            this.element.trigger('showCalendar.daterangepicker', this);\n        },\n\n        hideCalendars: function() {\n            this.container.removeClass('show-calendar');\n            this.element.trigger('hideCalendar.daterangepicker', this);\n        },\n\n        hoverRange: function(e) {\n\n            //ignore mouse movements while an above-calendar text input has focus\n            if (this.container.find('input[name=daterangepicker_start]').is(\":focus\") || this.container.find('input[name=daterangepicker_end]').is(\":focus\"))\n                return;\n\n            var label = e.target.getAttribute('data-range-key');\n\n            if (label == this.locale.customRangeLabel) {\n                this.updateView();\n            } else {\n                var dates = this.ranges[label];\n                this.container.find('input[name=daterangepicker_start]').val(dates[0].format(this.locale.format));\n                this.container.find('input[name=daterangepicker_end]').val(dates[1].format(this.locale.format));\n            }\n\n        },\n\n        clickRange: function(e) {\n            var label = e.target.getAttribute('data-range-key');\n            this.chosenLabel = label;\n            if (label == this.locale.customRangeLabel) {\n                this.showCalendars();\n            } else {\n                var dates = this.ranges[label];\n                this.startDate = dates[0];\n                this.endDate = dates[1];\n\n                if (!this.timePicker) {\n                    this.startDate.startOf('day');\n                    this.endDate.endOf('day');\n                }\n\n                if (!this.alwaysShowCalendars)\n                    this.hideCalendars();\n                this.clickApply();\n            }\n        },\n\n        clickPrev: function(e) {\n            var cal = $(e.target).parents('.calendar');\n            if (cal.hasClass('left')) {\n                this.leftCalendar.month.subtract(1, 'month');\n                if (this.linkedCalendars)\n                    this.rightCalendar.month.subtract(1, 'month');\n            } else {\n                this.rightCalendar.month.subtract(1, 'month');\n            }\n            this.updateCalendars();\n        },\n\n        clickNext: function(e) {\n            var cal = $(e.target).parents('.calendar');\n            if (cal.hasClass('left')) {\n                this.leftCalendar.month.add(1, 'month');\n            } else {\n                this.rightCalendar.month.add(1, 'month');\n                if (this.linkedCalendars)\n                    this.leftCalendar.month.add(1, 'month');\n            }\n            this.updateCalendars();\n        },\n\n        hoverDate: function(e) {\n\n            //ignore mouse movements while an above-calendar text input has focus\n            //if (this.container.find('input[name=daterangepicker_start]').is(\":focus\") || this.container.find('input[name=daterangepicker_end]').is(\":focus\"))\n            //    return;\n\n            //ignore dates that can't be selected\n            if (!$(e.target).hasClass('available')) return;\n\n            //have the text inputs above calendars reflect the date being hovered over\n            var title = $(e.target).attr('data-title');\n            var row = title.substr(1, 1);\n            var col = title.substr(3, 1);\n            var cal = $(e.target).parents('.calendar');\n            var date = cal.hasClass('left') ? this.leftCalendar.calendar[row][col] : this.rightCalendar.calendar[row][col];\n\n            if (this.endDate && !this.container.find('input[name=daterangepicker_start]').is(\":focus\")) {\n                this.container.find('input[name=daterangepicker_start]').val(date.format(this.locale.format));\n            } else if (!this.endDate && !this.container.find('input[name=daterangepicker_end]').is(\":focus\")) {\n                this.container.find('input[name=daterangepicker_end]').val(date.format(this.locale.format));\n            }\n\n            //highlight the dates between the start date and the date being hovered as a potential end date\n            var leftCalendar = this.leftCalendar;\n            var rightCalendar = this.rightCalendar;\n            var startDate = this.startDate;\n            if (!this.endDate) {\n                this.container.find('.calendar tbody td').each(function(index, el) {\n\n                    //skip week numbers, only look at dates\n                    if ($(el).hasClass('week')) return;\n\n                    var title = $(el).attr('data-title');\n                    var row = title.substr(1, 1);\n                    var col = title.substr(3, 1);\n                    var cal = $(el).parents('.calendar');\n                    var dt = cal.hasClass('left') ? leftCalendar.calendar[row][col] : rightCalendar.calendar[row][col];\n\n                    if ((dt.isAfter(startDate) && dt.isBefore(date)) || dt.isSame(date, 'day')) {\n                        $(el).addClass('in-range');\n                    } else {\n                        $(el).removeClass('in-range');\n                    }\n\n                });\n            }\n\n        },\n\n        clickDate: function(e) {\n\n            if (!$(e.target).hasClass('available')) return;\n\n            var title = $(e.target).attr('data-title');\n            var row = title.substr(1, 1);\n            var col = title.substr(3, 1);\n            var cal = $(e.target).parents('.calendar');\n            var date = cal.hasClass('left') ? this.leftCalendar.calendar[row][col] : this.rightCalendar.calendar[row][col];\n\n            //\n            // this function needs to do a few things:\n            // * alternate between selecting a start and end date for the range,\n            // * if the time picker is enabled, apply the hour/minute/second from the select boxes to the clicked date\n            // * if autoapply is enabled, and an end date was chosen, apply the selection\n            // * if single date picker mode, and time picker isn't enabled, apply the selection immediately\n            // * if one of the inputs above the calendars was focused, cancel that manual input\n            //\n\n            if (this.endDate || date.isBefore(this.startDate, 'day')) { //picking start\n                if (this.timePicker) {\n                    var hour = parseInt(this.container.find('.left .hourselect').val(), 10);\n                    if (!this.timePicker24Hour) {\n                        var ampm = this.container.find('.left .ampmselect').val();\n                        if (ampm === 'PM' && hour < 12)\n                            hour += 12;\n                        if (ampm === 'AM' && hour === 12)\n                            hour = 0;\n                    }\n                    var minute = parseInt(this.container.find('.left .minuteselect').val(), 10);\n                    var second = this.timePickerSeconds ? parseInt(this.container.find('.left .secondselect').val(), 10) : 0;\n                    date = date.clone().hour(hour).minute(minute).second(second);\n                }\n                this.endDate = null;\n                this.setStartDate(date.clone());\n            } else if (!this.endDate && date.isBefore(this.startDate)) {\n                //special case: clicking the same date for start/end,\n                //but the time of the end date is before the start date\n                this.setEndDate(this.startDate.clone());\n            } else { // picking end\n                if (this.timePicker) {\n                    var hour = parseInt(this.container.find('.right .hourselect').val(), 10);\n                    if (!this.timePicker24Hour) {\n                        var ampm = this.container.find('.right .ampmselect').val();\n                        if (ampm === 'PM' && hour < 12)\n                            hour += 12;\n                        if (ampm === 'AM' && hour === 12)\n                            hour = 0;\n                    }\n                    var minute = parseInt(this.container.find('.right .minuteselect').val(), 10);\n                    var second = this.timePickerSeconds ? parseInt(this.container.find('.right .secondselect').val(), 10) : 0;\n                    date = date.clone().hour(hour).minute(minute).second(second);\n                }\n                this.setEndDate(date.clone());\n                if (this.autoApply) {\n                  this.calculateChosenLabel();\n                  this.clickApply();\n                }\n            }\n\n            if (this.singleDatePicker) {\n                this.setEndDate(this.startDate);\n                if (!this.timePicker)\n                    this.clickApply();\n            }\n\n            this.updateView();\n\n            //This is to cancel the blur event handler if the mouse was in one of the inputs\n            e.stopPropagation();\n\n        },\n\n        calculateChosenLabel: function () {\n            var customRange = true;\n            var i = 0;\n            for (var range in this.ranges) {\n                if (this.timePicker) {\n                    if (this.startDate.isSame(this.ranges[range][0]) && this.endDate.isSame(this.ranges[range][1])) {\n                        customRange = false;\n                        this.chosenLabel = this.container.find('.ranges li:eq(' + i + ')').addClass('active').html();\n                        break;\n                    }\n                } else {\n                    //ignore times when comparing dates if time picker is not enabled\n                    if (this.startDate.format('YYYY-MM-DD') == this.ranges[range][0].format('YYYY-MM-DD') && this.endDate.format('YYYY-MM-DD') == this.ranges[range][1].format('YYYY-MM-DD')) {\n                        customRange = false;\n                        this.chosenLabel = this.container.find('.ranges li:eq(' + i + ')').addClass('active').html();\n                        break;\n                    }\n                }\n                i++;\n            }\n            if (customRange) {\n                if (this.showCustomRangeLabel) {\n                    this.chosenLabel = this.container.find('.ranges li:last').addClass('active').html();\n                } else {\n                    this.chosenLabel = null;\n                }\n                this.showCalendars();\n            }\n        },\n\n        clickApply: function(e) {\n            this.hide();\n            this.element.trigger('apply.daterangepicker', this);\n        },\n\n        clickCancel: function(e) {\n            this.startDate = this.oldStartDate;\n            this.endDate = this.oldEndDate;\n            this.hide();\n            this.element.trigger('cancel.daterangepicker', this);\n        },\n\n        monthOrYearChanged: function(e) {\n            var isLeft = $(e.target).closest('.calendar').hasClass('left'),\n                leftOrRight = isLeft ? 'left' : 'right',\n                cal = this.container.find('.calendar.'+leftOrRight);\n\n            // Month must be Number for new moment versions\n            var month = parseInt(cal.find('.monthselect').val(), 10);\n            var year = cal.find('.yearselect').val();\n\n            if (!isLeft) {\n                if (year < this.startDate.year() || (year == this.startDate.year() && month < this.startDate.month())) {\n                    month = this.startDate.month();\n                    year = this.startDate.year();\n                }\n            }\n\n            if (this.minDate) {\n                if (year < this.minDate.year() || (year == this.minDate.year() && month < this.minDate.month())) {\n                    month = this.minDate.month();\n                    year = this.minDate.year();\n                }\n            }\n\n            if (this.maxDate) {\n                if (year > this.maxDate.year() || (year == this.maxDate.year() && month > this.maxDate.month())) {\n                    month = this.maxDate.month();\n                    year = this.maxDate.year();\n                }\n            }\n\n            if (isLeft) {\n                this.leftCalendar.month.month(month).year(year);\n                if (this.linkedCalendars)\n                    this.rightCalendar.month = this.leftCalendar.month.clone().add(1, 'month');\n            } else {\n                this.rightCalendar.month.month(month).year(year);\n                if (this.linkedCalendars)\n                    this.leftCalendar.month = this.rightCalendar.month.clone().subtract(1, 'month');\n            }\n            this.updateCalendars();\n        },\n\n        timeChanged: function(e) {\n\n            var cal = $(e.target).closest('.calendar'),\n                isLeft = cal.hasClass('left');\n\n            var hour = parseInt(cal.find('.hourselect').val(), 10);\n            var minute = parseInt(cal.find('.minuteselect').val(), 10);\n            var second = this.timePickerSeconds ? parseInt(cal.find('.secondselect').val(), 10) : 0;\n\n            if (!this.timePicker24Hour) {\n                var ampm = cal.find('.ampmselect').val();\n                if (ampm === 'PM' && hour < 12)\n                    hour += 12;\n                if (ampm === 'AM' && hour === 12)\n                    hour = 0;\n            }\n\n            if (isLeft) {\n                var start = this.startDate.clone();\n                start.hour(hour);\n                start.minute(minute);\n                start.second(second);\n                this.setStartDate(start);\n                if (this.singleDatePicker) {\n                    this.endDate = this.startDate.clone();\n                } else if (this.endDate && this.endDate.format('YYYY-MM-DD') == start.format('YYYY-MM-DD') && this.endDate.isBefore(start)) {\n                    this.setEndDate(start.clone());\n                }\n            } else if (this.endDate) {\n                var end = this.endDate.clone();\n                end.hour(hour);\n                end.minute(minute);\n                end.second(second);\n                this.setEndDate(end);\n            }\n\n            //update the calendars so all clickable dates reflect the new time component\n            this.updateCalendars();\n\n            //update the form inputs above the calendars with the new time\n            this.updateFormInputs();\n\n            //re-render the time pickers because changing one selection can affect what's enabled in another\n            this.renderTimePicker('left');\n            this.renderTimePicker('right');\n\n        },\n\n        formInputsChanged: function(e) {\n            var isRight = $(e.target).closest('.calendar').hasClass('right');\n            var start = moment(this.container.find('input[name=\"daterangepicker_start\"]').val(), this.locale.format);\n            var end = moment(this.container.find('input[name=\"daterangepicker_end\"]').val(), this.locale.format);\n\n            if (start.isValid() && end.isValid()) {\n\n                if (isRight && end.isBefore(start))\n                    start = end.clone();\n\n                this.setStartDate(start);\n                this.setEndDate(end);\n\n                if (isRight) {\n                    this.container.find('input[name=\"daterangepicker_start\"]').val(this.startDate.format(this.locale.format));\n                } else {\n                    this.container.find('input[name=\"daterangepicker_end\"]').val(this.endDate.format(this.locale.format));\n                }\n\n            }\n\n            this.updateView();\n        },\n\n        formInputsFocused: function(e) {\n\n            // Highlight the focused input\n            this.container.find('input[name=\"daterangepicker_start\"], input[name=\"daterangepicker_end\"]').removeClass('active');\n            $(e.target).addClass('active');\n\n            // Set the state such that if the user goes back to using a mouse, \n            // the calendars are aware we're selecting the end of the range, not\n            // the start. This allows someone to edit the end of a date range without\n            // re-selecting the beginning, by clicking on the end date input then\n            // using the calendar.\n            var isRight = $(e.target).closest('.calendar').hasClass('right');\n            if (isRight) {\n                this.endDate = null;\n                this.setStartDate(this.startDate.clone());\n                this.updateView();\n            }\n\n        },\n\n        formInputsBlurred: function(e) {\n\n            // this function has one purpose right now: if you tab from the first\n            // text input to the second in the UI, the endDate is nulled so that\n            // you can click another, but if you tab out without clicking anything\n            // or changing the input value, the old endDate should be retained\n\n            if (!this.endDate) {\n                var val = this.container.find('input[name=\"daterangepicker_end\"]').val();\n                var end = moment(val, this.locale.format);\n                if (end.isValid()) {\n                    this.setEndDate(end);\n                    this.updateView();\n                }\n            }\n\n        },\n\n        elementChanged: function() {\n            if (!this.element.is('input')) return;\n            if (!this.element.val().length) return;\n            if (this.element.val().length < this.locale.format.length) return;\n\n            var dateString = this.element.val().split(this.locale.separator),\n                start = null,\n                end = null;\n\n            if (dateString.length === 2) {\n                start = moment(dateString[0], this.locale.format);\n                end = moment(dateString[1], this.locale.format);\n            }\n\n            if (this.singleDatePicker || start === null || end === null) {\n                start = moment(this.element.val(), this.locale.format);\n                end = start;\n            }\n\n            if (!start.isValid() || !end.isValid()) return;\n\n            this.setStartDate(start);\n            this.setEndDate(end);\n            this.updateView();\n        },\n\n        keydown: function(e) {\n            //hide on tab or enter\n            if ((e.keyCode === 9) || (e.keyCode === 13)) {\n                this.hide();\n            }\n        },\n\n        updateElement: function() {\n            if (this.element.is('input') && !this.singleDatePicker && this.autoUpdateInput) {\n                this.element.val(this.startDate.format(this.locale.format) + this.locale.separator + this.endDate.format(this.locale.format));\n                this.element.trigger('change');\n            } else if (this.element.is('input') && this.autoUpdateInput) {\n                this.element.val(this.startDate.format(this.locale.format));\n                this.element.trigger('change');\n            }\n        },\n\n        remove: function() {\n            this.container.remove();\n            this.element.off('.daterangepicker');\n            this.element.removeData();\n        }\n\n    };\n\n    $.fn.daterangepicker = function(options, callback) {\n        this.each(function() {\n            var el = $(this);\n            if (el.data('daterangepicker'))\n                el.data('daterangepicker').remove();\n            el.data('daterangepicker', new DateRangePicker(el, options, callback));\n        });\n        return this;\n    };\n\n    return DateRangePicker;\n\n}));\n"
-
-/***/ }),
-/* 526 */,
-/* 527 */,
-/* 528 */,
-/* 529 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(78)(__webpack_require__(525))
-
-/***/ }),
-/* 530 */,
-/* 531 */,
-/* 532 */,
-/* 533 */,
-/* 534 */,
-/* 535 */,
-/* 536 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(477);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// add the styles to the DOM
-var update = __webpack_require__(50)(content, {});
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!./../css-loader/index.js!./daterangepicker.css", function() {
-			var newContent = require("!!./../css-loader/index.js!./daterangepicker.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 537 */,
-/* 538 */,
-/* 539 */,
-/* 540 */,
-/* 541 */,
-/* 542 */,
-/* 543 */,
-/* 544 */,
-/* 545 */
-/***/ (function(module, exports) {
-
-module.exports = function(module) {
-	if(!module.webpackPolyfill) {
-		module.deprecate = function() {};
-		module.paths = [];
-		// module.parent = undefined by default
-		if(!module.children) module.children = [];
-		Object.defineProperty(module, "loaded", {
-			enumerable: true,
-			get: function() {
-				return module.l;
-			}
-		});
-		Object.defineProperty(module, "id", {
-			enumerable: true,
-			get: function() {
-				return module.i;
-			}
-		});
-		module.webpackPolyfill = 1;
-	}
-	return module;
-};
-
-
-/***/ }),
-/* 546 */,
-/* 547 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(289);
-
-
-/***/ }),
-/* 548 */,
-/* 549 */,
-/* 550 */
+/* 299 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
  * @namespace Chart
  */
-var Chart = __webpack_require__(571)();
+var Chart = __webpack_require__(320)();
 
-__webpack_require__(569)(Chart);
-__webpack_require__(565)(Chart);
-__webpack_require__(568)(Chart);
-__webpack_require__(564)(Chart);
-__webpack_require__(566)(Chart);
-__webpack_require__(567)(Chart);
-__webpack_require__(572)(Chart);
-__webpack_require__(576)(Chart);
-__webpack_require__(574)(Chart);
-__webpack_require__(577)(Chart);
-__webpack_require__(575)(Chart);
-__webpack_require__(578)(Chart);
-__webpack_require__(573)(Chart);
-__webpack_require__(570)(Chart);
-__webpack_require__(579)(Chart);
+__webpack_require__(318)(Chart);
+__webpack_require__(314)(Chart);
+__webpack_require__(317)(Chart);
+__webpack_require__(313)(Chart);
+__webpack_require__(315)(Chart);
+__webpack_require__(316)(Chart);
+__webpack_require__(321)(Chart);
+__webpack_require__(325)(Chart);
+__webpack_require__(323)(Chart);
+__webpack_require__(326)(Chart);
+__webpack_require__(324)(Chart);
+__webpack_require__(327)(Chart);
+__webpack_require__(322)(Chart);
+__webpack_require__(319)(Chart);
+__webpack_require__(328)(Chart);
 
-__webpack_require__(580)(Chart);
-__webpack_require__(581)(Chart);
-__webpack_require__(582)(Chart);
-__webpack_require__(583)(Chart);
+__webpack_require__(329)(Chart);
+__webpack_require__(330)(Chart);
+__webpack_require__(331)(Chart);
+__webpack_require__(332)(Chart);
 
-__webpack_require__(586)(Chart);
-__webpack_require__(584)(Chart);
-__webpack_require__(585)(Chart);
-__webpack_require__(587)(Chart);
-__webpack_require__(588)(Chart);
-__webpack_require__(589)(Chart);
+__webpack_require__(335)(Chart);
+__webpack_require__(333)(Chart);
+__webpack_require__(334)(Chart);
+__webpack_require__(336)(Chart);
+__webpack_require__(337)(Chart);
+__webpack_require__(338)(Chart);
 
 // Controllers must be loaded after elements
 // See Chart.core.datasetController.dataElementType
-__webpack_require__(558)(Chart);
-__webpack_require__(559)(Chart);
-__webpack_require__(560)(Chart);
-__webpack_require__(561)(Chart);
-__webpack_require__(562)(Chart);
-__webpack_require__(563)(Chart);
+__webpack_require__(307)(Chart);
+__webpack_require__(308)(Chart);
+__webpack_require__(309)(Chart);
+__webpack_require__(310)(Chart);
+__webpack_require__(311)(Chart);
+__webpack_require__(312)(Chart);
 
-__webpack_require__(551)(Chart);
-__webpack_require__(552)(Chart);
-__webpack_require__(553)(Chart);
-__webpack_require__(554)(Chart);
-__webpack_require__(555)(Chart);
-__webpack_require__(556)(Chart);
-__webpack_require__(557)(Chart);
+__webpack_require__(300)(Chart);
+__webpack_require__(301)(Chart);
+__webpack_require__(302)(Chart);
+__webpack_require__(303)(Chart);
+__webpack_require__(304)(Chart);
+__webpack_require__(305)(Chart);
+__webpack_require__(306)(Chart);
 
 window.Chart = module.exports = Chart;
 
 
 /***/ }),
-/* 551 */
+/* 300 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15971,7 +15666,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 552 */
+/* 301 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15988,7 +15683,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 553 */
+/* 302 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16006,7 +15701,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 554 */
+/* 303 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16024,7 +15719,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 555 */
+/* 304 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16042,7 +15737,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 556 */
+/* 305 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16060,7 +15755,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 557 */
+/* 306 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16114,7 +15809,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 558 */
+/* 307 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16671,7 +16366,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 559 */
+/* 308 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16800,7 +16495,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 560 */
+/* 309 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17110,7 +16805,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 561 */
+/* 310 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17454,7 +17149,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 562 */
+/* 311 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17676,7 +17371,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 563 */
+/* 312 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17864,7 +17559,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 564 */
+/* 313 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18010,7 +17705,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 565 */
+/* 314 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18121,7 +17816,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 566 */
+/* 315 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18931,7 +18626,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 567 */
+/* 316 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19247,7 +18942,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 568 */
+/* 317 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19350,7 +19045,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 569 */
+/* 318 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19358,7 +19053,7 @@ module.exports = function(Chart) {
 /* global document: false */
 
 
-var color = __webpack_require__(591);
+var color = __webpack_require__(340);
 
 module.exports = function(Chart) {
 	// Global Chart helpers object for utility methods and classes
@@ -20413,7 +20108,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 570 */
+/* 319 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20715,7 +20410,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 571 */
+/* 320 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20778,7 +20473,7 @@ module.exports = function() {
 
 
 /***/ }),
-/* 572 */
+/* 321 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21124,7 +20819,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 573 */
+/* 322 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21630,7 +21325,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 574 */
+/* 323 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21766,7 +21461,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 575 */
+/* 324 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22524,7 +22219,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 576 */
+/* 325 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22571,7 +22266,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 577 */
+/* 326 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22780,7 +22475,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 578 */
+/* 327 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22994,7 +22689,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 579 */
+/* 328 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23878,7 +23573,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 580 */
+/* 329 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23989,7 +23684,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 581 */
+/* 330 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24180,7 +23875,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 582 */
+/* 331 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24265,7 +23960,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 583 */
+/* 332 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24448,7 +24143,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 584 */
+/* 333 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24584,7 +24279,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 585 */
+/* 334 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24759,7 +24454,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 586 */
+/* 335 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24864,7 +24559,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 587 */
+/* 336 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25097,7 +24792,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 588 */
+/* 337 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25520,14 +25215,14 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 589 */
+/* 338 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* global window: false */
 
 
-var moment = __webpack_require__(1);
+var moment = __webpack_require__(0);
 moment = typeof(moment) === 'function' ? moment : window.moment;
 
 module.exports = function(Chart) {
@@ -25987,11 +25682,11 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 590 */
+/* 339 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* MIT license */
-var colorNames = __webpack_require__(594);
+var colorNames = __webpack_require__(343);
 
 module.exports = {
    getRgba: getRgba,
@@ -26214,12 +25909,12 @@ for (var name in colorNames) {
 
 
 /***/ }),
-/* 591 */
+/* 340 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* MIT license */
-var convert = __webpack_require__(593);
-var string = __webpack_require__(590);
+var convert = __webpack_require__(342);
+var string = __webpack_require__(339);
 
 var Color = function (obj) {
 	if (obj instanceof Color) {
@@ -26703,7 +26398,7 @@ module.exports = Color;
 
 
 /***/ }),
-/* 592 */
+/* 341 */
 /***/ (function(module, exports) {
 
 /* MIT license */
@@ -27407,10 +27102,10 @@ for (var key in cssKeywords) {
 
 
 /***/ }),
-/* 593 */
+/* 342 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var conversions = __webpack_require__(592);
+var conversions = __webpack_require__(341);
 
 var convert = function() {
    return new Converter();
@@ -27504,7 +27199,7 @@ Converter.prototype.getValues = function(space) {
 module.exports = convert;
 
 /***/ }),
-/* 594 */
+/* 343 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -27657,6 +27352,310 @@ module.exports = {
 	"yellow": [255, 255, 0],
 	"yellowgreen": [154, 205, 50]
 };
+
+/***/ }),
+/* 344 */,
+/* 345 */,
+/* 346 */,
+/* 347 */,
+/* 348 */,
+/* 349 */,
+/* 350 */,
+/* 351 */,
+/* 352 */,
+/* 353 */,
+/* 354 */,
+/* 355 */,
+/* 356 */,
+/* 357 */,
+/* 358 */,
+/* 359 */,
+/* 360 */,
+/* 361 */,
+/* 362 */,
+/* 363 */,
+/* 364 */,
+/* 365 */,
+/* 366 */,
+/* 367 */,
+/* 368 */,
+/* 369 */,
+/* 370 */,
+/* 371 */,
+/* 372 */,
+/* 373 */,
+/* 374 */,
+/* 375 */,
+/* 376 */,
+/* 377 */,
+/* 378 */,
+/* 379 */,
+/* 380 */,
+/* 381 */,
+/* 382 */,
+/* 383 */,
+/* 384 */,
+/* 385 */,
+/* 386 */,
+/* 387 */,
+/* 388 */,
+/* 389 */,
+/* 390 */,
+/* 391 */,
+/* 392 */,
+/* 393 */,
+/* 394 */,
+/* 395 */,
+/* 396 */,
+/* 397 */,
+/* 398 */,
+/* 399 */,
+/* 400 */,
+/* 401 */,
+/* 402 */,
+/* 403 */,
+/* 404 */,
+/* 405 */,
+/* 406 */,
+/* 407 */,
+/* 408 */,
+/* 409 */,
+/* 410 */,
+/* 411 */,
+/* 412 */,
+/* 413 */,
+/* 414 */,
+/* 415 */,
+/* 416 */,
+/* 417 */,
+/* 418 */,
+/* 419 */,
+/* 420 */,
+/* 421 */,
+/* 422 */,
+/* 423 */,
+/* 424 */,
+/* 425 */,
+/* 426 */,
+/* 427 */,
+/* 428 */,
+/* 429 */,
+/* 430 */,
+/* 431 */,
+/* 432 */,
+/* 433 */,
+/* 434 */,
+/* 435 */,
+/* 436 */,
+/* 437 */,
+/* 438 */,
+/* 439 */,
+/* 440 */,
+/* 441 */,
+/* 442 */,
+/* 443 */,
+/* 444 */,
+/* 445 */,
+/* 446 */,
+/* 447 */,
+/* 448 */,
+/* 449 */,
+/* 450 */,
+/* 451 */,
+/* 452 */,
+/* 453 */,
+/* 454 */,
+/* 455 */,
+/* 456 */,
+/* 457 */,
+/* 458 */,
+/* 459 */,
+/* 460 */,
+/* 461 */,
+/* 462 */,
+/* 463 */,
+/* 464 */,
+/* 465 */,
+/* 466 */,
+/* 467 */,
+/* 468 */,
+/* 469 */,
+/* 470 */,
+/* 471 */,
+/* 472 */,
+/* 473 */,
+/* 474 */,
+/* 475 */,
+/* 476 */,
+/* 477 */,
+/* 478 */,
+/* 479 */,
+/* 480 */,
+/* 481 */,
+/* 482 */,
+/* 483 */,
+/* 484 */,
+/* 485 */,
+/* 486 */,
+/* 487 */,
+/* 488 */,
+/* 489 */,
+/* 490 */,
+/* 491 */,
+/* 492 */,
+/* 493 */,
+/* 494 */,
+/* 495 */,
+/* 496 */,
+/* 497 */,
+/* 498 */,
+/* 499 */,
+/* 500 */,
+/* 501 */,
+/* 502 */,
+/* 503 */,
+/* 504 */,
+/* 505 */,
+/* 506 */,
+/* 507 */,
+/* 508 */,
+/* 509 */,
+/* 510 */,
+/* 511 */,
+/* 512 */,
+/* 513 */,
+/* 514 */,
+/* 515 */,
+/* 516 */,
+/* 517 */,
+/* 518 */,
+/* 519 */,
+/* 520 */,
+/* 521 */,
+/* 522 */,
+/* 523 */,
+/* 524 */,
+/* 525 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(47)();
+// imports
+
+
+// module
+exports.push([module.i, ".daterangepicker {\n  position: absolute;\n  color: inherit;\n  background-color: #fff;\n  border-radius: 4px;\n  width: 278px;\n  padding: 4px;\n  margin-top: 1px;\n  top: 100px;\n  left: 20px;\n  /* Calendars */ }\n  .daterangepicker:before, .daterangepicker:after {\n    position: absolute;\n    display: inline-block;\n    border-bottom-color: rgba(0, 0, 0, 0.2);\n    content: ''; }\n  .daterangepicker:before {\n    top: -7px;\n    border-right: 7px solid transparent;\n    border-left: 7px solid transparent;\n    border-bottom: 7px solid #ccc; }\n  .daterangepicker:after {\n    top: -6px;\n    border-right: 6px solid transparent;\n    border-bottom: 6px solid #fff;\n    border-left: 6px solid transparent; }\n  .daterangepicker.opensleft:before {\n    right: 9px; }\n  .daterangepicker.opensleft:after {\n    right: 10px; }\n  .daterangepicker.openscenter:before {\n    left: 0;\n    right: 0;\n    width: 0;\n    margin-left: auto;\n    margin-right: auto; }\n  .daterangepicker.openscenter:after {\n    left: 0;\n    right: 0;\n    width: 0;\n    margin-left: auto;\n    margin-right: auto; }\n  .daterangepicker.opensright:before {\n    left: 9px; }\n  .daterangepicker.opensright:after {\n    left: 10px; }\n  .daterangepicker.dropup {\n    margin-top: -5px; }\n    .daterangepicker.dropup:before {\n      top: initial;\n      bottom: -7px;\n      border-bottom: initial;\n      border-top: 7px solid #ccc; }\n    .daterangepicker.dropup:after {\n      top: initial;\n      bottom: -6px;\n      border-bottom: initial;\n      border-top: 6px solid #fff; }\n  .daterangepicker.dropdown-menu {\n    max-width: none;\n    z-index: 3001; }\n  .daterangepicker.single .ranges, .daterangepicker.single .calendar {\n    float: none; }\n  .daterangepicker.show-calendar .calendar {\n    display: block; }\n  .daterangepicker .calendar {\n    display: none;\n    max-width: 270px;\n    margin: 4px; }\n    .daterangepicker .calendar.single .calendar-table {\n      border: none; }\n    .daterangepicker .calendar th, .daterangepicker .calendar td {\n      white-space: nowrap;\n      text-align: center;\n      min-width: 32px; }\n  .daterangepicker .calendar-table {\n    border: 1px solid #fff;\n    padding: 4px;\n    border-radius: 4px;\n    background-color: #fff; }\n  .daterangepicker table {\n    width: 100%;\n    margin: 0; }\n  .daterangepicker td, .daterangepicker th {\n    text-align: center;\n    width: 20px;\n    height: 20px;\n    border-radius: 4px;\n    border: 1px solid transparent;\n    white-space: nowrap;\n    cursor: pointer; }\n    .daterangepicker td.available:hover, .daterangepicker th.available:hover {\n      background-color: #eee;\n      border-color: transparent;\n      color: inherit; }\n    .daterangepicker td.week, .daterangepicker th.week {\n      font-size: 80%;\n      color: #ccc; }\n  .daterangepicker td.off, .daterangepicker td.off.in-range, .daterangepicker td.off.start-date, .daterangepicker td.off.end-date {\n    background-color: #fff;\n    border-color: transparent;\n    color: #999; }\n  .daterangepicker td.in-range {\n    background-color: #ebf4f8;\n    border-color: transparent;\n    color: #000;\n    border-radius: 0; }\n  .daterangepicker td.start-date {\n    border-radius: 4px 0 0 4px; }\n  .daterangepicker td.end-date {\n    border-radius: 0 4px 4px 0; }\n  .daterangepicker td.start-date.end-date {\n    border-radius: 4px; }\n  .daterangepicker td.active, .daterangepicker td.active:hover {\n    background-color: #357ebd;\n    border-color: transparent;\n    color: #fff; }\n  .daterangepicker th.month {\n    width: auto; }\n  .daterangepicker td.disabled, .daterangepicker option.disabled {\n    color: #999;\n    cursor: not-allowed;\n    text-decoration: line-through; }\n  .daterangepicker select.monthselect, .daterangepicker select.yearselect {\n    font-size: 12px;\n    padding: 1px;\n    height: auto;\n    margin: 0;\n    cursor: default; }\n  .daterangepicker select.monthselect {\n    margin-right: 2%;\n    width: 56%; }\n  .daterangepicker select.yearselect {\n    width: 40%; }\n  .daterangepicker select.hourselect, .daterangepicker select.minuteselect, .daterangepicker select.secondselect, .daterangepicker select.ampmselect {\n    width: 50px;\n    margin-bottom: 0; }\n  .daterangepicker .input-mini {\n    border: 1px solid #ccc;\n    border-radius: 4px;\n    color: #555;\n    height: 30px;\n    line-height: 30px;\n    display: block;\n    vertical-align: middle;\n    margin: 0 0 5px 0;\n    padding: 0 6px 0 28px;\n    width: 100%; }\n    .daterangepicker .input-mini.active {\n      border: 1px solid #08c;\n      border-radius: 4px; }\n  .daterangepicker .daterangepicker_input {\n    position: relative; }\n    .daterangepicker .daterangepicker_input i {\n      position: absolute;\n      left: 8px;\n      top: 8px; }\n  .daterangepicker.rtl .input-mini {\n    padding-right: 28px;\n    padding-left: 6px; }\n  .daterangepicker.rtl .daterangepicker_input i {\n    left: auto;\n    right: 8px; }\n  .daterangepicker .calendar-time {\n    text-align: center;\n    margin: 5px auto;\n    line-height: 30px;\n    position: relative;\n    padding-left: 28px; }\n    .daterangepicker .calendar-time select.disabled {\n      color: #ccc;\n      cursor: not-allowed; }\n\n.ranges {\n  font-size: 11px;\n  float: none;\n  margin: 4px;\n  text-align: left; }\n  .ranges ul {\n    list-style: none;\n    margin: 0 auto;\n    padding: 0;\n    width: 100%; }\n  .ranges li {\n    font-size: 13px;\n    background-color: #f5f5f5;\n    border: 1px solid #f5f5f5;\n    border-radius: 4px;\n    color: #08c;\n    padding: 3px 12px;\n    margin-bottom: 8px;\n    cursor: pointer; }\n    .ranges li:hover {\n      background-color: #08c;\n      border: 1px solid #08c;\n      color: #fff; }\n    .ranges li.active {\n      background-color: #08c;\n      border: 1px solid #08c;\n      color: #fff; }\n\n/*  Larger Screen Styling */\n@media (min-width: 564px) {\n  .daterangepicker {\n    width: auto; }\n    .daterangepicker .ranges ul {\n      width: 160px; }\n    .daterangepicker.single .ranges ul {\n      width: 100%; }\n    .daterangepicker.single .calendar.left {\n      clear: none; }\n    .daterangepicker.single.ltr .ranges, .daterangepicker.single.ltr .calendar {\n      float: left; }\n    .daterangepicker.single.rtl .ranges, .daterangepicker.single.rtl .calendar {\n      float: right; }\n    .daterangepicker.ltr {\n      direction: ltr;\n      text-align: left; }\n      .daterangepicker.ltr .calendar.left {\n        clear: left;\n        margin-right: 0; }\n        .daterangepicker.ltr .calendar.left .calendar-table {\n          border-right: none;\n          border-top-right-radius: 0;\n          border-bottom-right-radius: 0; }\n      .daterangepicker.ltr .calendar.right {\n        margin-left: 0; }\n        .daterangepicker.ltr .calendar.right .calendar-table {\n          border-left: none;\n          border-top-left-radius: 0;\n          border-bottom-left-radius: 0; }\n      .daterangepicker.ltr .left .daterangepicker_input {\n        padding-right: 12px; }\n      .daterangepicker.ltr .calendar.left .calendar-table {\n        padding-right: 12px; }\n      .daterangepicker.ltr .ranges, .daterangepicker.ltr .calendar {\n        float: left; }\n    .daterangepicker.rtl {\n      direction: rtl;\n      text-align: right; }\n      .daterangepicker.rtl .calendar.left {\n        clear: right;\n        margin-left: 0; }\n        .daterangepicker.rtl .calendar.left .calendar-table {\n          border-left: none;\n          border-top-left-radius: 0;\n          border-bottom-left-radius: 0; }\n      .daterangepicker.rtl .calendar.right {\n        margin-right: 0; }\n        .daterangepicker.rtl .calendar.right .calendar-table {\n          border-right: none;\n          border-top-right-radius: 0;\n          border-bottom-right-radius: 0; }\n      .daterangepicker.rtl .left .daterangepicker_input {\n        padding-left: 12px; }\n      .daterangepicker.rtl .calendar.left .calendar-table {\n        padding-left: 12px; }\n      .daterangepicker.rtl .ranges, .daterangepicker.rtl .calendar {\n        text-align: right;\n        float: right; } }\n@media (min-width: 730px) {\n  .daterangepicker .ranges {\n    width: auto; }\n  .daterangepicker.ltr .ranges {\n    float: left; }\n  .daterangepicker.rtl .ranges {\n    float: right; }\n  .daterangepicker .calendar.left {\n    clear: none !important; } }\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 526 */,
+/* 527 */,
+/* 528 */,
+/* 529 */,
+/* 530 */,
+/* 531 */,
+/* 532 */,
+/* 533 */,
+/* 534 */,
+/* 535 */,
+/* 536 */,
+/* 537 */,
+/* 538 */,
+/* 539 */,
+/* 540 */,
+/* 541 */,
+/* 542 */,
+/* 543 */,
+/* 544 */,
+/* 545 */,
+/* 546 */,
+/* 547 */,
+/* 548 */,
+/* 549 */,
+/* 550 */,
+/* 551 */,
+/* 552 */,
+/* 553 */,
+/* 554 */,
+/* 555 */,
+/* 556 */,
+/* 557 */,
+/* 558 */,
+/* 559 */,
+/* 560 */,
+/* 561 */,
+/* 562 */,
+/* 563 */,
+/* 564 */,
+/* 565 */,
+/* 566 */,
+/* 567 */,
+/* 568 */,
+/* 569 */,
+/* 570 */,
+/* 571 */,
+/* 572 */
+/***/ (function(module, exports) {
+
+module.exports = "/**\n* @version: 2.1.25\n* @author: Dan Grossman http://www.dangrossman.info/\n* @copyright: Copyright (c) 2012-2017 Dan Grossman. All rights reserved.\n* @license: Licensed under the MIT license. See http://www.opensource.org/licenses/mit-license.php\n* @website: https://www.daterangepicker.com/\n*/\n// Follow the UMD template https://github.com/umdjs/umd/blob/master/templates/returnExportsGlobal.js\n(function (root, factory) {\n    if (typeof define === 'function' && define.amd) {\n        // AMD. Make globaly available as well\n        define(['moment', 'jquery'], function (moment, jquery) {\n            return (root.daterangepicker = factory(moment, jquery));\n        });\n    } else if (typeof module === 'object' && module.exports) {\n        // Node / Browserify\n        //isomorphic issue\n        var jQuery = (typeof window != 'undefined') ? window.jQuery : undefined;\n        if (!jQuery) {\n            jQuery = require('jquery');\n            if (!jQuery.fn) jQuery.fn = {};\n        }\n        module.exports = factory(require('moment'), jQuery);\n    } else {\n        // Browser globals\n        root.daterangepicker = factory(root.moment, root.jQuery);\n    }\n}(this, function(moment, $) {\n    var DateRangePicker = function(element, options, cb) {\n\n        //default settings for options\n        this.parentEl = 'body';\n        this.element = $(element);\n        this.startDate = moment().startOf('day');\n        this.endDate = moment().endOf('day');\n        this.minDate = false;\n        this.maxDate = false;\n        this.dateLimit = false;\n        this.autoApply = false;\n        this.singleDatePicker = false;\n        this.showDropdowns = false;\n        this.showWeekNumbers = false;\n        this.showISOWeekNumbers = false;\n        this.showCustomRangeLabel = true;\n        this.timePicker = false;\n        this.timePicker24Hour = false;\n        this.timePickerIncrement = 1;\n        this.timePickerSeconds = false;\n        this.linkedCalendars = true;\n        this.autoUpdateInput = true;\n        this.alwaysShowCalendars = false;\n        this.ranges = {};\n\n        this.opens = 'right';\n        if (this.element.hasClass('pull-right'))\n            this.opens = 'left';\n\n        this.drops = 'down';\n        if (this.element.hasClass('dropup'))\n            this.drops = 'up';\n\n        this.buttonClasses = 'btn btn-sm';\n        this.applyClass = 'btn-success';\n        this.cancelClass = 'btn-default';\n\n        this.locale = {\n            direction: 'ltr',\n            format: moment.localeData().longDateFormat('L'),\n            separator: ' - ',\n            applyLabel: 'Apply',\n            cancelLabel: 'Cancel',\n            weekLabel: 'W',\n            customRangeLabel: 'Custom Range',\n            daysOfWeek: moment.weekdaysMin(),\n            monthNames: moment.monthsShort(),\n            firstDay: moment.localeData().firstDayOfWeek()\n        };\n\n        this.callback = function() { };\n\n        //some state information\n        this.isShowing = false;\n        this.leftCalendar = {};\n        this.rightCalendar = {};\n\n        //custom options from user\n        if (typeof options !== 'object' || options === null)\n            options = {};\n\n        //allow setting options with data attributes\n        //data-api options will be overwritten with custom javascript options\n        options = $.extend(this.element.data(), options);\n\n        //html template for the picker UI\n        if (typeof options.template !== 'string' && !(options.template instanceof $))\n            options.template = '<div class=\"daterangepicker dropdown-menu\">' +\n                '<div class=\"calendar left\">' +\n                    '<div class=\"daterangepicker_input\">' +\n                      '<input class=\"input-mini form-control\" type=\"text\" name=\"daterangepicker_start\" value=\"\" />' +\n                      '<i class=\"fa fa-calendar glyphicon glyphicon-calendar\"></i>' +\n                      '<div class=\"calendar-time\">' +\n                        '<div></div>' +\n                        '<i class=\"fa fa-clock-o glyphicon glyphicon-time\"></i>' +\n                      '</div>' +\n                    '</div>' +\n                    '<div class=\"calendar-table\"></div>' +\n                '</div>' +\n                '<div class=\"calendar right\">' +\n                    '<div class=\"daterangepicker_input\">' +\n                      '<input class=\"input-mini form-control\" type=\"text\" name=\"daterangepicker_end\" value=\"\" />' +\n                      '<i class=\"fa fa-calendar glyphicon glyphicon-calendar\"></i>' +\n                      '<div class=\"calendar-time\">' +\n                        '<div></div>' +\n                        '<i class=\"fa fa-clock-o glyphicon glyphicon-time\"></i>' +\n                      '</div>' +\n                    '</div>' +\n                    '<div class=\"calendar-table\"></div>' +\n                '</div>' +\n                '<div class=\"ranges\">' +\n                    '<div class=\"range_inputs\">' +\n                        '<button class=\"applyBtn\" disabled=\"disabled\" type=\"button\"></button> ' +\n                        '<button class=\"cancelBtn\" type=\"button\"></button>' +\n                    '</div>' +\n                '</div>' +\n            '</div>';\n\n        this.parentEl = (options.parentEl && $(options.parentEl).length) ? $(options.parentEl) : $(this.parentEl);\n        this.container = $(options.template).appendTo(this.parentEl);\n\n        //\n        // handle all the possible options overriding defaults\n        //\n\n        if (typeof options.locale === 'object') {\n\n            if (typeof options.locale.direction === 'string')\n                this.locale.direction = options.locale.direction;\n\n            if (typeof options.locale.format === 'string')\n                this.locale.format = options.locale.format;\n\n            if (typeof options.locale.separator === 'string')\n                this.locale.separator = options.locale.separator;\n\n            if (typeof options.locale.daysOfWeek === 'object')\n                this.locale.daysOfWeek = options.locale.daysOfWeek.slice();\n\n            if (typeof options.locale.monthNames === 'object')\n              this.locale.monthNames = options.locale.monthNames.slice();\n\n            if (typeof options.locale.firstDay === 'number')\n              this.locale.firstDay = options.locale.firstDay;\n\n            if (typeof options.locale.applyLabel === 'string')\n              this.locale.applyLabel = options.locale.applyLabel;\n\n            if (typeof options.locale.cancelLabel === 'string')\n              this.locale.cancelLabel = options.locale.cancelLabel;\n\n            if (typeof options.locale.weekLabel === 'string')\n              this.locale.weekLabel = options.locale.weekLabel;\n\n            if (typeof options.locale.customRangeLabel === 'string'){\n                //Support unicode chars in the custom range name.\n                var elem = document.createElement('textarea');\n                elem.innerHTML = options.locale.customRangeLabel;\n                var rangeHtml = elem.value;\n                this.locale.customRangeLabel = rangeHtml;\n            }\n        }\n        this.container.addClass(this.locale.direction);\n\n        if (typeof options.startDate === 'string')\n            this.startDate = moment(options.startDate, this.locale.format);\n\n        if (typeof options.endDate === 'string')\n            this.endDate = moment(options.endDate, this.locale.format);\n\n        if (typeof options.minDate === 'string')\n            this.minDate = moment(options.minDate, this.locale.format);\n\n        if (typeof options.maxDate === 'string')\n            this.maxDate = moment(options.maxDate, this.locale.format);\n\n        if (typeof options.startDate === 'object')\n            this.startDate = moment(options.startDate);\n\n        if (typeof options.endDate === 'object')\n            this.endDate = moment(options.endDate);\n\n        if (typeof options.minDate === 'object')\n            this.minDate = moment(options.minDate);\n\n        if (typeof options.maxDate === 'object')\n            this.maxDate = moment(options.maxDate);\n\n        // sanity check for bad options\n        if (this.minDate && this.startDate.isBefore(this.minDate))\n            this.startDate = this.minDate.clone();\n\n        // sanity check for bad options\n        if (this.maxDate && this.endDate.isAfter(this.maxDate))\n            this.endDate = this.maxDate.clone();\n\n        if (typeof options.applyClass === 'string')\n            this.applyClass = options.applyClass;\n\n        if (typeof options.cancelClass === 'string')\n            this.cancelClass = options.cancelClass;\n\n        if (typeof options.dateLimit === 'object')\n            this.dateLimit = options.dateLimit;\n\n        if (typeof options.opens === 'string')\n            this.opens = options.opens;\n\n        if (typeof options.drops === 'string')\n            this.drops = options.drops;\n\n        if (typeof options.showWeekNumbers === 'boolean')\n            this.showWeekNumbers = options.showWeekNumbers;\n\n        if (typeof options.showISOWeekNumbers === 'boolean')\n            this.showISOWeekNumbers = options.showISOWeekNumbers;\n\n        if (typeof options.buttonClasses === 'string')\n            this.buttonClasses = options.buttonClasses;\n\n        if (typeof options.buttonClasses === 'object')\n            this.buttonClasses = options.buttonClasses.join(' ');\n\n        if (typeof options.showDropdowns === 'boolean')\n            this.showDropdowns = options.showDropdowns;\n\n        if (typeof options.showCustomRangeLabel === 'boolean')\n            this.showCustomRangeLabel = options.showCustomRangeLabel;\n\n        if (typeof options.singleDatePicker === 'boolean') {\n            this.singleDatePicker = options.singleDatePicker;\n            if (this.singleDatePicker)\n                this.endDate = this.startDate.clone();\n        }\n\n        if (typeof options.timePicker === 'boolean')\n            this.timePicker = options.timePicker;\n\n        if (typeof options.timePickerSeconds === 'boolean')\n            this.timePickerSeconds = options.timePickerSeconds;\n\n        if (typeof options.timePickerIncrement === 'number')\n            this.timePickerIncrement = options.timePickerIncrement;\n\n        if (typeof options.timePicker24Hour === 'boolean')\n            this.timePicker24Hour = options.timePicker24Hour;\n\n        if (typeof options.autoApply === 'boolean')\n            this.autoApply = options.autoApply;\n\n        if (typeof options.autoUpdateInput === 'boolean')\n            this.autoUpdateInput = options.autoUpdateInput;\n\n        if (typeof options.linkedCalendars === 'boolean')\n            this.linkedCalendars = options.linkedCalendars;\n\n        if (typeof options.isInvalidDate === 'function')\n            this.isInvalidDate = options.isInvalidDate;\n\n        if (typeof options.isCustomDate === 'function')\n            this.isCustomDate = options.isCustomDate;\n\n        if (typeof options.alwaysShowCalendars === 'boolean')\n            this.alwaysShowCalendars = options.alwaysShowCalendars;\n\n        // update day names order to firstDay\n        if (this.locale.firstDay != 0) {\n            var iterator = this.locale.firstDay;\n            while (iterator > 0) {\n                this.locale.daysOfWeek.push(this.locale.daysOfWeek.shift());\n                iterator--;\n            }\n        }\n\n        var start, end, range;\n\n        //if no start/end dates set, check if an input element contains initial values\n        if (typeof options.startDate === 'undefined' && typeof options.endDate === 'undefined') {\n            if ($(this.element).is('input[type=text]')) {\n                var val = $(this.element).val(),\n                    split = val.split(this.locale.separator);\n\n                start = end = null;\n\n                if (split.length == 2) {\n                    start = moment(split[0], this.locale.format);\n                    end = moment(split[1], this.locale.format);\n                } else if (this.singleDatePicker && val !== \"\") {\n                    start = moment(val, this.locale.format);\n                    end = moment(val, this.locale.format);\n                }\n                if (start !== null && end !== null) {\n                    this.setStartDate(start);\n                    this.setEndDate(end);\n                }\n            }\n        }\n\n        if (typeof options.ranges === 'object') {\n            for (range in options.ranges) {\n\n                if (typeof options.ranges[range][0] === 'string')\n                    start = moment(options.ranges[range][0], this.locale.format);\n                else\n                    start = moment(options.ranges[range][0]);\n\n                if (typeof options.ranges[range][1] === 'string')\n                    end = moment(options.ranges[range][1], this.locale.format);\n                else\n                    end = moment(options.ranges[range][1]);\n\n                // If the start or end date exceed those allowed by the minDate or dateLimit\n                // options, shorten the range to the allowable period.\n                if (this.minDate && start.isBefore(this.minDate))\n                    start = this.minDate.clone();\n\n                var maxDate = this.maxDate;\n                if (this.dateLimit && maxDate && start.clone().add(this.dateLimit).isAfter(maxDate))\n                    maxDate = start.clone().add(this.dateLimit);\n                if (maxDate && end.isAfter(maxDate))\n                    end = maxDate.clone();\n\n                // If the end of the range is before the minimum or the start of the range is\n                // after the maximum, don't display this range option at all.\n                if ((this.minDate && end.isBefore(this.minDate, this.timepicker ? 'minute' : 'day')) \n                  || (maxDate && start.isAfter(maxDate, this.timepicker ? 'minute' : 'day')))\n                    continue;\n\n                //Support unicode chars in the range names.\n                var elem = document.createElement('textarea');\n                elem.innerHTML = range;\n                var rangeHtml = elem.value;\n\n                this.ranges[rangeHtml] = [start, end];\n            }\n\n            var list = '<ul>';\n            for (range in this.ranges) {\n                list += '<li data-range-key=\"' + range + '\">' + range + '</li>';\n            }\n            if (this.showCustomRangeLabel) {\n                list += '<li data-range-key=\"' + this.locale.customRangeLabel + '\">' + this.locale.customRangeLabel + '</li>';\n            }\n            list += '</ul>';\n            this.container.find('.ranges').prepend(list);\n        }\n\n        if (typeof cb === 'function') {\n            this.callback = cb;\n        }\n\n        if (!this.timePicker) {\n            this.startDate = this.startDate.startOf('day');\n            this.endDate = this.endDate.endOf('day');\n            this.container.find('.calendar-time').hide();\n        }\n\n        //can't be used together for now\n        if (this.timePicker && this.autoApply)\n            this.autoApply = false;\n\n        if (this.autoApply && typeof options.ranges !== 'object') {\n            this.container.find('.ranges').hide();\n        } else if (this.autoApply) {\n            this.container.find('.applyBtn, .cancelBtn').addClass('hide');\n        }\n\n        if (this.singleDatePicker) {\n            this.container.addClass('single');\n            this.container.find('.calendar.left').addClass('single');\n            this.container.find('.calendar.left').show();\n            this.container.find('.calendar.right').hide();\n            this.container.find('.daterangepicker_input input, .daterangepicker_input > i').hide();\n            if (this.timePicker) {\n                this.container.find('.ranges ul').hide();\n            } else {\n                this.container.find('.ranges').hide();\n            }\n        }\n\n        if ((typeof options.ranges === 'undefined' && !this.singleDatePicker) || this.alwaysShowCalendars) {\n            this.container.addClass('show-calendar');\n        }\n\n        this.container.addClass('opens' + this.opens);\n\n        //swap the position of the predefined ranges if opens right\n        if (typeof options.ranges !== 'undefined' && this.opens == 'right') {\n            this.container.find('.ranges').prependTo( this.container.find('.calendar.left').parent() );\n        }\n\n        //apply CSS classes and labels to buttons\n        this.container.find('.applyBtn, .cancelBtn').addClass(this.buttonClasses);\n        if (this.applyClass.length)\n            this.container.find('.applyBtn').addClass(this.applyClass);\n        if (this.cancelClass.length)\n            this.container.find('.cancelBtn').addClass(this.cancelClass);\n        this.container.find('.applyBtn').html(this.locale.applyLabel);\n        this.container.find('.cancelBtn').html(this.locale.cancelLabel);\n\n        //\n        // event listeners\n        //\n\n        this.container.find('.calendar')\n            .on('click.daterangepicker', '.prev', $.proxy(this.clickPrev, this))\n            .on('click.daterangepicker', '.next', $.proxy(this.clickNext, this))\n            .on('mousedown.daterangepicker', 'td.available', $.proxy(this.clickDate, this))\n            .on('mouseenter.daterangepicker', 'td.available', $.proxy(this.hoverDate, this))\n            .on('mouseleave.daterangepicker', 'td.available', $.proxy(this.updateFormInputs, this))\n            .on('change.daterangepicker', 'select.yearselect', $.proxy(this.monthOrYearChanged, this))\n            .on('change.daterangepicker', 'select.monthselect', $.proxy(this.monthOrYearChanged, this))\n            .on('change.daterangepicker', 'select.hourselect,select.minuteselect,select.secondselect,select.ampmselect', $.proxy(this.timeChanged, this))\n            .on('click.daterangepicker', '.daterangepicker_input input', $.proxy(this.showCalendars, this))\n            .on('focus.daterangepicker', '.daterangepicker_input input', $.proxy(this.formInputsFocused, this))\n            .on('blur.daterangepicker', '.daterangepicker_input input', $.proxy(this.formInputsBlurred, this))\n            .on('change.daterangepicker', '.daterangepicker_input input', $.proxy(this.formInputsChanged, this));\n\n        this.container.find('.ranges')\n            .on('click.daterangepicker', 'button.applyBtn', $.proxy(this.clickApply, this))\n            .on('click.daterangepicker', 'button.cancelBtn', $.proxy(this.clickCancel, this))\n            .on('click.daterangepicker', 'li', $.proxy(this.clickRange, this))\n            .on('mouseenter.daterangepicker', 'li', $.proxy(this.hoverRange, this))\n            .on('mouseleave.daterangepicker', 'li', $.proxy(this.updateFormInputs, this));\n\n        if (this.element.is('input') || this.element.is('button')) {\n            this.element.on({\n                'click.daterangepicker': $.proxy(this.show, this),\n                'focus.daterangepicker': $.proxy(this.show, this),\n                'keyup.daterangepicker': $.proxy(this.elementChanged, this),\n                'keydown.daterangepicker': $.proxy(this.keydown, this)\n            });\n        } else {\n            this.element.on('click.daterangepicker', $.proxy(this.toggle, this));\n        }\n\n        //\n        // if attached to a text input, set the initial value\n        //\n\n        if (this.element.is('input') && !this.singleDatePicker && this.autoUpdateInput) {\n            this.element.val(this.startDate.format(this.locale.format) + this.locale.separator + this.endDate.format(this.locale.format));\n            this.element.trigger('change');\n        } else if (this.element.is('input') && this.autoUpdateInput) {\n            this.element.val(this.startDate.format(this.locale.format));\n            this.element.trigger('change');\n        }\n\n    };\n\n    DateRangePicker.prototype = {\n\n        constructor: DateRangePicker,\n\n        setStartDate: function(startDate) {\n            if (typeof startDate === 'string')\n                this.startDate = moment(startDate, this.locale.format);\n\n            if (typeof startDate === 'object')\n                this.startDate = moment(startDate);\n\n            if (!this.timePicker)\n                this.startDate = this.startDate.startOf('day');\n\n            if (this.timePicker && this.timePickerIncrement)\n                this.startDate.minute(Math.round(this.startDate.minute() / this.timePickerIncrement) * this.timePickerIncrement);\n\n            if (this.minDate && this.startDate.isBefore(this.minDate)) {\n                this.startDate = this.minDate.clone();\n                if (this.timePicker && this.timePickerIncrement)\n                    this.startDate.minute(Math.round(this.startDate.minute() / this.timePickerIncrement) * this.timePickerIncrement);\n            }\n\n            if (this.maxDate && this.startDate.isAfter(this.maxDate)) {\n                this.startDate = this.maxDate.clone();\n                if (this.timePicker && this.timePickerIncrement)\n                    this.startDate.minute(Math.floor(this.startDate.minute() / this.timePickerIncrement) * this.timePickerIncrement);\n            }\n\n            if (!this.isShowing)\n                this.updateElement();\n\n            this.updateMonthsInView();\n        },\n\n        setEndDate: function(endDate) {\n            if (typeof endDate === 'string')\n                this.endDate = moment(endDate, this.locale.format);\n\n            if (typeof endDate === 'object')\n                this.endDate = moment(endDate);\n\n            if (!this.timePicker)\n                this.endDate = this.endDate.endOf('day');\n\n            if (this.timePicker && this.timePickerIncrement)\n                this.endDate.minute(Math.round(this.endDate.minute() / this.timePickerIncrement) * this.timePickerIncrement);\n\n            if (this.endDate.isBefore(this.startDate))\n                this.endDate = this.startDate.clone();\n\n            if (this.maxDate && this.endDate.isAfter(this.maxDate))\n                this.endDate = this.maxDate.clone();\n\n            if (this.dateLimit && this.startDate.clone().add(this.dateLimit).isBefore(this.endDate))\n                this.endDate = this.startDate.clone().add(this.dateLimit);\n\n            this.previousRightTime = this.endDate.clone();\n\n            if (!this.isShowing)\n                this.updateElement();\n\n            this.updateMonthsInView();\n        },\n\n        isInvalidDate: function() {\n            return false;\n        },\n\n        isCustomDate: function() {\n            return false;\n        },\n\n        updateView: function() {\n            if (this.timePicker) {\n                this.renderTimePicker('left');\n                this.renderTimePicker('right');\n                if (!this.endDate) {\n                    this.container.find('.right .calendar-time select').attr('disabled', 'disabled').addClass('disabled');\n                } else {\n                    this.container.find('.right .calendar-time select').removeAttr('disabled').removeClass('disabled');\n                }\n            }\n            if (this.endDate) {\n                this.container.find('input[name=\"daterangepicker_end\"]').removeClass('active');\n                this.container.find('input[name=\"daterangepicker_start\"]').addClass('active');\n            } else {\n                this.container.find('input[name=\"daterangepicker_end\"]').addClass('active');\n                this.container.find('input[name=\"daterangepicker_start\"]').removeClass('active');\n            }\n            this.updateMonthsInView();\n            this.updateCalendars();\n            this.updateFormInputs();\n        },\n\n        updateMonthsInView: function() {\n            if (this.endDate) {\n\n                //if both dates are visible already, do nothing\n                if (!this.singleDatePicker && this.leftCalendar.month && this.rightCalendar.month &&\n                    (this.startDate.format('YYYY-MM') == this.leftCalendar.month.format('YYYY-MM') || this.startDate.format('YYYY-MM') == this.rightCalendar.month.format('YYYY-MM'))\n                    &&\n                    (this.endDate.format('YYYY-MM') == this.leftCalendar.month.format('YYYY-MM') || this.endDate.format('YYYY-MM') == this.rightCalendar.month.format('YYYY-MM'))\n                    ) {\n                    return;\n                }\n\n                this.leftCalendar.month = this.startDate.clone().date(2);\n                if (!this.linkedCalendars && (this.endDate.month() != this.startDate.month() || this.endDate.year() != this.startDate.year())) {\n                    this.rightCalendar.month = this.endDate.clone().date(2);\n                } else {\n                    this.rightCalendar.month = this.startDate.clone().date(2).add(1, 'month');\n                }\n\n            } else {\n                if (this.leftCalendar.month.format('YYYY-MM') != this.startDate.format('YYYY-MM') && this.rightCalendar.month.format('YYYY-MM') != this.startDate.format('YYYY-MM')) {\n                    this.leftCalendar.month = this.startDate.clone().date(2);\n                    this.rightCalendar.month = this.startDate.clone().date(2).add(1, 'month');\n                }\n            }\n            if (this.maxDate && this.linkedCalendars && !this.singleDatePicker && this.rightCalendar.month > this.maxDate) {\n              this.rightCalendar.month = this.maxDate.clone().date(2);\n              this.leftCalendar.month = this.maxDate.clone().date(2).subtract(1, 'month');\n            }\n        },\n\n        updateCalendars: function() {\n\n            if (this.timePicker) {\n                var hour, minute, second;\n                if (this.endDate) {\n                    hour = parseInt(this.container.find('.left .hourselect').val(), 10);\n                    minute = parseInt(this.container.find('.left .minuteselect').val(), 10);\n                    second = this.timePickerSeconds ? parseInt(this.container.find('.left .secondselect').val(), 10) : 0;\n                    if (!this.timePicker24Hour) {\n                        var ampm = this.container.find('.left .ampmselect').val();\n                        if (ampm === 'PM' && hour < 12)\n                            hour += 12;\n                        if (ampm === 'AM' && hour === 12)\n                            hour = 0;\n                    }\n                } else {\n                    hour = parseInt(this.container.find('.right .hourselect').val(), 10);\n                    minute = parseInt(this.container.find('.right .minuteselect').val(), 10);\n                    second = this.timePickerSeconds ? parseInt(this.container.find('.right .secondselect').val(), 10) : 0;\n                    if (!this.timePicker24Hour) {\n                        var ampm = this.container.find('.right .ampmselect').val();\n                        if (ampm === 'PM' && hour < 12)\n                            hour += 12;\n                        if (ampm === 'AM' && hour === 12)\n                            hour = 0;\n                    }\n                }\n                this.leftCalendar.month.hour(hour).minute(minute).second(second);\n                this.rightCalendar.month.hour(hour).minute(minute).second(second);\n            }\n\n            this.renderCalendar('left');\n            this.renderCalendar('right');\n\n            //highlight any predefined range matching the current start and end dates\n            this.container.find('.ranges li').removeClass('active');\n            if (this.endDate == null) return;\n\n            this.calculateChosenLabel();\n        },\n\n        renderCalendar: function(side) {\n\n            //\n            // Build the matrix of dates that will populate the calendar\n            //\n\n            var calendar = side == 'left' ? this.leftCalendar : this.rightCalendar;\n            var month = calendar.month.month();\n            var year = calendar.month.year();\n            var hour = calendar.month.hour();\n            var minute = calendar.month.minute();\n            var second = calendar.month.second();\n            var daysInMonth = moment([year, month]).daysInMonth();\n            var firstDay = moment([year, month, 1]);\n            var lastDay = moment([year, month, daysInMonth]);\n            var lastMonth = moment(firstDay).subtract(1, 'month').month();\n            var lastYear = moment(firstDay).subtract(1, 'month').year();\n            var daysInLastMonth = moment([lastYear, lastMonth]).daysInMonth();\n            var dayOfWeek = firstDay.day();\n\n            //initialize a 6 rows x 7 columns array for the calendar\n            var calendar = [];\n            calendar.firstDay = firstDay;\n            calendar.lastDay = lastDay;\n\n            for (var i = 0; i < 6; i++) {\n                calendar[i] = [];\n            }\n\n            //populate the calendar with date objects\n            var startDay = daysInLastMonth - dayOfWeek + this.locale.firstDay + 1;\n            if (startDay > daysInLastMonth)\n                startDay -= 7;\n\n            if (dayOfWeek == this.locale.firstDay)\n                startDay = daysInLastMonth - 6;\n\n            var curDate = moment([lastYear, lastMonth, startDay, 12, minute, second]);\n\n            var col, row;\n            for (var i = 0, col = 0, row = 0; i < 42; i++, col++, curDate = moment(curDate).add(24, 'hour')) {\n                if (i > 0 && col % 7 === 0) {\n                    col = 0;\n                    row++;\n                }\n                calendar[row][col] = curDate.clone().hour(hour).minute(minute).second(second);\n                curDate.hour(12);\n\n                if (this.minDate && calendar[row][col].format('YYYY-MM-DD') == this.minDate.format('YYYY-MM-DD') && calendar[row][col].isBefore(this.minDate) && side == 'left') {\n                    calendar[row][col] = this.minDate.clone();\n                }\n\n                if (this.maxDate && calendar[row][col].format('YYYY-MM-DD') == this.maxDate.format('YYYY-MM-DD') && calendar[row][col].isAfter(this.maxDate) && side == 'right') {\n                    calendar[row][col] = this.maxDate.clone();\n                }\n\n            }\n\n            //make the calendar object available to hoverDate/clickDate\n            if (side == 'left') {\n                this.leftCalendar.calendar = calendar;\n            } else {\n                this.rightCalendar.calendar = calendar;\n            }\n\n            //\n            // Display the calendar\n            //\n\n            var minDate = side == 'left' ? this.minDate : this.startDate;\n            var maxDate = this.maxDate;\n            var selected = side == 'left' ? this.startDate : this.endDate;\n            var arrow = this.locale.direction == 'ltr' ? {left: 'chevron-left', right: 'chevron-right'} : {left: 'chevron-right', right: 'chevron-left'};\n\n            var html = '<table class=\"table-condensed\">';\n            html += '<thead>';\n            html += '<tr>';\n\n            // add empty cell for week number\n            if (this.showWeekNumbers || this.showISOWeekNumbers)\n                html += '<th></th>';\n\n            if ((!minDate || minDate.isBefore(calendar.firstDay)) && (!this.linkedCalendars || side == 'left')) {\n                html += '<th class=\"prev available\"><i class=\"fa fa-' + arrow.left + ' glyphicon glyphicon-' + arrow.left + '\"></i></th>';\n            } else {\n                html += '<th></th>';\n            }\n\n            var dateHtml = this.locale.monthNames[calendar[1][1].month()] + calendar[1][1].format(\" YYYY\");\n\n            if (this.showDropdowns) {\n                var currentMonth = calendar[1][1].month();\n                var currentYear = calendar[1][1].year();\n                var maxYear = (maxDate && maxDate.year()) || (currentYear + 5);\n                var minYear = (minDate && minDate.year()) || (currentYear - 50);\n                var inMinYear = currentYear == minYear;\n                var inMaxYear = currentYear == maxYear;\n\n                var monthHtml = '<select class=\"monthselect\">';\n                for (var m = 0; m < 12; m++) {\n                    if ((!inMinYear || m >= minDate.month()) && (!inMaxYear || m <= maxDate.month())) {\n                        monthHtml += \"<option value='\" + m + \"'\" +\n                            (m === currentMonth ? \" selected='selected'\" : \"\") +\n                            \">\" + this.locale.monthNames[m] + \"</option>\";\n                    } else {\n                        monthHtml += \"<option value='\" + m + \"'\" +\n                            (m === currentMonth ? \" selected='selected'\" : \"\") +\n                            \" disabled='disabled'>\" + this.locale.monthNames[m] + \"</option>\";\n                    }\n                }\n                monthHtml += \"</select>\";\n\n                var yearHtml = '<select class=\"yearselect\">';\n                for (var y = minYear; y <= maxYear; y++) {\n                    yearHtml += '<option value=\"' + y + '\"' +\n                        (y === currentYear ? ' selected=\"selected\"' : '') +\n                        '>' + y + '</option>';\n                }\n                yearHtml += '</select>';\n\n                dateHtml = monthHtml + yearHtml;\n            }\n\n            html += '<th colspan=\"5\" class=\"month\">' + dateHtml + '</th>';\n            if ((!maxDate || maxDate.isAfter(calendar.lastDay)) && (!this.linkedCalendars || side == 'right' || this.singleDatePicker)) {\n                html += '<th class=\"next available\"><i class=\"fa fa-' + arrow.right + ' glyphicon glyphicon-' + arrow.right + '\"></i></th>';\n            } else {\n                html += '<th></th>';\n            }\n\n            html += '</tr>';\n            html += '<tr>';\n\n            // add week number label\n            if (this.showWeekNumbers || this.showISOWeekNumbers)\n                html += '<th class=\"week\">' + this.locale.weekLabel + '</th>';\n\n            $.each(this.locale.daysOfWeek, function(index, dayOfWeek) {\n                html += '<th>' + dayOfWeek + '</th>';\n            });\n\n            html += '</tr>';\n            html += '</thead>';\n            html += '<tbody>';\n\n            //adjust maxDate to reflect the dateLimit setting in order to\n            //grey out end dates beyond the dateLimit\n            if (this.endDate == null && this.dateLimit) {\n                var maxLimit = this.startDate.clone().add(this.dateLimit).endOf('day');\n                if (!maxDate || maxLimit.isBefore(maxDate)) {\n                    maxDate = maxLimit;\n                }\n            }\n\n            for (var row = 0; row < 6; row++) {\n                html += '<tr>';\n\n                // add week number\n                if (this.showWeekNumbers)\n                    html += '<td class=\"week\">' + calendar[row][0].week() + '</td>';\n                else if (this.showISOWeekNumbers)\n                    html += '<td class=\"week\">' + calendar[row][0].isoWeek() + '</td>';\n\n                for (var col = 0; col < 7; col++) {\n\n                    var classes = [];\n\n                    //highlight today's date\n                    if (calendar[row][col].isSame(new Date(), \"day\"))\n                        classes.push('today');\n\n                    //highlight weekends\n                    if (calendar[row][col].isoWeekday() > 5)\n                        classes.push('weekend');\n\n                    //grey out the dates in other months displayed at beginning and end of this calendar\n                    if (calendar[row][col].month() != calendar[1][1].month())\n                        classes.push('off');\n\n                    //don't allow selection of dates before the minimum date\n                    if (this.minDate && calendar[row][col].isBefore(this.minDate, 'day'))\n                        classes.push('off', 'disabled');\n\n                    //don't allow selection of dates after the maximum date\n                    if (maxDate && calendar[row][col].isAfter(maxDate, 'day'))\n                        classes.push('off', 'disabled');\n\n                    //don't allow selection of date if a custom function decides it's invalid\n                    if (this.isInvalidDate(calendar[row][col]))\n                        classes.push('off', 'disabled');\n\n                    //highlight the currently selected start date\n                    if (calendar[row][col].format('YYYY-MM-DD') == this.startDate.format('YYYY-MM-DD'))\n                        classes.push('active', 'start-date');\n\n                    //highlight the currently selected end date\n                    if (this.endDate != null && calendar[row][col].format('YYYY-MM-DD') == this.endDate.format('YYYY-MM-DD'))\n                        classes.push('active', 'end-date');\n\n                    //highlight dates in-between the selected dates\n                    if (this.endDate != null && calendar[row][col] > this.startDate && calendar[row][col] < this.endDate)\n                        classes.push('in-range');\n\n                    //apply custom classes for this date\n                    var isCustom = this.isCustomDate(calendar[row][col]);\n                    if (isCustom !== false) {\n                        if (typeof isCustom === 'string')\n                            classes.push(isCustom);\n                        else\n                            Array.prototype.push.apply(classes, isCustom);\n                    }\n\n                    var cname = '', disabled = false;\n                    for (var i = 0; i < classes.length; i++) {\n                        cname += classes[i] + ' ';\n                        if (classes[i] == 'disabled')\n                            disabled = true;\n                    }\n                    if (!disabled)\n                        cname += 'available';\n\n                    html += '<td class=\"' + cname.replace(/^\\s+|\\s+$/g, '') + '\" data-title=\"' + 'r' + row + 'c' + col + '\">' + calendar[row][col].date() + '</td>';\n\n                }\n                html += '</tr>';\n            }\n\n            html += '</tbody>';\n            html += '</table>';\n\n            this.container.find('.calendar.' + side + ' .calendar-table').html(html);\n\n        },\n\n        renderTimePicker: function(side) {\n\n            // Don't bother updating the time picker if it's currently disabled\n            // because an end date hasn't been clicked yet\n            if (side == 'right' && !this.endDate) return;\n\n            var html, selected, minDate, maxDate = this.maxDate;\n\n            if (this.dateLimit && (!this.maxDate || this.startDate.clone().add(this.dateLimit).isAfter(this.maxDate)))\n                maxDate = this.startDate.clone().add(this.dateLimit);\n\n            if (side == 'left') {\n                selected = this.startDate.clone();\n                minDate = this.minDate;\n            } else if (side == 'right') {\n                selected = this.endDate.clone();\n                minDate = this.startDate;\n\n                //Preserve the time already selected\n                var timeSelector = this.container.find('.calendar.right .calendar-time div');\n                if (timeSelector.html() != '') {\n\n                    selected.hour(timeSelector.find('.hourselect option:selected').val() || selected.hour());\n                    selected.minute(timeSelector.find('.minuteselect option:selected').val() || selected.minute());\n                    selected.second(timeSelector.find('.secondselect option:selected').val() || selected.second());\n\n                    if (!this.timePicker24Hour) {\n                        var ampm = timeSelector.find('.ampmselect option:selected').val();\n                        if (ampm === 'PM' && selected.hour() < 12)\n                            selected.hour(selected.hour() + 12);\n                        if (ampm === 'AM' && selected.hour() === 12)\n                            selected.hour(0);\n                    }\n\n                }\n\n                if (selected.isBefore(this.startDate))\n                    selected = this.startDate.clone();\n\n                if (maxDate && selected.isAfter(maxDate))\n                    selected = maxDate.clone();\n\n            }\n\n            //\n            // hours\n            //\n\n            html = '<select class=\"hourselect\">';\n\n            var start = this.timePicker24Hour ? 0 : 1;\n            var end = this.timePicker24Hour ? 23 : 12;\n\n            for (var i = start; i <= end; i++) {\n                var i_in_24 = i;\n                if (!this.timePicker24Hour)\n                    i_in_24 = selected.hour() >= 12 ? (i == 12 ? 12 : i + 12) : (i == 12 ? 0 : i);\n\n                var time = selected.clone().hour(i_in_24);\n                var disabled = false;\n                if (minDate && time.minute(59).isBefore(minDate))\n                    disabled = true;\n                if (maxDate && time.minute(0).isAfter(maxDate))\n                    disabled = true;\n\n                if (i_in_24 == selected.hour() && !disabled) {\n                    html += '<option value=\"' + i + '\" selected=\"selected\">' + i + '</option>';\n                } else if (disabled) {\n                    html += '<option value=\"' + i + '\" disabled=\"disabled\" class=\"disabled\">' + i + '</option>';\n                } else {\n                    html += '<option value=\"' + i + '\">' + i + '</option>';\n                }\n            }\n\n            html += '</select> ';\n\n            //\n            // minutes\n            //\n\n            html += ': <select class=\"minuteselect\">';\n\n            for (var i = 0; i < 60; i += this.timePickerIncrement) {\n                var padded = i < 10 ? '0' + i : i;\n                var time = selected.clone().minute(i);\n\n                var disabled = false;\n                if (minDate && time.second(59).isBefore(minDate))\n                    disabled = true;\n                if (maxDate && time.second(0).isAfter(maxDate))\n                    disabled = true;\n\n                if (selected.minute() == i && !disabled) {\n                    html += '<option value=\"' + i + '\" selected=\"selected\">' + padded + '</option>';\n                } else if (disabled) {\n                    html += '<option value=\"' + i + '\" disabled=\"disabled\" class=\"disabled\">' + padded + '</option>';\n                } else {\n                    html += '<option value=\"' + i + '\">' + padded + '</option>';\n                }\n            }\n\n            html += '</select> ';\n\n            //\n            // seconds\n            //\n\n            if (this.timePickerSeconds) {\n                html += ': <select class=\"secondselect\">';\n\n                for (var i = 0; i < 60; i++) {\n                    var padded = i < 10 ? '0' + i : i;\n                    var time = selected.clone().second(i);\n\n                    var disabled = false;\n                    if (minDate && time.isBefore(minDate))\n                        disabled = true;\n                    if (maxDate && time.isAfter(maxDate))\n                        disabled = true;\n\n                    if (selected.second() == i && !disabled) {\n                        html += '<option value=\"' + i + '\" selected=\"selected\">' + padded + '</option>';\n                    } else if (disabled) {\n                        html += '<option value=\"' + i + '\" disabled=\"disabled\" class=\"disabled\">' + padded + '</option>';\n                    } else {\n                        html += '<option value=\"' + i + '\">' + padded + '</option>';\n                    }\n                }\n\n                html += '</select> ';\n            }\n\n            //\n            // AM/PM\n            //\n\n            if (!this.timePicker24Hour) {\n                html += '<select class=\"ampmselect\">';\n\n                var am_html = '';\n                var pm_html = '';\n\n                if (minDate && selected.clone().hour(12).minute(0).second(0).isBefore(minDate))\n                    am_html = ' disabled=\"disabled\" class=\"disabled\"';\n\n                if (maxDate && selected.clone().hour(0).minute(0).second(0).isAfter(maxDate))\n                    pm_html = ' disabled=\"disabled\" class=\"disabled\"';\n\n                if (selected.hour() >= 12) {\n                    html += '<option value=\"AM\"' + am_html + '>AM</option><option value=\"PM\" selected=\"selected\"' + pm_html + '>PM</option>';\n                } else {\n                    html += '<option value=\"AM\" selected=\"selected\"' + am_html + '>AM</option><option value=\"PM\"' + pm_html + '>PM</option>';\n                }\n\n                html += '</select>';\n            }\n\n            this.container.find('.calendar.' + side + ' .calendar-time div').html(html);\n\n        },\n\n        updateFormInputs: function() {\n\n            //ignore mouse movements while an above-calendar text input has focus\n            if (this.container.find('input[name=daterangepicker_start]').is(\":focus\") || this.container.find('input[name=daterangepicker_end]').is(\":focus\"))\n                return;\n\n            this.container.find('input[name=daterangepicker_start]').val(this.startDate.format(this.locale.format));\n            if (this.endDate)\n                this.container.find('input[name=daterangepicker_end]').val(this.endDate.format(this.locale.format));\n\n            if (this.singleDatePicker || (this.endDate && (this.startDate.isBefore(this.endDate) || this.startDate.isSame(this.endDate)))) {\n                this.container.find('button.applyBtn').removeAttr('disabled');\n            } else {\n                this.container.find('button.applyBtn').attr('disabled', 'disabled');\n            }\n\n        },\n\n        move: function() {\n            var parentOffset = { top: 0, left: 0 },\n                containerTop;\n            var parentRightEdge = $(window).width();\n            if (!this.parentEl.is('body')) {\n                parentOffset = {\n                    top: this.parentEl.offset().top - this.parentEl.scrollTop(),\n                    left: this.parentEl.offset().left - this.parentEl.scrollLeft()\n                };\n                parentRightEdge = this.parentEl[0].clientWidth + this.parentEl.offset().left;\n            }\n\n            if (this.drops == 'up')\n                containerTop = this.element.offset().top - this.container.outerHeight() - parentOffset.top;\n            else\n                containerTop = this.element.offset().top + this.element.outerHeight() - parentOffset.top;\n            this.container[this.drops == 'up' ? 'addClass' : 'removeClass']('dropup');\n\n            if (this.opens == 'left') {\n                this.container.css({\n                    top: containerTop,\n                    right: parentRightEdge - this.element.offset().left - this.element.outerWidth(),\n                    left: 'auto'\n                });\n                if (this.container.offset().left < 0) {\n                    this.container.css({\n                        right: 'auto',\n                        left: 9\n                    });\n                }\n            } else if (this.opens == 'center') {\n                this.container.css({\n                    top: containerTop,\n                    left: this.element.offset().left - parentOffset.left + this.element.outerWidth() / 2\n                            - this.container.outerWidth() / 2,\n                    right: 'auto'\n                });\n                if (this.container.offset().left < 0) {\n                    this.container.css({\n                        right: 'auto',\n                        left: 9\n                    });\n                }\n            } else {\n                this.container.css({\n                    top: containerTop,\n                    left: this.element.offset().left - parentOffset.left,\n                    right: 'auto'\n                });\n                if (this.container.offset().left + this.container.outerWidth() > $(window).width()) {\n                    this.container.css({\n                        left: 'auto',\n                        right: 0\n                    });\n                }\n            }\n        },\n\n        show: function(e) {\n            if (this.isShowing) return;\n\n            // Create a click proxy that is private to this instance of datepicker, for unbinding\n            this._outsideClickProxy = $.proxy(function(e) { this.outsideClick(e); }, this);\n\n            // Bind global datepicker mousedown for hiding and\n            $(document)\n              .on('mousedown.daterangepicker', this._outsideClickProxy)\n              // also support mobile devices\n              .on('touchend.daterangepicker', this._outsideClickProxy)\n              // also explicitly play nice with Bootstrap dropdowns, which stopPropagation when clicking them\n              .on('click.daterangepicker', '[data-toggle=dropdown]', this._outsideClickProxy)\n              // and also close when focus changes to outside the picker (eg. tabbing between controls)\n              .on('focusin.daterangepicker', this._outsideClickProxy);\n\n            // Reposition the picker if the window is resized while it's open\n            $(window).on('resize.daterangepicker', $.proxy(function(e) { this.move(e); }, this));\n\n            this.oldStartDate = this.startDate.clone();\n            this.oldEndDate = this.endDate.clone();\n            this.previousRightTime = this.endDate.clone();\n\n            this.updateView();\n            this.container.show();\n            this.move();\n            this.element.trigger('show.daterangepicker', this);\n            this.isShowing = true;\n        },\n\n        hide: function(e) {\n            if (!this.isShowing) return;\n\n            //incomplete date selection, revert to last values\n            if (!this.endDate) {\n                this.startDate = this.oldStartDate.clone();\n                this.endDate = this.oldEndDate.clone();\n            }\n\n            //if a new date range was selected, invoke the user callback function\n            if (!this.startDate.isSame(this.oldStartDate) || !this.endDate.isSame(this.oldEndDate))\n                this.callback(this.startDate, this.endDate, this.chosenLabel);\n\n            //if picker is attached to a text input, update it\n            this.updateElement();\n\n            $(document).off('.daterangepicker');\n            $(window).off('.daterangepicker');\n            this.container.hide();\n            this.element.trigger('hide.daterangepicker', this);\n            this.isShowing = false;\n        },\n\n        toggle: function(e) {\n            if (this.isShowing) {\n                this.hide();\n            } else {\n                this.show();\n            }\n        },\n\n        outsideClick: function(e) {\n            var target = $(e.target);\n            // if the page is clicked anywhere except within the daterangerpicker/button\n            // itself then call this.hide()\n            if (\n                // ie modal dialog fix\n                e.type == \"focusin\" ||\n                target.closest(this.element).length ||\n                target.closest(this.container).length ||\n                target.closest('.calendar-table').length\n                ) return;\n            this.hide();\n            this.element.trigger('outsideClick.daterangepicker', this);\n        },\n\n        showCalendars: function() {\n            this.container.addClass('show-calendar');\n            this.move();\n            this.element.trigger('showCalendar.daterangepicker', this);\n        },\n\n        hideCalendars: function() {\n            this.container.removeClass('show-calendar');\n            this.element.trigger('hideCalendar.daterangepicker', this);\n        },\n\n        hoverRange: function(e) {\n\n            //ignore mouse movements while an above-calendar text input has focus\n            if (this.container.find('input[name=daterangepicker_start]').is(\":focus\") || this.container.find('input[name=daterangepicker_end]').is(\":focus\"))\n                return;\n\n            var label = e.target.getAttribute('data-range-key');\n\n            if (label == this.locale.customRangeLabel) {\n                this.updateView();\n            } else {\n                var dates = this.ranges[label];\n                this.container.find('input[name=daterangepicker_start]').val(dates[0].format(this.locale.format));\n                this.container.find('input[name=daterangepicker_end]').val(dates[1].format(this.locale.format));\n            }\n\n        },\n\n        clickRange: function(e) {\n            var label = e.target.getAttribute('data-range-key');\n            this.chosenLabel = label;\n            if (label == this.locale.customRangeLabel) {\n                this.showCalendars();\n            } else {\n                var dates = this.ranges[label];\n                this.startDate = dates[0];\n                this.endDate = dates[1];\n\n                if (!this.timePicker) {\n                    this.startDate.startOf('day');\n                    this.endDate.endOf('day');\n                }\n\n                if (!this.alwaysShowCalendars)\n                    this.hideCalendars();\n                this.clickApply();\n            }\n        },\n\n        clickPrev: function(e) {\n            var cal = $(e.target).parents('.calendar');\n            if (cal.hasClass('left')) {\n                this.leftCalendar.month.subtract(1, 'month');\n                if (this.linkedCalendars)\n                    this.rightCalendar.month.subtract(1, 'month');\n            } else {\n                this.rightCalendar.month.subtract(1, 'month');\n            }\n            this.updateCalendars();\n        },\n\n        clickNext: function(e) {\n            var cal = $(e.target).parents('.calendar');\n            if (cal.hasClass('left')) {\n                this.leftCalendar.month.add(1, 'month');\n            } else {\n                this.rightCalendar.month.add(1, 'month');\n                if (this.linkedCalendars)\n                    this.leftCalendar.month.add(1, 'month');\n            }\n            this.updateCalendars();\n        },\n\n        hoverDate: function(e) {\n\n            //ignore mouse movements while an above-calendar text input has focus\n            //if (this.container.find('input[name=daterangepicker_start]').is(\":focus\") || this.container.find('input[name=daterangepicker_end]').is(\":focus\"))\n            //    return;\n\n            //ignore dates that can't be selected\n            if (!$(e.target).hasClass('available')) return;\n\n            //have the text inputs above calendars reflect the date being hovered over\n            var title = $(e.target).attr('data-title');\n            var row = title.substr(1, 1);\n            var col = title.substr(3, 1);\n            var cal = $(e.target).parents('.calendar');\n            var date = cal.hasClass('left') ? this.leftCalendar.calendar[row][col] : this.rightCalendar.calendar[row][col];\n\n            if (this.endDate && !this.container.find('input[name=daterangepicker_start]').is(\":focus\")) {\n                this.container.find('input[name=daterangepicker_start]').val(date.format(this.locale.format));\n            } else if (!this.endDate && !this.container.find('input[name=daterangepicker_end]').is(\":focus\")) {\n                this.container.find('input[name=daterangepicker_end]').val(date.format(this.locale.format));\n            }\n\n            //highlight the dates between the start date and the date being hovered as a potential end date\n            var leftCalendar = this.leftCalendar;\n            var rightCalendar = this.rightCalendar;\n            var startDate = this.startDate;\n            if (!this.endDate) {\n                this.container.find('.calendar tbody td').each(function(index, el) {\n\n                    //skip week numbers, only look at dates\n                    if ($(el).hasClass('week')) return;\n\n                    var title = $(el).attr('data-title');\n                    var row = title.substr(1, 1);\n                    var col = title.substr(3, 1);\n                    var cal = $(el).parents('.calendar');\n                    var dt = cal.hasClass('left') ? leftCalendar.calendar[row][col] : rightCalendar.calendar[row][col];\n\n                    if ((dt.isAfter(startDate) && dt.isBefore(date)) || dt.isSame(date, 'day')) {\n                        $(el).addClass('in-range');\n                    } else {\n                        $(el).removeClass('in-range');\n                    }\n\n                });\n            }\n\n        },\n\n        clickDate: function(e) {\n\n            if (!$(e.target).hasClass('available')) return;\n\n            var title = $(e.target).attr('data-title');\n            var row = title.substr(1, 1);\n            var col = title.substr(3, 1);\n            var cal = $(e.target).parents('.calendar');\n            var date = cal.hasClass('left') ? this.leftCalendar.calendar[row][col] : this.rightCalendar.calendar[row][col];\n\n            //\n            // this function needs to do a few things:\n            // * alternate between selecting a start and end date for the range,\n            // * if the time picker is enabled, apply the hour/minute/second from the select boxes to the clicked date\n            // * if autoapply is enabled, and an end date was chosen, apply the selection\n            // * if single date picker mode, and time picker isn't enabled, apply the selection immediately\n            // * if one of the inputs above the calendars was focused, cancel that manual input\n            //\n\n            if (this.endDate || date.isBefore(this.startDate, 'day')) { //picking start\n                if (this.timePicker) {\n                    var hour = parseInt(this.container.find('.left .hourselect').val(), 10);\n                    if (!this.timePicker24Hour) {\n                        var ampm = this.container.find('.left .ampmselect').val();\n                        if (ampm === 'PM' && hour < 12)\n                            hour += 12;\n                        if (ampm === 'AM' && hour === 12)\n                            hour = 0;\n                    }\n                    var minute = parseInt(this.container.find('.left .minuteselect').val(), 10);\n                    var second = this.timePickerSeconds ? parseInt(this.container.find('.left .secondselect').val(), 10) : 0;\n                    date = date.clone().hour(hour).minute(minute).second(second);\n                }\n                this.endDate = null;\n                this.setStartDate(date.clone());\n            } else if (!this.endDate && date.isBefore(this.startDate)) {\n                //special case: clicking the same date for start/end,\n                //but the time of the end date is before the start date\n                this.setEndDate(this.startDate.clone());\n            } else { // picking end\n                if (this.timePicker) {\n                    var hour = parseInt(this.container.find('.right .hourselect').val(), 10);\n                    if (!this.timePicker24Hour) {\n                        var ampm = this.container.find('.right .ampmselect').val();\n                        if (ampm === 'PM' && hour < 12)\n                            hour += 12;\n                        if (ampm === 'AM' && hour === 12)\n                            hour = 0;\n                    }\n                    var minute = parseInt(this.container.find('.right .minuteselect').val(), 10);\n                    var second = this.timePickerSeconds ? parseInt(this.container.find('.right .secondselect').val(), 10) : 0;\n                    date = date.clone().hour(hour).minute(minute).second(second);\n                }\n                this.setEndDate(date.clone());\n                if (this.autoApply) {\n                  this.calculateChosenLabel();\n                  this.clickApply();\n                }\n            }\n\n            if (this.singleDatePicker) {\n                this.setEndDate(this.startDate);\n                if (!this.timePicker)\n                    this.clickApply();\n            }\n\n            this.updateView();\n\n            //This is to cancel the blur event handler if the mouse was in one of the inputs\n            e.stopPropagation();\n\n        },\n\n        calculateChosenLabel: function () {\n            var customRange = true;\n            var i = 0;\n            for (var range in this.ranges) {\n                if (this.timePicker) {\n                    if (this.startDate.isSame(this.ranges[range][0]) && this.endDate.isSame(this.ranges[range][1])) {\n                        customRange = false;\n                        this.chosenLabel = this.container.find('.ranges li:eq(' + i + ')').addClass('active').html();\n                        break;\n                    }\n                } else {\n                    //ignore times when comparing dates if time picker is not enabled\n                    if (this.startDate.format('YYYY-MM-DD') == this.ranges[range][0].format('YYYY-MM-DD') && this.endDate.format('YYYY-MM-DD') == this.ranges[range][1].format('YYYY-MM-DD')) {\n                        customRange = false;\n                        this.chosenLabel = this.container.find('.ranges li:eq(' + i + ')').addClass('active').html();\n                        break;\n                    }\n                }\n                i++;\n            }\n            if (customRange) {\n                if (this.showCustomRangeLabel) {\n                    this.chosenLabel = this.container.find('.ranges li:last').addClass('active').html();\n                } else {\n                    this.chosenLabel = null;\n                }\n                this.showCalendars();\n            }\n        },\n\n        clickApply: function(e) {\n            this.hide();\n            this.element.trigger('apply.daterangepicker', this);\n        },\n\n        clickCancel: function(e) {\n            this.startDate = this.oldStartDate;\n            this.endDate = this.oldEndDate;\n            this.hide();\n            this.element.trigger('cancel.daterangepicker', this);\n        },\n\n        monthOrYearChanged: function(e) {\n            var isLeft = $(e.target).closest('.calendar').hasClass('left'),\n                leftOrRight = isLeft ? 'left' : 'right',\n                cal = this.container.find('.calendar.'+leftOrRight);\n\n            // Month must be Number for new moment versions\n            var month = parseInt(cal.find('.monthselect').val(), 10);\n            var year = cal.find('.yearselect').val();\n\n            if (!isLeft) {\n                if (year < this.startDate.year() || (year == this.startDate.year() && month < this.startDate.month())) {\n                    month = this.startDate.month();\n                    year = this.startDate.year();\n                }\n            }\n\n            if (this.minDate) {\n                if (year < this.minDate.year() || (year == this.minDate.year() && month < this.minDate.month())) {\n                    month = this.minDate.month();\n                    year = this.minDate.year();\n                }\n            }\n\n            if (this.maxDate) {\n                if (year > this.maxDate.year() || (year == this.maxDate.year() && month > this.maxDate.month())) {\n                    month = this.maxDate.month();\n                    year = this.maxDate.year();\n                }\n            }\n\n            if (isLeft) {\n                this.leftCalendar.month.month(month).year(year);\n                if (this.linkedCalendars)\n                    this.rightCalendar.month = this.leftCalendar.month.clone().add(1, 'month');\n            } else {\n                this.rightCalendar.month.month(month).year(year);\n                if (this.linkedCalendars)\n                    this.leftCalendar.month = this.rightCalendar.month.clone().subtract(1, 'month');\n            }\n            this.updateCalendars();\n        },\n\n        timeChanged: function(e) {\n\n            var cal = $(e.target).closest('.calendar'),\n                isLeft = cal.hasClass('left');\n\n            var hour = parseInt(cal.find('.hourselect').val(), 10);\n            var minute = parseInt(cal.find('.minuteselect').val(), 10);\n            var second = this.timePickerSeconds ? parseInt(cal.find('.secondselect').val(), 10) : 0;\n\n            if (!this.timePicker24Hour) {\n                var ampm = cal.find('.ampmselect').val();\n                if (ampm === 'PM' && hour < 12)\n                    hour += 12;\n                if (ampm === 'AM' && hour === 12)\n                    hour = 0;\n            }\n\n            if (isLeft) {\n                var start = this.startDate.clone();\n                start.hour(hour);\n                start.minute(minute);\n                start.second(second);\n                this.setStartDate(start);\n                if (this.singleDatePicker) {\n                    this.endDate = this.startDate.clone();\n                } else if (this.endDate && this.endDate.format('YYYY-MM-DD') == start.format('YYYY-MM-DD') && this.endDate.isBefore(start)) {\n                    this.setEndDate(start.clone());\n                }\n            } else if (this.endDate) {\n                var end = this.endDate.clone();\n                end.hour(hour);\n                end.minute(minute);\n                end.second(second);\n                this.setEndDate(end);\n            }\n\n            //update the calendars so all clickable dates reflect the new time component\n            this.updateCalendars();\n\n            //update the form inputs above the calendars with the new time\n            this.updateFormInputs();\n\n            //re-render the time pickers because changing one selection can affect what's enabled in another\n            this.renderTimePicker('left');\n            this.renderTimePicker('right');\n\n        },\n\n        formInputsChanged: function(e) {\n            var isRight = $(e.target).closest('.calendar').hasClass('right');\n            var start = moment(this.container.find('input[name=\"daterangepicker_start\"]').val(), this.locale.format);\n            var end = moment(this.container.find('input[name=\"daterangepicker_end\"]').val(), this.locale.format);\n\n            if (start.isValid() && end.isValid()) {\n\n                if (isRight && end.isBefore(start))\n                    start = end.clone();\n\n                this.setStartDate(start);\n                this.setEndDate(end);\n\n                if (isRight) {\n                    this.container.find('input[name=\"daterangepicker_start\"]').val(this.startDate.format(this.locale.format));\n                } else {\n                    this.container.find('input[name=\"daterangepicker_end\"]').val(this.endDate.format(this.locale.format));\n                }\n\n            }\n\n            this.updateView();\n        },\n\n        formInputsFocused: function(e) {\n\n            // Highlight the focused input\n            this.container.find('input[name=\"daterangepicker_start\"], input[name=\"daterangepicker_end\"]').removeClass('active');\n            $(e.target).addClass('active');\n\n            // Set the state such that if the user goes back to using a mouse, \n            // the calendars are aware we're selecting the end of the range, not\n            // the start. This allows someone to edit the end of a date range without\n            // re-selecting the beginning, by clicking on the end date input then\n            // using the calendar.\n            var isRight = $(e.target).closest('.calendar').hasClass('right');\n            if (isRight) {\n                this.endDate = null;\n                this.setStartDate(this.startDate.clone());\n                this.updateView();\n            }\n\n        },\n\n        formInputsBlurred: function(e) {\n\n            // this function has one purpose right now: if you tab from the first\n            // text input to the second in the UI, the endDate is nulled so that\n            // you can click another, but if you tab out without clicking anything\n            // or changing the input value, the old endDate should be retained\n\n            if (!this.endDate) {\n                var val = this.container.find('input[name=\"daterangepicker_end\"]').val();\n                var end = moment(val, this.locale.format);\n                if (end.isValid()) {\n                    this.setEndDate(end);\n                    this.updateView();\n                }\n            }\n\n        },\n\n        elementChanged: function() {\n            if (!this.element.is('input')) return;\n            if (!this.element.val().length) return;\n            if (this.element.val().length < this.locale.format.length) return;\n\n            var dateString = this.element.val().split(this.locale.separator),\n                start = null,\n                end = null;\n\n            if (dateString.length === 2) {\n                start = moment(dateString[0], this.locale.format);\n                end = moment(dateString[1], this.locale.format);\n            }\n\n            if (this.singleDatePicker || start === null || end === null) {\n                start = moment(this.element.val(), this.locale.format);\n                end = start;\n            }\n\n            if (!start.isValid() || !end.isValid()) return;\n\n            this.setStartDate(start);\n            this.setEndDate(end);\n            this.updateView();\n        },\n\n        keydown: function(e) {\n            //hide on tab or enter\n            if ((e.keyCode === 9) || (e.keyCode === 13)) {\n                this.hide();\n            }\n        },\n\n        updateElement: function() {\n            if (this.element.is('input') && !this.singleDatePicker && this.autoUpdateInput) {\n                this.element.val(this.startDate.format(this.locale.format) + this.locale.separator + this.endDate.format(this.locale.format));\n                this.element.trigger('change');\n            } else if (this.element.is('input') && this.autoUpdateInput) {\n                this.element.val(this.startDate.format(this.locale.format));\n                this.element.trigger('change');\n            }\n        },\n\n        remove: function() {\n            this.container.remove();\n            this.element.off('.daterangepicker');\n            this.element.removeData();\n        }\n\n    };\n\n    $.fn.daterangepicker = function(options, callback) {\n        this.each(function() {\n            var el = $(this);\n            if (el.data('daterangepicker'))\n                el.data('daterangepicker').remove();\n            el.data('daterangepicker', new DateRangePicker(el, options, callback));\n        });\n        return this;\n    };\n\n    return DateRangePicker;\n\n}));\n"
+
+/***/ }),
+/* 573 */,
+/* 574 */,
+/* 575 */,
+/* 576 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(186)(__webpack_require__(572))
+
+/***/ }),
+/* 577 */,
+/* 578 */,
+/* 579 */,
+/* 580 */,
+/* 581 */,
+/* 582 */,
+/* 583 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(525);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(50)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!./../css-loader/index.js!./daterangepicker.css", function() {
+			var newContent = require("!!./../css-loader/index.js!./daterangepicker.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 584 */,
+/* 585 */,
+/* 586 */,
+/* 587 */,
+/* 588 */,
+/* 589 */,
+/* 590 */,
+/* 591 */,
+/* 592 */,
+/* 593 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(291);
+
 
 /***/ })
 /******/ ]);

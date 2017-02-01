@@ -17,6 +17,9 @@ var config = {
       ],
       page_report: [
         './resources/assets/js/page_report.js',  
+      ],
+      page_user: [
+        './resources/assets/js/page_user.js',  
       ]
   },
 

@@ -45,12 +45,12 @@
 
         <div class="form-group col-sm-6">
             {!! Form::label('password', 'Password:') !!}
-            {!! Form::text('password', '', ['class' => 'form-control']) !!}
+            {!! Form::password('password', ['class' => 'form-control']) !!}
         </div>
 
         <div class="form-group col-sm-6">
             {!! Form::label('password_confirm', 'Confirm Password:') !!}
-            {!! Form::text('password_confirm', '', ['class' => 'form-control']) !!}
+            {!! Form::password('password_confirm', ['class' => 'form-control']) !!}
         </div>
 
         <div class="form-group col-sm-12">
