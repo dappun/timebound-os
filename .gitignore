@@ -9,6 +9,9 @@ composer.lock
 node_modules
 public/dev
 public/build
-public/download
+public/download/*.csv
 public/storage
-public/images/profile
+public/images/profile/*.jpg
+
+!public/images/profile/default.jpg
+!.gitignore
