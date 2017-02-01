@@ -44,11 +44,13 @@ function gmhours($seconds, $format = 'full') {
     if ($format == 'short') {
         return str_pad($hours, 2, '0', STR_PAD_LEFT)
              . ':' . str_pad($minutes, 2, '0', STR_PAD_LEFT);
+    } else if ($format == 'number') {
+        return $hours + ($minutes / 60);
     } else {
         return str_pad($hours, 2, '0', STR_PAD_LEFT)
              . ':' . str_pad($minutes, 2, '0', STR_PAD_LEFT)
               . ':' . str_pad($secs, 2, '0', STR_PAD_LEFT);
-    }    
+    }
 }
 
 

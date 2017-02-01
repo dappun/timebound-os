@@ -41,33 +41,35 @@ class EloquentTimesheetRepository extends EloquentBaseRepository implements Time
      */
     public function history($condition, $page = 0, $limit = 10)
     {
-        // \DB::enableQueryLog();
-        $query = $this->model->select('timesheets.*', 'projects.title AS project_title', 'users.name AS user_name');
+        $query = $this->model->select(
+            'timesheets.*', 
+            \DB::raw("CONVERT_TZ(start, 'UTC', '{$this->userTz}') as start"),
+            \DB::raw("CONVERT_TZ(end, 'UTC', '{$this->userTz}') as end"),
+            'projects.title AS project_title', 
+            'users.name AS user_name'
+        );
         
         $query->leftJoin('projects', 'timesheets.project_id', '=', 'projects.id');
         $query->leftJoin('users', 'timesheets.user_id', '=', 'users.id');
 
-        if (isset($condition['user_id']) && $condition['user_id']) {
-            $query->where('user_id', (int)$condition['user_id']);
-        }
-
-        if (isset($condition['project_id']) && $condition['project_id']) {
-            $query->where('project_id', $condition['project_id']);
-        }
-
-        if (isset($condition['client_id']) && $condition['client_id']) {
-            $query->where('projects.client_id', $condition['client_id']);
-        }  
+        $this->setWhereConditions($query, $condition, [
+            'user_id', 'project_id', 'client_id' => 'projects.client_id'
+        ]);
 
         $fr = $this->_timeformatting($condition, 'start', 'Y-m-d 00:00:00');
+        // Time is already converted in the field
+        // $fr = \Timezone::convertToUTC($fr, userTimezone(), 'Y-m-d H:i:s');
+
         $to = $this->_timeformatting($condition, 'end', 'Y-m-d 23:59:59');
+        // Time is already converted in the field
+        // $to = \Timezone::convertToUTC($to, userTimezone(), 'Y-m-d H:i:s');
 
         if ($fr) {
            $query->where('start', '>=', $fr); 
         }
 
         $query->where(function($q) use ($to) {
-            $q->where('end', '<=', $to)
+            $q->where('start', '<=', $to)
                 ->orWhere('end', '0000-00-00 00:00:00')
                 ->orWhereNull('end');
         });
@@ -76,8 +78,6 @@ class EloquentTimesheetRepository extends EloquentBaseRepository implements Time
         $this->totalCount = $totalQuery->sum('timesheets.duration');
 
         $result = $query->orderBy('start', 'desc')->paginate($limit, ['*'], 'page', $page);
-
-        // dd(\DB::getQueryLog());
 
         return $result;
     }
@@ -99,11 +99,6 @@ class EloquentTimesheetRepository extends EloquentBaseRepository implements Time
             
         return $result;
     }
-
-    /*public function getDay($day, $format = "Y-m-d H:i:s")
-    {
-        return date($format, strtotime($day . ' this week'));
-    }*/
 
     public function stopwatch($input)
     {
@@ -134,7 +129,7 @@ class EloquentTimesheetRepository extends EloquentBaseRepository implements Time
     {
         $cleanInput = [
             'id' => $input['id'],
-            'end' => date('Y-m-d H:i:s')
+            'end' => \Timezone::convertToUTC(date('Y-m-d H:i:s'), userTimezone(), 'Y-m-d H:i:s')
         ];
         
         $obj = $this->update($cleanInput);
@@ -145,7 +140,7 @@ class EloquentTimesheetRepository extends EloquentBaseRepository implements Time
     {
         $old = $this->find($id);
 
-        $newInput['start'] = date('Y-m-d H:i:s');
+        $newInput['start'] = \Timezone::convertToUTC(date('Y-m-d H:i:s'), userTimezone(), 'Y-m-d H:i:s');
 
         $new = $old->replicate();
         $new->start = $this->_timeformatting($newInput, 'start');
@@ -244,23 +239,83 @@ class EloquentTimesheetRepository extends EloquentBaseRepository implements Time
 
     public function groupByDay($condition) 
     {
-        \DB::enableQueryLog();
         $query = $this->model->select(
-            \DB::raw('date(start) as stat_day'), 
+            \DB::raw("DATE(CONVERT_TZ(start, 'UTC', '{$this->userTz}')) as stat_day"),
+            \DB::raw('SUM(duration) AS total_duration')
+        );
+
+        $fr = $this->_timeformatting($condition, 'start', 'Y-m-d 00:00:00');
+        $to = $this->_timeformatting($condition, 'end', 'Y-m-d 23:59:59');
+        $query->whereBetween('start', [
+            \Timezone::convertToUTC($fr, userTimezone(), 'Y-m-d H:i:s'),
+            \Timezone::convertToUTC($to, userTimezone(), 'Y-m-d H:i:s')
+        ]);
+
+        $this->setWhereConditions($query, $condition, [
+            'user_id', 'project_id', 'client_id' => 'projects.client_id'
+        ]);
+
+        $query->leftJoin('projects', 'timesheets.project_id', '=', 'projects.id');
+        $query->leftJoin('users', 'timesheets.user_id', '=', 'users.id');
+
+        $groupBy = 'stat_day';
+        $orderBy = 'stat_day';
+
+        $query->groupBy($groupBy);
+        $query->orderBy($orderBy);
+        $result = $query->get();
+        
+        $dateRanges = calculateDateRanges([
+            'from' => $condition['start'],
+            'to' => $condition['end']
+        ], 'day');
+
+        $orderedResult = [];
+        foreach ($result as $item) {
+            $orderedResult[$item->stat_day] = $item->total_duration;
+        }
+
+        $orderedResult2 = [];
+        foreach ($dateRanges as $key => $value) {
+            $date = $value['from'];
+            if (!isset($orderedResult[$date])) {
+                $orderedResult2[$date] = 0;
+            } else {
+                $orderedResult2[$date] = (float)$orderedResult[$date];
+            }
+        }
+        
+
+        return $orderedResult2;
+    }
+
+    public function groupUserByDay($condition) 
+    {
+        $query = $this->model->select(
+            \DB::raw("DATE(CONVERT_TZ(start, 'UTC', '{$this->userTz}')) as stat_day"),
             \DB::raw('SUM(duration) AS total_duration'),
             'user_id'
         );
 
         $fr = $this->_timeformatting($condition, 'start', 'Y-m-d 00:00:00');
         $to = $this->_timeformatting($condition, 'end', 'Y-m-d 23:59:59');
-        $query->whereBetween('start', [$fr, $to]);
+        $query->whereBetween('start', [
+            \Timezone::convertToUTC($fr, userTimezone(), 'Y-m-d H:i:s'),
+            \Timezone::convertToUTC($to, userTimezone(), 'Y-m-d H:i:s')
+        ]);
 
+        $this->setWhereConditions($query, $condition, [
+            'user_id', 'project_id', 'client_id' => 'projects.client_id'
+        ]);
+
+        $query->leftJoin('projects', 'timesheets.project_id', '=', 'projects.id');
         $query->leftJoin('users', 'timesheets.user_id', '=', 'users.id');
-        $query->groupBy(['user_id', 'stat_day']);
-        $query->orderBy('users.id', 'stat_day');
-        $result = $query->get();
 
-        // dd(\DB::getQueryLog());
+        $groupBy = ['user_id', 'stat_day'];
+        
+        $query->groupBy($groupBy);
+        $query->orderBy('user_id', 'stat_day');
+        $result = $query->get();
 
         $orderedResult = [];
         foreach ($result as $item) {
@@ -312,5 +367,32 @@ class EloquentTimesheetRepository extends EloquentBaseRepository implements Time
         $query->where(\DB::raw('TIME_TO_SEC(TIMEDIFF(NOW(), start))'), '>', $limit);
 
         return $query->get();
+    }
+
+    private function setWhereConditions(&$query, $condition, $fields = []) 
+    {
+        $dataClean = [
+            'description' => 'strip_tags', 
+            'ticket' => 'strip_tags',
+        ];
+
+        if ($fields == '*') {
+            $fields = $this->model->fillable;
+        }
+
+        foreach ($fields as $fieldname => $dbFieldname) {
+            if (is_integer($fieldname)) {
+                $fieldname = $dbFieldname;
+            }
+
+            if (isset($condition[$fieldname]) && $condition[$fieldname]) {
+                $value = $condition[$fieldname];
+                if (isset($dataClean[$fieldname])) {
+                    $value = $dataClean[$fieldname]($value);
+                }
+
+                $query->where($dbFieldname, $value);
+            }
+        }
     }
 }

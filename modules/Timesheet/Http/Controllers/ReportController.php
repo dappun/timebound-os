@@ -11,6 +11,7 @@ use TB\Client\Repositories\ClientRepository;
 use Illuminate\Http\Request;
 use Flash;
 use Response;
+use Carbon\Carbon;
 
 class ReportController extends BaseController
 {
@@ -49,35 +50,27 @@ class ReportController extends BaseController
         $this->users = $this->userRepository->options($this->user['id'], 'array', 'All team members');
         $this->clients = $this->clientRepository->options($this->user['id'], 'array', 'All client');
 
-        $this->setUrl();
-
         $method = 'report' . ucfirst($type);
-
-        $input = $request->all();
-        if ($input) {
-            $request->session()->put('last_query_report', $input);
+        $urlQuery = $request->query();
+        
+        if ($urlQuery) {
+            $toSave = $urlQuery;
+            unset($toSave['page']);
+            $request->session()->put('last_query_report', $toSave);
         } else {
-            // $input = $request->session()->get('last_query_report');
-            // if ($input) {
-                //$request->replace($input);    
-            // }
-        }
-
-        $urlParam = '';
-        if ($request->query()) {
-            foreach ($request->query() as $key => $value) {
-                $urlParam .= !$urlParam ? '?' : '&';
-                $urlParam .= $key . '=' . urlencode($value);
+            if ($storedQuery = $request->session()->get('last_query_report')) {
+                $urlQuery = $storedQuery;
+                $request->replace($storedQuery);
             }
         }
-            
+
+        $input = $request->all();
 
         \View::share('projects', $this->projects);
         \View::share('users', $this->users);
         \View::share('clients', $this->clients);
         \View::share('request', $request);
-        \View::share('urlParam', $urlParam);
-        \View::share('urlQuery', $request->query());
+        \View::share('urlQuery', $urlQuery);
 
         return $this->{$method}($input);
     }
@@ -91,28 +84,31 @@ class ReportController extends BaseController
         $total = $this->timesheetRepository->totalCount;
         \View::share('total', $total);
 
-        $all = $this->timesheetRepository->history($conditions, 0, 1000);
-        $jsonData = [];
-        $jsonData[] = ['Day', 'Hours', ['role' => 'annotation']];
-        foreach ($all as $ts) {
-            $seconds = (int)$ts->getAttributes()['duration'];
-            // $hours = floor($seconds / 3600);
-            // $minutes = floor($seconds / 60 % 60) / 60;
+        $all = $this->timesheetRepository->groupByDay($conditions);
+        
+        $chartData = [
+            'label' => [],
+            'data' => [],
+        ];
 
-            $d = date('d', strtotime($ts->start));
-            $jsonData[] = [$d, $seconds, 'h'];
+        foreach ($all as $date => $seconds) {
+            $total = gmhours($seconds, 'number');
+            
+            $d = date('M-d', strtotime($date));
+            $chartData['label'][] = $d;
+            $chartData['data'][] = number_format($total, 2);
         }
 
         return view('timesheet::report/detailed')
             ->with('timesheets', $timesheets)
-            ->with('jsonData', $jsonData);
+            ->with('chartData', $chartData);
     }
 
     public function reportTeam($request) 
     {
         $conditions = $this->cleanRequestInput($request);
-        $report = $this->timesheetRepository->groupByDay($conditions);
-        
+        $report = $this->timesheetRepository->groupUserByDay($conditions);
+
         $dateRanges = calculateDateRanges([
             'from' => $conditions['start'],
             'to' => $conditions['end']
@@ -233,7 +229,7 @@ class ReportController extends BaseController
     private function downloadTeam($request)
     {
         $conditions = $this->cleanRequestInput($request);
-        $report = $this->timesheetRepository->groupByDay($conditions);
+        $report = $this->timesheetRepository->groupUserByDay($conditions);
         
         $dateRanges = calculateDateRanges([
             'from' => $conditions['start'],
@@ -278,17 +274,21 @@ class ReportController extends BaseController
             'user_id' => $userID
         ];
 
-        if (!isset($input['start'])) {
-            $conditions['start'] = date('Y-m-d', strtotime('Monday this week'));
-        } else {
-            $conditions['start'] = date('Y-m-d', strtotime($input['start']));
+        $dateString = 'monday this week';
+        if (isset($input['start']) && $input['start']) {
+            $dateString = $input['start'];
         }
 
-        if (!isset($input['end'])) {
-            $conditions['end'] = date('Y-m-d', strtotime('Sunday this week'));
-        } else {
-            $conditions['end'] = date('Y-m-d', strtotime($input['end']));
+        $date = new \DateTime($dateString);
+        $conditions['start'] = $date->format('Y-m-d');
+
+        $dateString = 'sunday this week';
+        if (isset($input['end']) && $input['end']) {
+            $dateString = $input['end'];
         }
+
+        $date = new \DateTime($dateString);
+        $conditions['end'] = $date->format('Y-m-d');
 
         if (isset($input['project_id'])) {
             $conditions['project_id'] = (int)$input['project_id'];
@@ -299,31 +299,5 @@ class ReportController extends BaseController
         }
 
         return $conditions;
-    }
-
-    private function setUrl()
-    {
-        $urlParam = [];
-        if (isset($_GET['start'])) {
-            $urlParam['start'] = strip_tags($_GET['start']);
-        }
-
-        if (isset($_GET['end'])) {
-            $urlParam['end'] = strip_tags($_GET['end']);
-        }
-
-        if (isset($_GET['user_id'])) {
-            $urlParam['user_id'] = strip_tags($_GET['user_id']);
-        }
-
-        if (isset($_GET['project_id'])) {
-            $urlParam['project_id'] = strip_tags($_GET['project_id']);
-        }
-
-        if (isset($_GET['client_id'])) {
-            $urlParam['client_id'] = strip_tags($_GET['client_id']);
-        }
-
-        \View::share('urlParam', $urlParam);
     }
 }

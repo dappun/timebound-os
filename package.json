@@ -9,6 +9,7 @@
   "dependencies": {
     "babel-polyfill": "^6.22.0",
     "bootstrap-daterangepicker": "^2.1.25",
+    "chart.js": "^2.4.0",
     "eonasdan-bootstrap-datetimepicker": "^4.17.45",
     "imports-loader": "^0.7.0",
     "jquery": "^3.1.1",

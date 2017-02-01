@@ -41,6 +41,7 @@ class CoreServiceProvider extends ServiceProvider {
 		$this->app->register(\Snowfire\Beautymail\BeautymailServiceProvider::class);
 		$this->app->register(\Intervention\Image\ImageServiceProvider::class);
 		$this->app->register(\Laracasts\Utilities\JavaScript\JavaScriptServiceProvider::class);
+		$this->app->register(\Camroncade\Timezone\TimezoneServiceProvider::class);
 		// $this->app->register(\Maatwebsite\Excel\ExcelServiceProvider::class);
 
 		$this->registerAlias();

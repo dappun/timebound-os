@@ -90,7 +90,7 @@
     @if (isset($urlQuery) && $urlQuery)
         {{ $timesheets->appends($urlQuery)->links() }}
     @else
-        
+        {{ $timesheets->links() }}
     @endif
 
 @endif

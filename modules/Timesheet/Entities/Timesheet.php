@@ -28,7 +28,11 @@ class Timesheet extends Model
      * @var array
      */
     protected $casts = [
-        'description' => 'string'
+        'project_id'    => 'int',
+        'ticket'        => 'string',
+        'user_id'       => 'int',
+        'description'   => 'string',
+        'duration'      => 'double'
     ];
 
     /**
@@ -53,19 +57,19 @@ class Timesheet extends Model
         return $value;
     }
 
-    public function getStartAttribute($value)
-    {
-        if ($value) {
-            $date = convertDate($value, 'db-to-user');
-            return $date->format('Y-m-d H:i:s');
-        }
-    }
+    // public function getStartAttribute($value)
+    // {
+    //     if ($value) {
+    //         $date = convertDate($value, 'db-to-user');
+    //         return $date->format('Y-m-d H:i:s');
+    //     }
+    // }
 
-    public function getEndAttribute($value)
-    {
-        if ($value) {
-            $date = convertDate($value, 'db-to-user');
-            return $date->format('Y-m-d H:i:s');
-        }
-    }
+    // public function getEndAttribute($value)
+    // {
+    //     if ($value) {
+    //         $date = convertDate($value, 'db-to-user');
+    //         return $date->format('Y-m-d H:i:s');
+    //     }
+    // }
 }

@@ -1,4 +1,5 @@
 import '../../../node_modules/bootstrap-daterangepicker/daterangepicker.css';
+import Chart from '../../../node_modules/chart.js/src/chart.js';
 
 require("script-loader!../../../node_modules/bootstrap-daterangepicker/daterangepicker.js");
 
@@ -62,44 +63,30 @@ report.initChart = function(data, container)
 		data: data
 	}
 
-	google.charts.load('current', {packages: ['corechart']});
-	google.charts.setOnLoadCallback(report.drawReportChart);
+	var ctx = $("#" + container);
+
+	var myChart = new Chart(ctx, {
+	    type: 'bar',
+	    data: {
+	        labels: report.chart.data.label,
+	        datasets: [{
+	            label: 'Worked hours',
+	            data: report.chart.data.data,
+	            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+	            borderColor: 'rgba(54, 162, 235, 1)',
+	            borderWidth: 1
+	        }]
+	    },
+	    options: {
+	        scales: {
+	            yAxes: [{
+	                ticks: {
+	                    beginAtZero:true
+	                }
+	            }]
+	        }
+	    }
+	});
 }
-
-report.drawReportChart = function ()
-{
-	var data = google.visualization.arrayToDataTable(report.chart.data);
-
-	var g1 = google.visualization.data.group(data, [0], [{
-	    type: 'number',
-	    label: 'Total Hours',
-	    column: 1,
-	    aggregation: google.visualization.data.sum
-	}]);
-
-	var view = new google.visualization.DataView(g1);
-  	view.setColumns([0, 1, { calc: function(data, row){
-  			var num = data.getValue(row, 1);
-  			return core.formatGMH(num);
-  		},
-        sourceColumn: 1,
-        type: "string",
-        role: "annotation"}
-    ]);
-
-  	var options = {
-		hAxis: {
-			title: 'Date'
-		},
-		vAxis: {
-			title: 'Total Hours',
-		},
-		bar: {groupWidth: "95%"}
-	};
-
-	var chart = new google.visualization.ColumnChart(document.getElementById(report.chart.container));
-	chart.draw(view, options);
-}
-
 
 window.report = report;

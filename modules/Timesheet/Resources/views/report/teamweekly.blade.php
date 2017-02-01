@@ -22,7 +22,11 @@
     @if ($rows)
     <div class="actions">
     	<ul class="list-inline pull-right">
-    	<li><a href="{{ route('report.download', 'team', $urlParam) }}"><i class="fa fa-download" aria-hidden="true"></i> CSV</a></li>
+    	   <li>
+                <a href="{{ route('report.download', ['list'] + $urlQuery) }}">
+                    <i class="fa fa-download" aria-hidden="true"></i> CSV
+                </a>   
+            </li>
     	</ul>
 
     	<div class="clearfix"></div>

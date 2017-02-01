@@ -157,6 +157,7 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         'Pingpong\Modules\ModulesServiceProvider',
+        Barryvdh\Debugbar\ServiceProvider::class,
 
     ],
 
@@ -205,6 +206,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
         'Module' => 'Pingpong\Modules\Facades\Module',
+        'Debugbar' => Barryvdh\Debugbar\Facade::class,
     ],
 
 ];
