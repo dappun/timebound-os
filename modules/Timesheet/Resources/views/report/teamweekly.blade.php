@@ -23,7 +23,7 @@
     <div class="actions">
     	<ul class="list-inline pull-right">
     	   <li>
-                <a href="{{ route('report.download', ['list'] + $urlQuery) }}">
+                <a href="{{ route('report.download', ['team'] + $urlQuery) }}">
                     <i class="fa fa-download" aria-hidden="true"></i> CSV
                 </a>   
             </li>
