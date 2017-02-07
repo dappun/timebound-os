@@ -43,7 +43,7 @@
             <td class="table-project">
                 {!! $timesheet->project_title !!}
                 @if ($timesheet->ticket)
-                <span class="tag">{!! $timesheet->ticket !!}</span>
+                <span class="label-ticket">{!! $timesheet->ticket !!}</span>
                 @endif
 
                 @if ($timesheet->user_id == \Auth::id() || \Auth::user()->hasRole('admin'))

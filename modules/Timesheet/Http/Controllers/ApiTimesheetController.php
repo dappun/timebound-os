@@ -53,6 +53,7 @@ class ApiTimesheetController extends BaseController
             $jsonResult[] = [
                 'id' => $item->id,
                 'description' => $item->description,
+                'ticket' => $item->ticket,
                 'project' => [
                     'id' => $item->project_id,
                     'name' => $item->project_title,

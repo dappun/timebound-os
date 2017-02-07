@@ -24,6 +24,7 @@
         </td>
         <td class="table-project" v-if="item.line_item">
             @{{ item.project.name }}
+            <span class="label-ticket" v-if="item.ticket">@{{ item.ticket }}</span>
         </td>
         <td v-if="item.line_item">
             @{{ item.user.name }}

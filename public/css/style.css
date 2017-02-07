@@ -459,13 +459,6 @@ hr.tall {
 	text-shadow: none;
 }
 
-.tag {
-	background-color: #bc2d07; color: white !important;
-	padding: 1px 4px; 
-	border-radius: 3px;
-	font-size: 11px;
-}
-
 .mini-link {
 	font-size: 11px; text-transform: uppercase;
 }
@@ -792,4 +785,11 @@ hr.tall {
 	padding: 20px 0px;
 	border-bottom: 1px solid #ccc;
 	overflow: hidden;
+}
+
+.label-ticket {
+	background-color: #bc2d07; color: white !important;
+	padding: 1px 4px; 
+	border-radius: 3px;
+	font-size: 11px;
 }
