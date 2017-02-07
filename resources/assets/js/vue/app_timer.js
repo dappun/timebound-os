@@ -35,7 +35,6 @@ var appTimer = new Vue({
                 if (response.status == 401) {
                     window.location = core.url('/');
                 } else {
-                    console.log(response);
                     alert('Error ' + response.status + ': ' + response.statusText)
                 }
             });
@@ -77,10 +76,7 @@ var appTimer = new Vue({
             if (this.ts.start) {
                 var browserTz = moment.tz.guess();
                 var localTime = moment.tz(this.ts.start, core.userTimezone);
-                // console.log(this.ts.start)
-                // console.log(savedTz + ' - ' + browserTz);
-                // console.log(moment(localTime).format());
-
+                
                 $.APP.resumeTimer('sw', moment(localTime).format());
             } else {
                 $.APP.startTimer('sw');    
@@ -104,8 +100,8 @@ var appTimer = new Vue({
             this.ts.ticket = '';
             this.ts.start = '';
         }
-    },
-    components: {select2: select2},
+    }
+    // components: {select2: select2},
 });
 
 appTimer.onLoad();

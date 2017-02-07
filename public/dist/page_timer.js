@@ -99,11 +99,8 @@ var select2 = Vue.component('select2', {
     template: '#select2-template',
     mounted: function mounted() {
         var vm = this;
-        $(this.$el).val(this.value)
-        // init select2
-        .select2({ data: this.options })
-        // emit event on change.
-        .on('change', function () {
+
+        $(this.$el).val(this.value).select2({ data: this.options }).on('change', function () {
             vm.$emit('input', this.value);
         });
     },
@@ -147,10 +144,15 @@ var appHistory = new Vue({
         },
         counter: 0,
         last_date: null,
+        last_page: false,
         loader_show: true
     },
     methods: {
         loadMore: function loadMore() {
+            if (this.last_page == true) {
+                return;
+            }
+
             this.busy = true;
             this.loader_show = true;
 
@@ -167,7 +169,6 @@ var appHistory = new Vue({
                     if (response.status == 401) {
                         window.location = core.url('/');
                     } else {
-                        console.log(response);
                         alert('Error ' + response.status + ': ' + response.statusText);
                     }
                 }
@@ -181,6 +182,10 @@ var appHistory = new Vue({
                 that.paging.currentPage = result.currentPage;
                 if (result.lastPage != result.currentPage) {
                     that.busy = false;
+                }
+
+                if (result.total == 0) {
+                    that.last_page = true;
                 }
 
                 that.loader_show = false;
@@ -512,7 +517,6 @@ var appTimer = new Vue({
                 if (response.status == 401) {
                     window.location = core.url('/');
                 } else {
-                    console.log(response);
                     alert('Error ' + response.status + ': ' + response.statusText);
                 }
             });
@@ -555,9 +559,6 @@ var appTimer = new Vue({
             if (this.ts.start) {
                 var browserTz = moment.tz.guess();
                 var localTime = moment.tz(this.ts.start, core.userTimezone);
-                // console.log(this.ts.start)
-                // console.log(savedTz + ' - ' + browserTz);
-                // console.log(moment(localTime).format());
 
                 $.APP.resumeTimer('sw', moment(localTime).format());
             } else {
@@ -581,8 +582,8 @@ var appTimer = new Vue({
             this.ts.ticket = '';
             this.ts.start = '';
         }
-    },
-    components: { select2: select2 }
+    }
+    // components: {select2: select2},
 });
 
 appTimer.onLoad();

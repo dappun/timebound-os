@@ -13,10 +13,15 @@ var appHistory = new Vue({
         },
         counter: 0,
         last_date: null,
+        last_page: false,
         loader_show: true,
     },
     methods: {
         loadMore: function() {
+            if (this.last_page == true) {
+                return;
+            }
+            
             this.busy = true;
             this.loader_show = true;
 
@@ -33,7 +38,6 @@ var appHistory = new Vue({
                     if (response.status == 401) {
                         window.location = core.url('/');
                     } else {
-                        console.log(response);
                         alert('Error ' + response.status + ': ' + response.statusText);
                     }
                 },
@@ -47,6 +51,10 @@ var appHistory = new Vue({
                 that.paging.currentPage = result.currentPage;
                 if (result.lastPage != result.currentPage) {
                     that.busy = false;
+                }
+
+                if (result.total == 0) {
+                    that.last_page = true;
                 }
                 
                 that.loader_show = false;
