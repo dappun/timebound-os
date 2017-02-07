@@ -284,7 +284,7 @@ label, .label {
 }
 
 #timer input[name="description"] {
-	width: 500px;
+	width: 100%;
 	padding: 0 20px;
 }
 

@@ -14,9 +14,9 @@ class UserDatabaseSeeder extends Seeder {
 	{
 		// Model::unguard();
 		
-		// $this->call("\TB\User\Database\Seeders\UsersTableSeeder");
+		$this->call("\TB\User\Database\Seeders\UsersTableSeeder");
 		$this->call("\TB\User\Database\Seeders\RolesTableSeeder");
-		// $this->call("\TB\User\Database\Seeders\UserRolesTableSeeder");
+		$this->call("\TB\User\Database\Seeders\UserRolesTableSeeder");
 	}
 
 }
