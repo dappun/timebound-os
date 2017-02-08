@@ -72,4 +72,20 @@ class Timesheet extends Model
     //         return $date->format('Y-m-d H:i:s');
     //     }
     // }
+
+    public function startConverted()
+    {
+        $value = $this->start;
+        if ($value) {
+            return \Timezone::convertFromUTC($value, userTimezone(), 'Y-m-d H:i:s');
+        }
+    }
+
+    public function endConverted()
+    {
+        $value = $this->end;
+        if ($value) {
+            return \Timezone::convertFromUTC($value, userTimezone(), 'Y-m-d H:i:s');
+        }
+    }
 }
