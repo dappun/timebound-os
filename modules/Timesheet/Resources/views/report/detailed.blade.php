@@ -11,7 +11,7 @@
     <div class="clearfix"></div>
     <div class="reports-actions">
     	<ul class="list-inline pull-right">
-    	<li><a href="{{ route('report.detailed') }}">Reset</a></li>
+    	<li><a href="{{ route('report.reset', ['d' => 'detailed']) }}">Reset</a></li>
     	</ul>
 
     	<div class="clearfix"></div>
@@ -44,7 +44,7 @@
     @include('timesheet::_table')
 
     @else
-    	<div class="well">No entries found. <a href="{{ route('report.detailed') }}">Reset?</a></div>
+    	<div class="well">No entries found. <a href="{{ route('report.reset', ['d' => 'detailed']) }}">Reset</a></div>
     @endif
         
 @endsection

@@ -9,6 +9,8 @@ Route::group(['middleware' => 'web', 'prefix' => '/', 'namespace' => 'TB\Timeshe
 	Route::get('api/timer', 'ApiTimesheetController@index')->name('api.timer.index');
 	Route::post('api/timer/stopwatch', 'ApiTimesheetController@stopwatch')->name('api.timer.stopwatch');
 	Route::get('api/timer/ongoing', 'ApiTimesheetController@ongoing')->name('api.timer.ongoing');
+
+	Route::get('filter-reset', 'ReportController@reset')->name('report.reset');
 });
 
 Route::group(['middleware' => 'web', 'prefix' => '/report', 'namespace' => 'TB\Timesheet\Http\Controllers'], function()

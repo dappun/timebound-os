@@ -15,7 +15,6 @@ use Carbon\Carbon;
 
 class ReportController extends BaseController
 {
-    /** @var  TimesheetRepository */
     private $timesheetRepository;
 
     public function __construct(TimesheetRepository $timesheetRepo, 
@@ -299,5 +298,18 @@ class ReportController extends BaseController
         }
 
         return $conditions;
+    }
+
+    public function reset(Request $request)
+    {
+        $refer = $request->get('d');
+        if (!$refer) {
+            $refer = route('report.detailed');
+        } else {
+            $refer = route('report.' . $refer);
+        }
+        
+        $request->session()->put('last_query_report', false);
+        return redirect($refer);
     }
 }
