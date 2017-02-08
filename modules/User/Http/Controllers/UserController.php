@@ -28,6 +28,26 @@ class UserController extends BaseController
      */
     public function index()
     {
+        $imagePath = public_path('images/profile');
+        $promptFileError = false;
+        try {
+            if (!file_exists($imagePath)) {
+                if (!is_writable($imagePath)) {
+                    $promptFileError = true;
+                } else {
+                    mkdir($imagePath, 0777, true);    
+                }
+            }
+        } catch (Exception $e) {
+            $promptFileError = true;
+        }
+
+            
+
+        if ($promptFileError) {
+            \Flash::error('Image directory is not writable. Make sure you have public/images/profile folder with right permission.');   
+        }
+
         $users = $this->userRepository->all();
 
         return view('user::index')
