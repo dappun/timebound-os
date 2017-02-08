@@ -84,8 +84,8 @@ class TimesheetController extends BaseController
     public function edit($id)
     {
         $timesheet = $this->timesheetRepository->findMine($id, $this->user['id']);
-        $timesheet->start = $timesheet->startConverted;
-        $timesheet->end = $timesheet->endConverted;
+        $timesheet->start = $timesheet->startConverted();
+        $timesheet->end = $timesheet->endConverted();
 
         if (empty($timesheet)) {
             Flash::error('Time Entry not found');

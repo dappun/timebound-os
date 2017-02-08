@@ -75,7 +75,5 @@ class Project extends Model
         }
 
         return '';
-        // dd($client);
-        
     }
 }

@@ -68,11 +68,16 @@ class EloquentTimesheetRepository extends EloquentBaseRepository implements Time
            $query->where('start', '>=', $fr); 
         }
 
-        $query->where(function($q) use ($to) {
-            $q->where('start', '<=', $to)
-                ->orWhere('end', '0000-00-00 00:00:00')
-                ->orWhereNull('end');
-        });
+        if ($to) {
+            $query->where('start', '<=', $to);
+            $query->where('end', '!=', '0000-00-00 00:00:00');
+        }
+
+        // $query->where(function($q) use ($to) {
+        //     $q->where('start', '<=', $to)
+        //         ->orWhere('end', '0000-00-00 00:00:00')
+        //         ->orWhereNull('end');
+        // });
 
         $totalQuery = clone $query;
         $this->totalCount = $totalQuery->sum('timesheets.duration');
@@ -146,8 +151,11 @@ class EloquentTimesheetRepository extends EloquentBaseRepository implements Time
     public function stop($input)
     {
         $cleanInput = [
-            'id' => $input['id'],
-            'end' => date('Y-m-d H:i:s')
+            'id'            => $input['id'],
+            'end'           => date('Y-m-d H:i:s'),
+            'description'   => strip_tags($input['description']),
+            'project_id'    => (int)@$input['project_id'],
+            'ticket'        => strip_tags($input['ticket']),
         ];
         
         $obj = $this->update($cleanInput);
@@ -159,7 +167,7 @@ class EloquentTimesheetRepository extends EloquentBaseRepository implements Time
     {
         $old = $this->find($id);
 
-        $newInput['start'] = \Timezone::convertToUTC(date('Y-m-d H:i:s'), userTimezone(), 'Y-m-d H:i:s');
+        $newInput['start'] = date('Y-m-d H:i:s');
 
         $new = $old->replicate();
         $new->start = $this->_timeformatting($newInput, 'start');
