@@ -19,22 +19,24 @@ This project uses the following:
 ## Installation
 
 * `$ git clone https://github.com/koodiph/timebound-os.git`
-
 * Create `.env` file.
-
 * Copy the content of `.env.example` to `.env`
-
-* Put your database credentials in `.env`
-
+* Put your database credentials in `.env` and STMP settings
 * `$ composer install`
+* `$ php artisan key:generate`
+* `$ php artisan module:migrate`
+* `$ php artisan module:seed`
+* Make sure the following directories exist and make them writable
+
+`public/images/profile`
+`public/download`
+
+## Installation - Dev
+
+To work on javascript, you need npm and webpack
 
 * `$ npm install`
 
-* `$ php artisan key:generate`
-
-* `$ php artisan module:migrate`
-
-* `$ php artisan module:seed`
 
 ## Documentation
 
