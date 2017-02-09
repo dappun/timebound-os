@@ -43,9 +43,10 @@ var appTimer = new Vue({
             // Validate All returns a promise and provides the validation result.                
             this.$validator.validateAll().then(success => {
                 if (!success) return;
-                
+
                 var that = this;
                 var formdata = $('#timer-form').serialize();
+                console.log(formdata)
                 
                 $.ajax({
                     type: "POST",
@@ -76,6 +77,7 @@ var appTimer = new Vue({
             if (this.ts.start) {
                 var browserTz = moment.tz.guess();
                 var localTime = moment.tz(this.ts.start, core.userTimezone);
+                // localTime = this.ts.start;
                 
                 $.APP.resumeTimer('sw', moment(localTime).format());
             } else {
@@ -100,10 +102,12 @@ var appTimer = new Vue({
             this.ts.ticket = '';
             this.ts.start = '';
         }
-    }
-    // components: {select2: select2},
+    },
+    components: {select2: select2},
 });
 
-appTimer.onLoad();
+$( document ).ready(function() {
+    appTimer.onLoad();
+});
 
 window.appTimer = appTimer;

@@ -57,19 +57,19 @@ class Timesheet extends Model
         return $value;
     }
 
-    // public function getStartAttribute($value)
-    // {
-    //     if ($value) {
-    //         $date = convertDate($value, 'db-to-user');
-    //         return $date->format('Y-m-d H:i:s');
-    //     }
-    // }
+    public function startConverted()
+    {
+        $value = $this->start;
+        if ($value) {
+            return \Timezone::convertFromUTC($value, userTimezone(), 'Y-m-d H:i:s');
+        }
+    }
 
-    // public function getEndAttribute($value)
-    // {
-    //     if ($value) {
-    //         $date = convertDate($value, 'db-to-user');
-    //         return $date->format('Y-m-d H:i:s');
-    //     }
-    // }
+    public function endConverted()
+    {
+        $value = $this->end;
+        if ($value) {
+            return \Timezone::convertFromUTC($value, userTimezone(), 'Y-m-d H:i:s');
+        }
+    }
 }

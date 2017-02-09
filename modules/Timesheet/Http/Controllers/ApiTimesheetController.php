@@ -63,8 +63,8 @@ class ApiTimesheetController extends BaseController
                     'name' => $item->user_name,
                 ],
                 'date' => [
-                    'start' => $item->start,
-                    'end' => $item->end,
+                    'start' => $item->startConverted(),
+                    'end' => $item->endConverted(),
                     'duration' => (float)$item->getAttributes()['duration'],
                     'duration_formatted' => $item->duration,
                     'duration_raw' => computeDuration($item->start, $end, 'array')
@@ -97,7 +97,7 @@ class ApiTimesheetController extends BaseController
                 'duration' => (float)$timesheet->getAttributes()['duration'],
                 'duration_formatted' => $timesheet->duration,
                 'duration_raw' => $timesheet->duration_raw,
-                'start' => $timesheet->start
+                'start' => $timesheet->startConverted()
             ];
         }
             
@@ -118,17 +118,18 @@ class ApiTimesheetController extends BaseController
         $data = [
             'id' => $item->id,
             'description' => $item->description,
+            'ticket' => $item->ticket,
             'project' => [
                 'id' => $item->project_id,
-                'name' => '',
+                'name' => $item->project_title,
             ],
             'user'  => [
                 'id' => $item->user_id,
-                'name' => '',
+                'name' => $item->user_name,
             ],
             'date' => [
-                'start' => $item->start,
-                'end' => $item->end,
+                'start' => $item->startConverted(),
+                'end' => $item->endConverted(),
                 'duration' => (float)@$item->getAttributes()['duration'],
                 'duration_formatted' => $item->duration,
                 'duration_raw' => computeDuration($item->start, $end, 'array')

@@ -17,6 +17,7 @@ Template used for select2 component. Place this in your html file
 </script>
 
  */
+
 var select2 = Vue.component('select2', {
     name: 'select2',
     props: ['options', 'value'],

@@ -93,6 +93,7 @@ Template used for select2 component. Place this in your html file
 </script>
 
  */
+
 var select2 = Vue.component('select2', {
     name: 'select2',
     props: ['options', 'value'],
@@ -530,6 +531,7 @@ var appTimer = new Vue({
 
                 var that = _this2;
                 var formdata = $('#timer-form').serialize();
+                console.log(formdata);
 
                 $.ajax({
                     type: "POST",
@@ -559,6 +561,7 @@ var appTimer = new Vue({
             if (this.ts.start) {
                 var browserTz = moment.tz.guess();
                 var localTime = moment.tz(this.ts.start, core.userTimezone);
+                // localTime = this.ts.start;
 
                 $.APP.resumeTimer('sw', moment(localTime).format());
             } else {
@@ -582,11 +585,13 @@ var appTimer = new Vue({
             this.ts.ticket = '';
             this.ts.start = '';
         }
-    }
-    // components: {select2: select2},
+    },
+    components: { select2: select2 }
 });
 
-appTimer.onLoad();
+$(document).ready(function () {
+    appTimer.onLoad();
+});
 
 window.appTimer = appTimer;
 

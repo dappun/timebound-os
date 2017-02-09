@@ -19,7 +19,7 @@
             $colspan = 5;
         }
         
-        $d = date('Y-m-d', strtotime($timesheet->start));
+        $d = date('Y-m-d', strtotime($timesheet->startConverted()));
         if ($lastDate != $d) {
             echo '<tr><td colspan='.$colspan.'><h1>'. timeElapsedString($d) .'</h1></td></tr>';
         }
@@ -77,7 +77,7 @@
                 @endif
             </td>
             <td>
-                <span class="nowrap">{!! date('h:i a', strtotime($timesheet->start)) !!} - {!! date('h:i a', strtotime($timesheet->end)) !!}</span>
+                <span class="nowrap">{!! date('h:i a', strtotime($timesheet->startConverted())) !!} - {!! date('h:i a', strtotime($timesheet->endConverted())) !!}</span>
             </td>
             
         </tr>
