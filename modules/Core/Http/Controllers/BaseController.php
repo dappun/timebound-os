@@ -1,6 +1,6 @@
 <?php namespace TB\Core\Http\Controllers;
 
-use Pingpong\Modules\Routing\Controller;
+use Nwidart\Modules\Routing\Controller;
 use Flash;
 use Illuminate\Support\Facades\Auth as Auth;
 use InfyOm\Generator\Utils\ResponseUtil;

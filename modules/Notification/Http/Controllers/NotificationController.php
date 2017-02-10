@@ -1,6 +1,6 @@
 <?php namespace TB\Notification\Http\Controllers;
 
-use Pingpong\Modules\Routing\Controller;
+use TB\Core\Http\Controllers\BaseController; 
 
 class NotificationController extends Controller {
 	

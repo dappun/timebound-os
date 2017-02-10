@@ -7,10 +7,10 @@
     "require": {
         "php": ">=5.5.9",
         "laravel/framework": "5.2.*",
-        "pingpong/modules": "~2.1",
         "cartalyst/sentinel": "~2.0",
         "wikimedia/composer-merge-plugin": "^1.3",
-        "barryvdh/laravel-debugbar": "^2.3"
+        "barryvdh/laravel-debugbar": "^2.3",
+        "nwidart/laravel-modules": "^1.16"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
