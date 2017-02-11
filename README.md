@@ -11,6 +11,12 @@ This project uses the following:
 * Webpack
 * Bootstrap 3
 
+**Project Status**
+
+* Maintenance status: Actively maintained
+* Development status: Under active development
+* Not advisable for production use yet. Planned release of stable version is on the third quarter of 2017
+
 ## Requirements
 
 * PHP 5.6 or higher. Tested using PHP 5.6 and PHP 7.1
