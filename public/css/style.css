@@ -793,3 +793,10 @@ hr.tall {
 	border-radius: 3px;
 	font-size: 11px;
 }
+
+#footer {
+	padding: 1em;
+	background: #331b01;
+	color: #ddd;
+	margin-top: 1em;
+}

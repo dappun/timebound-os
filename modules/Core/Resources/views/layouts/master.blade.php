@@ -116,6 +116,16 @@
 </div>
 <!-- /#page-content-wrapper -->
 
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                Copyright &copy; 2017 <a href="http://timebound.io" target="_blank">Timebound</a>. All rights reserved.
+            </div>
+        </div>
+    </div>  
+</footer>
+
 @yield('scripts')
 
 </body>
