@@ -58,4 +58,4 @@ If you discover a security vulnerability within the app, please send an e-mail t
 
 ## License
 
-This app is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+This app is open-sourced software licensed under the [Apache License, Version 2.0](https://opensource.org/licenses/Apache-2.0).
