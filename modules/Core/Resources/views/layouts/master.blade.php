@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}" /> 
 
     <title>{{ env('SITE_NAME', '') }}</title>
 
@@ -87,6 +88,7 @@
                     <a class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                         <img src="{{ url(\Auth::user()->profile_image) }}" class="img-circle special-img" style="height:25px;">
                     <span class="name">{{\Auth::user()->name}}</span>
+                    <input type="hidden" value="{{\Auth::user()->id}}" id="input_user_id" >
                     <span class="caret"></span>
                     </a>
 

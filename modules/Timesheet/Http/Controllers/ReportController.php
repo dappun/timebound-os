@@ -49,6 +49,9 @@ class ReportController extends BaseController
         $this->users = $this->userRepository->options($this->user['id'], 'array', 'All team members');
         $this->clients = $this->clientRepository->options($this->user['id'], 'array', 'All client');
 
+        $url = \App\SaveReport::oldest('created_at')->where('ac_user_id','=', \Auth::user()->id)->get();
+        // dd ($url);
+
         $method = 'report' . ucfirst($type);
         $urlQuery = $request->query();
         
@@ -71,7 +74,17 @@ class ReportController extends BaseController
         \View::share('request', $request);
         \View::share('urlQuery', $urlQuery);
 
-        return $this->{$method}($input);
+        return $this->{$method}($input)->with('url', $url);
+    }
+
+    public function save(Request $request)
+    {
+        $filters['created_at'] = Carbon::now();
+        $filters['updated_at'] = Carbon::now();
+        $filters = $request->only('name','ac_user_id','filter','ac_start','ac_end','p_id','u_id','c_id');
+        $filters['url'] = json_encode($filters );
+       //var_dump($filter);
+        \App\SaveReport::create($filters);
     }
 
     private function reportList($request)

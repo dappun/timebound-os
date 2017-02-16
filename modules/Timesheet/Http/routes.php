@@ -17,6 +17,7 @@ Route::group(['middleware' => 'web', 'prefix' => '/report', 'namespace' => 'TB\T
 {
 	Route::get('/{type?}', 'ReportController@detailed')->name('report.detailed');
 	// Route::post('/', 'ReportController@detailed')->name('report.detailed');
+	Route::post('/save', 'ReportController@save');
 	Route::get('/team', 'ReportController@teamweekly')->name('report.teamweekly');
 	Route::get('/download/{type}', 'ReportController@download')->name('report.download');
 });
